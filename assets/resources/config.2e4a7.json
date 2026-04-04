@@ -1,0 +1,96 @@
+{
+    "paths": {
+        "14MHSvrTlHkZwvc4rM7Gb/": [
+            "prefab/adNode",
+            "cc.Prefab"
+        ],
+        "57+ou/ttBMQqhAi2F6gWVE": [
+            "prefab/notify",
+            "cc.Prefab"
+        ],
+        "0ekKKIjHJBlbWS9YEwuuTc": [
+            "textures/img_bgg",
+            "cc.SpriteFrame",
+            1
+        ],
+        "84Zd+5akVLSrlci6QR3LDm": [
+            "textures/img_bgg",
+            "cc.Texture2D"
+        ],
+        "4dlTEmzDlGlrN2Ytl3Jsbk": [
+            "textures/img_l_jdt",
+            "cc.Texture2D"
+        ],
+        "c6mJ7FPTRNf57WcdDnL/9I": [
+            "textures/img_l_jdt",
+            "cc.SpriteFrame",
+            1
+        ],
+        "c92HnuQ2dFnLAuej5KPG6w": [
+            "textures/img_l_jdt_dk",
+            "cc.SpriteFrame",
+            1
+        ],
+        "fcZfi8lvpN+aVkRDIN7NOV": [
+            "textures/img_l_jdt_dk",
+            "cc.Texture2D"
+        ],
+        "6dRY34Z91DkaaCFDl9LjPU": [
+            "uiPrefab/loadPanel",
+            "cc.Prefab"
+        ]
+    },
+    "uuids": [
+        "0ekKKIjHJBlbWS9YEwuuTc",
+        "14MHSvrTlHkZwvc4rM7Gb/",
+        "4dlTEmzDlGlrN2Ytl3Jsbk",
+        "57+ou/ttBMQqhAi2F6gWVE",
+        "6dRY34Z91DkaaCFDl9LjPU",
+        "84Zd+5akVLSrlci6QR3LDm",
+        "c6mJ7FPTRNf57WcdDnL/9I",
+        "c92HnuQ2dFnLAuej5KPG6w",
+        "fcZfi8lvpN+aVkRDIN7NOV"
+    ],
+    "scenes": {},
+    "redirect": [],
+    "deps": [],
+    "packs": {
+        "0262133ec": [
+            "0ekKKIjHJBlbWS9YEwuuTc",
+            "6dRY34Z91DkaaCFDl9LjPU",
+            "c6mJ7FPTRNf57WcdDnL/9I",
+            "c92HnuQ2dFnLAuej5KPG6w"
+        ],
+        "07ea7baa2": [
+            "4dlTEmzDlGlrN2Ytl3Jsbk",
+            "84Zd+5akVLSrlci6QR3LDm",
+            "fcZfi8lvpN+aVkRDIN7NOV"
+        ]
+    },
+    "name": "resources",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false,
+    "versions": {
+        "import": [
+            "0262133ec",
+            "69484",
+            "07ea7baa2",
+            "01145",
+            "14MHSvrTlHkZwvc4rM7Gb/",
+            "62eab",
+            "57+ou/ttBMQqhAi2F6gWVE",
+            "b267b"
+        ],
+        "native": [
+            "4dlTEmzDlGlrN2Ytl3Jsbk",
+            "1c447",
+            "84Zd+5akVLSrlci6QR3LDm",
+            "d34e1",
+            "fcZfi8lvpN+aVkRDIN7NOV",
+            "cb23a"
+        ]
+    }
+}
