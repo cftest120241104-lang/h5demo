@@ -1,7 +1,7 @@
 [
   1,
   [
-    "64PjPV0IRGe6V9stQok9PL"
+    "05IY7RrQ1N5KRgxGrVvkHX"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "img_xz_pt4",
+      "name": "img_huakuang",
       "rect": [
+        1,
         0,
-        0,
-        78,
-        59
+        765,
+        837
       ],
       "offset": [
-        0,
-        0
+        0.5,
+        0.5
       ],
       "originalSize": [
-        78,
-        59
+        766,
+        838
       ],
       "capInsets": [
         0,

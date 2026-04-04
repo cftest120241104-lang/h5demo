@@ -17,7 +17,7 @@
             "textures/img_bgg",
             "cc.Texture2D"
         ],
-        "997XVfBOdEr4PT7Oval0t8": [
+        "34GARW2jVJP6xYopNUZfZF": [
             "textures/img_l_jdt",
             "cc.Texture2D"
         ],
@@ -26,7 +26,7 @@
             "cc.SpriteFrame",
             1
         ],
-        "82cCKiKAREX5aiAt7ub0n5": [
+        "a94pkZ/QRFxK8omJt/Q/Q6": [
             "textures/img_l_jdt_dk",
             "cc.Texture2D"
         ],
@@ -43,11 +43,11 @@
     "uuids": [
         "0ekKKIjHJBlbWS9YEwuuTc",
         "14MHSvrTlHkZwvc4rM7Gb/",
+        "34GARW2jVJP6xYopNUZfZF",
         "57+ou/ttBMQqhAi2F6gWVE",
         "6dRY34Z91DkaaCFDl9LjPU",
-        "82cCKiKAREX5aiAt7ub0n5",
         "84Zd+5akVLSrlci6QR3LDm",
-        "997XVfBOdEr4PT7Oval0t8",
+        "a94pkZ/QRFxK8omJt/Q/Q6",
         "c6mJ7FPTRNf57WcdDnL/9I",
         "c92HnuQ2dFnLAuej5KPG6w"
     ],
@@ -55,16 +55,16 @@
     "redirect": [],
     "deps": [],
     "packs": {
-        "022e850ef": [
-            "82cCKiKAREX5aiAt7ub0n5",
-            "84Zd+5akVLSrlci6QR3LDm",
-            "997XVfBOdEr4PT7Oval0t8"
-        ],
         "0262133ec": [
             "0ekKKIjHJBlbWS9YEwuuTc",
             "6dRY34Z91DkaaCFDl9LjPU",
             "c6mJ7FPTRNf57WcdDnL/9I",
             "c92HnuQ2dFnLAuej5KPG6w"
+        ],
+        "0ba59279d": [
+            "34GARW2jVJP6xYopNUZfZF",
+            "84Zd+5akVLSrlci6QR3LDm",
+            "a94pkZ/QRFxK8omJt/Q/Q6"
         ]
     },
     "name": "resources",
@@ -75,22 +75,22 @@
     "encrypted": false,
     "versions": {
         "import": [
-            "022e850ef",
-            "01145",
             "0262133ec",
-            "e20d3",
+            "eccf1",
+            "0ba59279d",
+            "01145",
             "14MHSvrTlHkZwvc4rM7Gb/",
             "62eab",
             "57+ou/ttBMQqhAi2F6gWVE",
             "b267b"
         ],
         "native": [
-            "82cCKiKAREX5aiAt7ub0n5",
-            "cb23a",
+            "34GARW2jVJP6xYopNUZfZF",
+            "1c447",
             "84Zd+5akVLSrlci6QR3LDm",
             "d34e1",
-            "997XVfBOdEr4PT7Oval0t8",
-            "1c447"
+            "a94pkZ/QRFxK8omJt/Q/Q6",
+            "cb23a"
         ]
     }
 }

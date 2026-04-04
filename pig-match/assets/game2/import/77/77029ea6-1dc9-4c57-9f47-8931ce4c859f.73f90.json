@@ -1,7 +1,7 @@
 [
   1,
   [
-    "53j68XVxVHuYdYU4HFzaAQ"
+    "921cDWe4FPkLCdeUNC41ot"
   ],
   [
     "_textureSetter"
@@ -12,20 +12,20 @@
   0,
   [
     {
-      "name": "img_xz_pt1",
+      "name": "img_xz_pt5",
       "rect": [
         0,
         0,
-        79,
-        57
+        78,
+        59
       ],
       "offset": [
         0,
         0
       ],
       "originalSize": [
-        79,
-        57
+        78,
+        59
       ],
       "capInsets": [
         0,

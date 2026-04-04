@@ -336,11 +336,12 @@ window.__require = function e(t, n, r) {
         this.flipNum = 0;
       }
       init(p13, p14, p15) {
-        this.tailing_smoke = cc.find("tailing_smoke", this.node), this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.CHANGE_SKIN, this.onChangeSkin, this)), 
+        return this.tailing_smoke = cc.find("tailing_smoke", this.node), this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.CHANGE_SKIN, this.onChangeSkin, this)), 
         this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.ANIMAL_LIGHT, this.onLight, this)), 
         this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.ANIMAL_IDLE, this.onIdle, this)), 
         this.state = Enum.AnimalState.IDLE, this.aniData = p13, this.aniScale = p14, this.aniAngle = p15, 
-        this.node.scale = p14, this.node.angle = p15, this.curAngle = p15, this.flipNum = 0;
+        this.node.scale = p14, this.node.angle = p15, this.curAngle = p15, this.flipNum = 0, 
+        [ 2 ];
       }
       init2(p16, p17, p18) {
         return __awaiter(this, void 0, void 0, function*() {
@@ -582,13 +583,13 @@ window.__require = function e(t, n, r) {
       }
       playMusic(p4, p5) {
         return __awaiter(this, void 0, void 0, function*() {
+          var v6;
           void 0 === p5 && (p5 = true);
           this.url = p4;
-          if (this._switch_music) {
-            this.music && cc.audioEngine.stop(this.music);
-            var v6 = yield Res.default.load(p4, cc.AudioClip);
-            this.music = cc.audioEngine.play(v6, p5, 1);
-          }
+          if (!this._switch_music) return;
+          this.music && cc.audioEngine.stop(this.music);
+          v6 = yield Res.default.load(p4, cc.AudioClip);
+          this.music = cc.audioEngine.play(v6, p5, 1);
         });
       }
       get switchMusic() {
@@ -600,12 +601,12 @@ window.__require = function e(t, n, r) {
       }
       playEffect(p8, p9) {
         return __awaiter(this, void 0, void 0, function*() {
+          var v10;
           void 0 === p9 && (p9 = false);
-          if (this._switch_effect) {
-            var v10 = yield Res.default.load(p8, cc.AudioClip);
-            this.effect = cc.audioEngine.play(v10, false, 1);
-            p9 && (this.effectObj[p8] || (this.effectObj[p8] = this.effect));
-          }
+          if (!this._switch_effect) return;
+          v10 = yield Res.default.load(p8, cc.AudioClip);
+          this.effect = cc.audioEngine.play(v10, false, 1);
+          p9 && (this.effectObj[p8] || (this.effectObj[p8] = this.effect));
         });
       }
       stopEffect(p11) {
@@ -1366,113 +1367,113 @@ window.__require = function e(t, n, r) {
       value: true
     });
     var v0, v1, v2, v3;
-    var v4 = this && this.__awaiter || function(p15, p16, p17, p18) {
-      return new (p17 || (p17 = Promise))(function(p19, p20) {
-        function fn21(p24) {
+    var __awaiter = this && this.__awaiter || function(p13, p14, p15, p16) {
+      return new (p15 || (p15 = Promise))(function(p17, p18) {
+        function fn19(p22) {
           try {
-            fn23(p18.next(p24));
+            fn21(p16.next(p22));
+          } catch (v23) {
+            p18(v23);
+          }
+        }
+        function fn20(p24) {
+          try {
+            fn21(p16["throw"](p24));
           } catch (v25) {
-            p20(v25);
+            p18(v25);
           }
         }
-        function fn22(p26) {
-          try {
-            fn23(p18["throw"](p26));
-          } catch (v27) {
-            p20(v27);
-          }
+        function fn21(p26) {
+          var v27;
+          p26.done ? p17(p26.value) : (v27 = p26.value, v27 instanceof p15 ? v27 : new p15(function(p28) {
+            p28(v27);
+          })).then(fn19, fn20);
         }
-        function fn23(p28) {
-          var v29;
-          p28.done ? p19(p28.value) : (v29 = p28.value, v29 instanceof p17 ? v29 : new p17(function(p30) {
-            p30(v29);
-          })).then(fn21, fn22);
-        }
-        fn23((p18 = p18.apply(p15, p16 || [])).next());
+        fn21((p16 = p16.apply(p13, p14 || [])).next());
       });
-    }, v5 = this && this.__generator || function(p31, p32) {
-      var v33, v34, v35, v36, v37 = {
+    }, __generator = this && this.__generator || function(p29, p30) {
+      var v31, v32, v33, v34, v35 = {
         label: 0,
         sent: function sent() {
-          if (1 & v35[0]) throw v35[1];
-          return v35[1];
+          if (1 & v33[0]) throw v33[1];
+          return v33[1];
         },
         trys: [],
         ops: []
       };
-      return v36 = {
-        next: fn38(0),
-        throw: fn38(1),
-        return: fn38(2)
-      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v36[Symbol.iterator] = function() {
+      return v34 = {
+        next: fn36(0),
+        throw: fn36(1),
+        return: fn36(2)
+      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v34[Symbol.iterator] = function() {
         return this;
-      }), v36;
-      function fn38(p40) {
-        return function(p41) {
-          return fn39([ p40, p41 ]);
+      }), v34;
+      function fn36(p38) {
+        return function(p39) {
+          return fn37([ p38, p39 ]);
         };
       }
-      function fn39(p42) {
-        if (v33) throw new TypeError("Generator is already executing.");
-        for (;v37; ) try {
-          if (v33 = 1, v34 && (v35 = 2 & p42[0] ? v34["return"] : p42[0] ? v34["throw"] || ((v35 = v34["return"]) && v35.call(v34), 
-          0) : v34.next) && !(v35 = v35.call(v34, p42[1])).done) return v35;
-          switch (v34 = 0, v35 && (p42 = [ 2 & p42[0], v35.value ]), p42[0]) {
+      function fn37(p40) {
+        if (v31) throw new TypeError("Generator is already executing.");
+        for (;v35; ) try {
+          if (v31 = 1, v32 && (v33 = 2 & p40[0] ? v32["return"] : p40[0] ? v32["throw"] || ((v33 = v32["return"]) && v33.call(v32), 
+          0) : v32.next) && !(v33 = v33.call(v32, p40[1])).done) return v33;
+          switch (v32 = 0, v33 && (p40 = [ 2 & p40[0], v33.value ]), p40[0]) {
            case 0:
            case 1:
-            v35 = p42;
+            v33 = p40;
             break;
 
            case 4:
-            return v37.label++, {
-              value: p42[1],
+            return v35.label++, {
+              value: p40[1],
               done: false
             };
 
            case 5:
-            v37.label++;
-            v34 = p42[1];
-            p42 = [ 0 ];
+            v35.label++;
+            v32 = p40[1];
+            p40 = [ 0 ];
             continue;
 
            case 7:
-            p42 = v37.ops.pop();
-            v37.trys.pop();
+            p40 = v35.ops.pop();
+            v35.trys.pop();
             continue;
 
            default:
-            if (!(v35 = (v35 = v37.trys).length > 0 && v35[v35.length - 1]) && (6 === p42[0] || 2 === p42[0])) {
-              v37 = 0;
+            if (!(v33 = (v33 = v35.trys).length > 0 && v33[v33.length - 1]) && (6 === p40[0] || 2 === p40[0])) {
+              v35 = 0;
               continue;
             }
-            if (3 === p42[0] && (!v35 || p42[1] > v35[0] && p42[1] < v35[3])) {
-              v37.label = p42[1];
+            if (3 === p40[0] && (!v33 || p40[1] > v33[0] && p40[1] < v33[3])) {
+              v35.label = p40[1];
               break;
             }
-            if (6 === p42[0] && v37.label < v35[1]) {
-              v37.label = v35[1];
-              v35 = p42;
+            if (6 === p40[0] && v35.label < v33[1]) {
+              v35.label = v33[1];
+              v33 = p40;
               break;
             }
-            if (v35 && v37.label < v35[2]) {
-              v37.label = v35[2];
-              v37.ops.push(p42);
+            if (v33 && v35.label < v33[2]) {
+              v35.label = v33[2];
+              v35.ops.push(p40);
               break;
             }
-            v35[2] && v37.ops.pop();
-            v37.trys.pop();
+            v33[2] && v35.ops.pop();
+            v35.trys.pop();
             continue;
           }
-          p42 = p32.call(p31, v37);
-        } catch (v43) {
-          p42 = [ 6, v43 ];
-          v34 = 0;
+          p40 = p30.call(p29, v35);
+        } catch (v41) {
+          p40 = [ 6, v41 ];
+          v32 = 0;
         } finally {
-          v33 = v35 = 0;
+          v31 = v33 = 0;
         }
-        if (5 & p42[0]) throw p42[1];
+        if (5 & p40[0]) throw p40[1];
         return {
-          value: p42[0] ? p42[1] : void 0,
+          value: p40[0] ? p40[1] : void 0,
           done: true
         };
       }
@@ -1490,8 +1491,8 @@ window.__require = function e(t, n, r) {
       if ("function" === typeof Symbol && "symbol" === typeof Symbol.iterator) return typeof obj;
       return obj && "function" === typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     }
-    var v14 = function() {
-      function fn44() {
+    var v12 = function() {
+      function fn42() {
         this.isInited = false;
         this.starting = false;
         this.playerId = 1;
@@ -1504,15 +1505,15 @@ window.__require = function e(t, n, r) {
         this.gameMgr = null;
         this.uiMgr = null;
       }
-      return fn44.prototype.init = function(p45) {
+      return fn42.prototype.init = function(p43) {
         return __awaiter(this, void 0, void 0, function*() {
           if (this.isInited) {
-            p45();
+            p43();
             return;
           }
           cc.sys.platform == cc.sys.WECHAT_GAME ? Global.default.platform = new WechatPlatform.default() : Global.default.platform = new LocalPlatform.default();
           this.isInited = true;
-          this.login(p45);
+          this.login(p43);
           yield Res.default.loadBundle("game");
           yield this.loadAnimalPrefab();
           Global.default.loadFinish = true;
@@ -1522,55 +1523,65 @@ window.__require = function e(t, n, r) {
           yield Res.default.loadBundle("audio");
           Global.default.platform.playMusic("ab:audio/bgm");
         });
-      }, fn44.prototype.login = function(p46) {
-        Global.default.platform.login(function(p47) {
+      }, fn42.prototype.login = function(p44) {
+        Global.default.platform.login(function(p45) {
           Global.default.user = UserData.default.instance;
           Global.default.user.decode();
           Global.default.user.initData();
           Global.default.user.date != Global.default.user.day && (Global.default.user.date = Global.default.user.day, 
           Global.default.user.newDate());
-          p47 && (Global.default.user.nickName = p47.nickname, Global.default.user.avatarUrl = p47.avatarUrl, 
-          p47.score && (Global.default.user.level = Global.default.user.level > p47.score ? Global.default.user.level : p47.score));
-          p46();
+          p45 && (Global.default.user.nickName = p45.nickname, Global.default.user.avatarUrl = p45.avatarUrl, 
+          p45.score && (Global.default.user.level = Global.default.user.level > p45.score ? Global.default.user.level : p45.score));
+          p44();
         });
-      }, fn44.prototype.initLayer = function(p48) {
-        Global.default.gui = new LayerManager.LayerManager(p48);
+      }, fn42.prototype.initLayer = function(p46) {
+        Global.default.gui = new LayerManager.LayerManager(p46);
         Global.default.gui.init(GameUIConfig.UIConfigData);
-      }, fn44.prototype.isLong = function() {
-        var v49 = cc.view.getVisibleSize();
-        return v49.height / v49.width >= 2;
-      }, fn44.prototype.isIpad = function() {
-        var v50 = cc.view.getVisibleSize();
-        return v50.height / v50.width <= 1.5;
-      }, fn44.prototype.isPcWeChat = function() {
-        var v51 = window.navigator.userAgent.toLowerCase();
-        return /micromessenger/.test(v51) && /windows/.test(v51);
-      }, fn44.prototype.loadAnimalPrefab = function() {
+      }, fn42.prototype.isLong = function() {
+        var v47 = cc.view.getVisibleSize();
+        return v47.height / v47.width >= 2;
+      }, fn42.prototype.isIpad = function() {
+        var v48 = cc.view.getVisibleSize();
+        return v48.height / v48.width <= 1.5;
+      }, fn42.prototype.isPcWeChat = function() {
+        var v49 = window.navigator.userAgent.toLowerCase();
+        return /micromessenger/.test(v49) && /windows/.test(v49);
+      }, fn42.prototype.loadAnimalPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          this.animalPrefab = yield Res.default.load("ab:game/prefab/animal", cc.Prefab);
+          var v50;
+          v50 = this;
+          v50.animalPrefab = yield Res.default.load("ab:game/prefab/animal", cc.Prefab);
           this.prefabObj.animal = this.animalPrefab;
           PoolMgr.PoolMgr.prePool([ this.animalPrefab ], 5);
         });
-      }, fn44.prototype.loadAnimalMPrefab = function() {
+      }, fn42.prototype.loadAnimalMPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          this.animalMPrefab = yield Res.default.load("ab:game/prefab/animalM", cc.Prefab);
+          var v51;
+          v51 = this;
+          v51.animalMPrefab = yield Res.default.load("ab:game/prefab/animalM", cc.Prefab);
         });
-      }, fn44.prototype.loadcdPrefab = function() {
+      }, fn42.prototype.loadcdPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          this.cdPrefab = yield Res.default.load("ab:game/prefab/cd", cc.Prefab);
+          var v52;
+          v52 = this;
+          v52.cdPrefab = yield Res.default.load("ab:game/prefab/cd", cc.Prefab);
         });
-      }, fn44.prototype.loadGridPrefab = function() {
+      }, fn42.prototype.loadGridPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          this.gridPrefab = yield Res.default.load("ab:game/prefab/grid", cc.Prefab);
+          var v53;
+          v53 = this;
+          v53.gridPrefab = yield Res.default.load("ab:game/prefab/grid", cc.Prefab);
         });
-      }, fn44.prototype.loadBlockPrefab = function() {
+      }, fn42.prototype.loadBlockPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          this.blockPrefab = yield Res.default.load("ab:game/prefab/block", cc.Prefab);
+          var v54;
+          v54 = this;
+          v54.blockPrefab = yield Res.default.load("ab:game/prefab/block", cc.Prefab);
         });
-      }, fn44.ins = new fn44(), fn44;
+      }, fn42.ins = new fn42(), fn42;
     }();
-    module.exports.GameApp = v14.ins;
-    exports.default = v14;
+    module.exports.GameApp = v12.ins;
+    exports.default = v12;
     cc._RF.pop();
   }, {
     "./GameUIConfig": "GameUIConfig",
@@ -2788,113 +2799,113 @@ window.__require = function e(t, n, r) {
     });
     exports.LayerType = void 0;
     var v0, v1, v2, v3, v4;
-    var v5 = this && this.__awaiter || function(p14, p15, p16, p17) {
-      return new (p16 || (p16 = Promise))(function(p18, p19) {
-        function fn20(p23) {
+    var __awaiter = this && this.__awaiter || function(p12, p13, p14, p15) {
+      return new (p14 || (p14 = Promise))(function(p16, p17) {
+        function fn18(p21) {
           try {
-            fn22(p17.next(p23));
+            fn20(p15.next(p21));
+          } catch (v22) {
+            p17(v22);
+          }
+        }
+        function fn19(p23) {
+          try {
+            fn20(p15["throw"](p23));
           } catch (v24) {
-            p19(v24);
+            p17(v24);
           }
         }
-        function fn21(p25) {
-          try {
-            fn22(p17["throw"](p25));
-          } catch (v26) {
-            p19(v26);
-          }
+        function fn20(p25) {
+          var v26;
+          p25.done ? p16(p25.value) : (v26 = p25.value, v26 instanceof p14 ? v26 : new p14(function(p27) {
+            p27(v26);
+          })).then(fn18, fn19);
         }
-        function fn22(p27) {
-          var v28;
-          p27.done ? p18(p27.value) : (v28 = p27.value, v28 instanceof p16 ? v28 : new p16(function(p29) {
-            p29(v28);
-          })).then(fn20, fn21);
-        }
-        fn22((p17 = p17.apply(p14, p15 || [])).next());
+        fn20((p15 = p15.apply(p12, p13 || [])).next());
       });
-    }, v6 = this && this.__generator || function(p30, p31) {
-      var v32, v33, v34, v35, v36 = {
+    }, __generator = this && this.__generator || function(p28, p29) {
+      var v30, v31, v32, v33, v34 = {
         label: 0,
         sent: function sent() {
-          if (1 & v34[0]) throw v34[1];
-          return v34[1];
+          if (1 & v32[0]) throw v32[1];
+          return v32[1];
         },
         trys: [],
         ops: []
       };
-      return v35 = {
-        next: fn37(0),
-        throw: fn37(1),
-        return: fn37(2)
-      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v35[Symbol.iterator] = function() {
+      return v33 = {
+        next: fn35(0),
+        throw: fn35(1),
+        return: fn35(2)
+      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v33[Symbol.iterator] = function() {
         return this;
-      }), v35;
-      function fn37(p39) {
-        return function(p40) {
-          return fn38([ p39, p40 ]);
+      }), v33;
+      function fn35(p37) {
+        return function(p38) {
+          return fn36([ p37, p38 ]);
         };
       }
-      function fn38(p41) {
-        if (v32) throw new TypeError("Generator is already executing.");
-        for (;v36; ) try {
-          if (v32 = 1, v33 && (v34 = 2 & p41[0] ? v33["return"] : p41[0] ? v33["throw"] || ((v34 = v33["return"]) && v34.call(v33), 
-          0) : v33.next) && !(v34 = v34.call(v33, p41[1])).done) return v34;
-          switch (v33 = 0, v34 && (p41 = [ 2 & p41[0], v34.value ]), p41[0]) {
+      function fn36(p39) {
+        if (v30) throw new TypeError("Generator is already executing.");
+        for (;v34; ) try {
+          if (v30 = 1, v31 && (v32 = 2 & p39[0] ? v31["return"] : p39[0] ? v31["throw"] || ((v32 = v31["return"]) && v32.call(v31), 
+          0) : v31.next) && !(v32 = v32.call(v31, p39[1])).done) return v32;
+          switch (v31 = 0, v32 && (p39 = [ 2 & p39[0], v32.value ]), p39[0]) {
            case 0:
            case 1:
-            v34 = p41;
+            v32 = p39;
             break;
 
            case 4:
-            return v36.label++, {
-              value: p41[1],
+            return v34.label++, {
+              value: p39[1],
               done: false
             };
 
            case 5:
-            v36.label++;
-            v33 = p41[1];
-            p41 = [ 0 ];
+            v34.label++;
+            v31 = p39[1];
+            p39 = [ 0 ];
             continue;
 
            case 7:
-            p41 = v36.ops.pop();
-            v36.trys.pop();
+            p39 = v34.ops.pop();
+            v34.trys.pop();
             continue;
 
            default:
-            if (!(v34 = (v34 = v36.trys).length > 0 && v34[v34.length - 1]) && (6 === p41[0] || 2 === p41[0])) {
-              v36 = 0;
+            if (!(v32 = (v32 = v34.trys).length > 0 && v32[v32.length - 1]) && (6 === p39[0] || 2 === p39[0])) {
+              v34 = 0;
               continue;
             }
-            if (3 === p41[0] && (!v34 || p41[1] > v34[0] && p41[1] < v34[3])) {
-              v36.label = p41[1];
+            if (3 === p39[0] && (!v32 || p39[1] > v32[0] && p39[1] < v32[3])) {
+              v34.label = p39[1];
               break;
             }
-            if (6 === p41[0] && v36.label < v34[1]) {
-              v36.label = v34[1];
-              v34 = p41;
+            if (6 === p39[0] && v34.label < v32[1]) {
+              v34.label = v32[1];
+              v32 = p39;
               break;
             }
-            if (v34 && v36.label < v34[2]) {
-              v36.label = v34[2];
-              v36.ops.push(p41);
+            if (v32 && v34.label < v32[2]) {
+              v34.label = v32[2];
+              v34.ops.push(p39);
               break;
             }
-            v34[2] && v36.ops.pop();
-            v36.trys.pop();
+            v32[2] && v34.ops.pop();
+            v34.trys.pop();
             continue;
           }
-          p41 = p31.call(p30, v36);
-        } catch (v42) {
-          p41 = [ 6, v42 ];
-          v33 = 0;
+          p39 = p29.call(p28, v34);
+        } catch (v40) {
+          p39 = [ 6, v40 ];
+          v31 = 0;
         } finally {
-          v32 = v34 = 0;
+          v30 = v32 = 0;
         }
-        if (5 & p41[0]) throw p41[1];
+        if (5 & p39[0]) throw p39[1];
         return {
-          value: p41[0] ? p41[1] : void 0,
+          value: p39[0] ? p39[1] : void 0,
           done: true
         };
       }
@@ -2920,10 +2931,10 @@ window.__require = function e(t, n, r) {
       LayerType["Notify"] = "LayerNotify";
       LayerType["Guide"] = "LayerGuide";
     })(LayerType = exports.LayerType || (exports.LayerType = {}));
-    var v13 = function() {
-      function fn43(p44) {
+    var v11 = function() {
+      function fn41(p42) {
         this.configs = {};
-        this.root = p44;
+        this.root = p42;
         this.game = this.create_node(LayerType.Game);
         this.ui = new LayerUI.LayerUI(LayerType.UI);
         this.popup = new LayerPopup.LayerPopUp(LayerType.PopUp);
@@ -2931,124 +2942,120 @@ window.__require = function e(t, n, r) {
         this.system = new LayerDialog.LayerDialog(LayerType.System);
         this.notify = new LayerNotify.LayerNotify(LayerType.Notify);
         this.guide = this.create_node(LayerType.Guide);
-        p44.addChild(this.game);
-        p44.addChild(this.ui);
-        p44.addChild(this.popup);
-        p44.addChild(this.dialog);
-        p44.addChild(this.system);
-        p44.addChild(this.notify);
-        p44.addChild(this.guide);
+        p42.addChild(this.game);
+        p42.addChild(this.ui);
+        p42.addChild(this.popup);
+        p42.addChild(this.dialog);
+        p42.addChild(this.system);
+        p42.addChild(this.notify);
+        p42.addChild(this.guide);
       }
-      return Object.defineProperty(fn43.prototype, "portrait", {
+      return Object.defineProperty(fn41.prototype, "portrait", {
         get: function get() {
           return true;
         },
         enumerable: false,
         configurable: true
-      }), fn43.prototype.init = function(p45) {
-        this.configs = p45;
-      }, fn43.prototype.toast = function(p46, p47) {
-        void 0 === p47 && (p47 = null);
-        this.notify.show(p46, p47);
-      }, fn43.prototype.setConfig = function(p48, p49) {
-        this.configs[p48] = p49;
-      }, fn43.prototype.setUIMap = function(p50) {
+      }), fn41.prototype.init = function(p43) {
+        this.configs = p43;
+      }, fn41.prototype.toast = function(p44, p45) {
+        void 0 === p45 && (p45 = null);
+        this.notify.show(p44, p45);
+      }, fn41.prototype.setConfig = function(p46, p47) {
+        this.configs[p46] = p47;
+      }, fn41.prototype.setUIMap = function(p48) {
         null == this.uiMap && (this.uiMap = new UIMap.UIMap());
-        this.uiMap.init(this, p50);
-      }, fn43.prototype.open = function(p51, p52, p53) {
-        void 0 === p52 && (p52 = null);
-        var v54 = this.configs[p51];
-        if (null != v54) switch (v54.layer) {
+        this.uiMap.init(this, p48);
+      }, fn41.prototype.open = function(p49, p50, p51) {
+        void 0 === p50 && (p50 = null);
+        var v52 = this.configs[p49];
+        if (null != v52) switch (v52.layer) {
          case LayerType.UI:
-          this.ui.add(v54, p52, p53);
+          this.ui.add(v52, p50, p51);
           break;
 
          case LayerType.PopUp:
-          this.popup.add(v54, p52, p53);
+          this.popup.add(v52, p50, p51);
           break;
 
          case LayerType.Dialog:
-          this.dialog.add(v54, p52, p53);
+          this.dialog.add(v52, p50, p51);
           break;
 
          case LayerType.System:
-          this.system.add(v54, p52, p53);
-        } else cc.warn("\u6253\u5f00\u7f16\u53f7\u4e3a\u3010" + p51 + "\u3011\u7684\u754c\u9762\u5931\u8d25\uff0c\u914d\u7f6e\u4fe1\u606f\u4e0d\u5b58\u5728");
-      }, fn43.prototype.openAsync = function(p55, p56) {
-        return void 0 === p56 && (p56 = null), v5(this, void 0, Promise, function() {
-          var v57 = this;
-          return v6(this, function() {
-            return [ 2, new Promise(function(p58) {
-              var v59 = {
-                onAdded: function onAdded(p60) {
-                  p58(p60);
-                }
-              };
-              v57.open(p55, p56, v59);
-            }) ];
-          });
+          this.system.add(v52, p50, p51);
+        } else cc.warn("\u6253\u5f00\u7f16\u53f7\u4e3a\u3010" + p49 + "\u3011\u7684\u754c\u9762\u5931\u8d25\uff0c\u914d\u7f6e\u4fe1\u606f\u4e0d\u5b58\u5728");
+      }, fn41.prototype.openAsync = function(p53, p54) {
+        void 0 === p54 && (p54 = null);
+        return new Promise(function(p55) {
+          var v56 = {
+            onAdded: function onAdded(p57) {
+              p55(p57);
+            }
+          };
+          _0x3dab67.open(p53, p54, v56);
         });
-      }, fn43.prototype.has = function(p61) {
-        var v62 = this.configs[p61];
-        if (null == v62) return cc.warn("\u7f16\u53f7\u4e3a\u3010" + p61 + "\u3011\u7684\u754c\u9762\u5931\u8d25\uff0c\u914d\u7f6e\u4fe1\u606f\u4e0d\u5b58\u5728"), 
+      }, fn41.prototype.has = function(p58) {
+        var v59 = this.configs[p58];
+        if (null == v59) return cc.warn("\u7f16\u53f7\u4e3a\u3010" + p58 + "\u3011\u7684\u754c\u9762\u5931\u8d25\uff0c\u914d\u7f6e\u4fe1\u606f\u4e0d\u5b58\u5728"), 
         false;
-        var v63 = false;
-        switch (v62.layer) {
+        var v60 = false;
+        switch (v59.layer) {
          case LayerType.UI:
-          v63 = this.ui.has(v62.prefab);
+          v60 = this.ui.has(v59.prefab);
           break;
 
          case LayerType.PopUp:
-          v63 = this.popup.has(v62.prefab);
+          v60 = this.popup.has(v59.prefab);
           break;
 
          case LayerType.Dialog:
-          v63 = this.dialog.has(v62.prefab);
+          v60 = this.dialog.has(v59.prefab);
           break;
 
          case LayerType.System:
-          v63 = this.system.has(v62.prefab);
+          v60 = this.system.has(v59.prefab);
         }
-        return v63;
-      }, fn43.prototype.remove = function(p64, p65) {
-        void 0 === p65 && (p65 = true);
-        var v66 = this.configs[p64];
-        if (null != v66) switch (v66.layer) {
+        return v60;
+      }, fn41.prototype.remove = function(p61, p62) {
+        void 0 === p62 && (p62 = true);
+        var v63 = this.configs[p61];
+        if (null != v63) switch (v63.layer) {
          case LayerType.UI:
-          this.ui.remove(v66.prefab, p65);
+          this.ui.remove(v63.prefab, p62);
           break;
 
          case LayerType.PopUp:
-          this.popup.remove(v66.prefab, p65);
+          this.popup.remove(v63.prefab, p62);
           break;
 
          case LayerType.Dialog:
-          this.dialog.remove(v66.prefab, p65);
+          this.dialog.remove(v63.prefab, p62);
           break;
 
          case LayerType.System:
-          this.system.remove(v66.prefab, p65);
-        } else cc.warn("\u5220\u9664\u7f16\u53f7\u4e3a\u3010" + p64 + "\u3011\u7684\u754c\u9762\u5931\u8d25\uff0c\u914d\u7f6e\u4fe1\u606f\u4e0d\u5b58\u5728");
-      }, fn43.prototype.removeByNode = function(p67, p68) {
-        if (void 0 === p68 && (p68 = false), p67 instanceof cc.Node) {
-          var v69 = p67.getComponent(DelegateComponent.DelegateComponent);
-          v69 && v69.viewParams ? p67.parent.removeByUuid(v69.viewParams.uuid, p68) : (cc.warn("\u5f53\u524d\u5220\u9664\u7684node\u4e0d\u662f\u901a\u8fc7\u754c\u9762\u7ba1\u7406\u5668\u6dfb\u52a0\u5230\u821e\u53f0\u4e0a"), 
-          p67.destroy());
+          this.system.remove(v63.prefab, p62);
+        } else cc.warn("\u5220\u9664\u7f16\u53f7\u4e3a\u3010" + p61 + "\u3011\u7684\u754c\u9762\u5931\u8d25\uff0c\u914d\u7f6e\u4fe1\u606f\u4e0d\u5b58\u5728");
+      }, fn41.prototype.removeByNode = function(p64, p65) {
+        if (void 0 === p65 && (p65 = false), p64 instanceof cc.Node) {
+          var v66 = p64.getComponent(DelegateComponent.DelegateComponent);
+          v66 && v66.viewParams ? p64.parent.removeByUuid(v66.viewParams.uuid, p65) : (cc.warn("\u5f53\u524d\u5220\u9664\u7684node\u4e0d\u662f\u901a\u8fc7\u754c\u9762\u7ba1\u7406\u5668\u6dfb\u52a0\u5230\u821e\u53f0\u4e0a"), 
+          p64.destroy());
         }
-      }, fn43.prototype.clear = function(p70) {
-        void 0 === p70 && (p70 = false);
-        this.ui.clearNode(p70);
-        this.popup.clearNode(p70);
-        this.dialog.clearNode(p70);
-        this.system.clearNode(p70);
-      }, fn43.prototype.create_node = function(p71) {
-        var v72 = new cc.Node(p71), v73 = v72.addComponent(cc.Widget);
-        return v73.isAlignLeft = v73.isAlignRight = v73.isAlignTop = v73.isAlignBottom = true, 
-        v73.left = v73.right = v73.top = v73.bottom = 0, v73.enabled = true, v72;
-      }, fn43;
+      }, fn41.prototype.clear = function(p67) {
+        void 0 === p67 && (p67 = false);
+        this.ui.clearNode(p67);
+        this.popup.clearNode(p67);
+        this.dialog.clearNode(p67);
+        this.system.clearNode(p67);
+      }, fn41.prototype.create_node = function(p68) {
+        var v69 = new cc.Node(p68), v70 = v69.addComponent(cc.Widget);
+        return v70.isAlignLeft = v70.isAlignRight = v70.isAlignTop = v70.isAlignBottom = true, 
+        v70.left = v70.right = v70.top = v70.bottom = 0, v70.enabled = true, v69;
+      }, fn41;
     }();
-    module.exports.LayerManager = v13;
-    exports.default = v13;
+    module.exports.LayerManager = v11;
+    exports.default = v11;
     cc._RF.pop();
   }, {
     "./DelegateComponent": "DelegateComponent",
@@ -3094,113 +3101,113 @@ window.__require = function e(t, n, r) {
     });
     exports.LayerNotify = void 0;
     var v0, v1, v2, v3, v4;
-    var v5 = this && this.__awaiter || function(p11, p12, p13, p14) {
-      return new (p13 || (p13 = Promise))(function(p15, p16) {
-        function fn17(p20) {
+    var __awaiter = this && this.__awaiter || function(p9, p10, p11, p12) {
+      return new (p11 || (p11 = Promise))(function(p13, p14) {
+        function fn15(p18) {
           try {
-            fn19(p14.next(p20));
+            fn17(p12.next(p18));
+          } catch (v19) {
+            p14(v19);
+          }
+        }
+        function fn16(p20) {
+          try {
+            fn17(p12["throw"](p20));
           } catch (v21) {
-            p16(v21);
+            p14(v21);
           }
         }
-        function fn18(p22) {
-          try {
-            fn19(p14["throw"](p22));
-          } catch (v23) {
-            p16(v23);
-          }
+        function fn17(p22) {
+          var v23;
+          p22.done ? p13(p22.value) : (v23 = p22.value, v23 instanceof p11 ? v23 : new p11(function(p24) {
+            p24(v23);
+          })).then(fn15, fn16);
         }
-        function fn19(p24) {
-          var v25;
-          p24.done ? p15(p24.value) : (v25 = p24.value, v25 instanceof p13 ? v25 : new p13(function(p26) {
-            p26(v25);
-          })).then(fn17, fn18);
-        }
-        fn19((p14 = p14.apply(p11, p12 || [])).next());
+        fn17((p12 = p12.apply(p9, p10 || [])).next());
       });
-    }, v6 = this && this.__generator || function(p27, p28) {
-      var v29, v30, v31, v32, v33 = {
+    }, __generator = this && this.__generator || function(p25, p26) {
+      var v27, v28, v29, v30, v31 = {
         label: 0,
         sent: function sent() {
-          if (1 & v31[0]) throw v31[1];
-          return v31[1];
+          if (1 & v29[0]) throw v29[1];
+          return v29[1];
         },
         trys: [],
         ops: []
       };
-      return v32 = {
-        next: fn34(0),
-        throw: fn34(1),
-        return: fn34(2)
-      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v32[Symbol.iterator] = function() {
+      return v30 = {
+        next: fn32(0),
+        throw: fn32(1),
+        return: fn32(2)
+      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v30[Symbol.iterator] = function() {
         return this;
-      }), v32;
-      function fn34(p36) {
-        return function(p37) {
-          return fn35([ p36, p37 ]);
+      }), v30;
+      function fn32(p34) {
+        return function(p35) {
+          return fn33([ p34, p35 ]);
         };
       }
-      function fn35(p38) {
-        if (v29) throw new TypeError("Generator is already executing.");
-        for (;v33; ) try {
-          if (v29 = 1, v30 && (v31 = 2 & p38[0] ? v30["return"] : p38[0] ? v30["throw"] || ((v31 = v30["return"]) && v31.call(v30), 
-          0) : v30.next) && !(v31 = v31.call(v30, p38[1])).done) return v31;
-          switch (v30 = 0, v31 && (p38 = [ 2 & p38[0], v31.value ]), p38[0]) {
+      function fn33(p36) {
+        if (v27) throw new TypeError("Generator is already executing.");
+        for (;v31; ) try {
+          if (v27 = 1, v28 && (v29 = 2 & p36[0] ? v28["return"] : p36[0] ? v28["throw"] || ((v29 = v28["return"]) && v29.call(v28), 
+          0) : v28.next) && !(v29 = v29.call(v28, p36[1])).done) return v29;
+          switch (v28 = 0, v29 && (p36 = [ 2 & p36[0], v29.value ]), p36[0]) {
            case 0:
            case 1:
-            v31 = p38;
+            v29 = p36;
             break;
 
            case 4:
-            return v33.label++, {
-              value: p38[1],
+            return v31.label++, {
+              value: p36[1],
               done: false
             };
 
            case 5:
-            v33.label++;
-            v30 = p38[1];
-            p38 = [ 0 ];
+            v31.label++;
+            v28 = p36[1];
+            p36 = [ 0 ];
             continue;
 
            case 7:
-            p38 = v33.ops.pop();
-            v33.trys.pop();
+            p36 = v31.ops.pop();
+            v31.trys.pop();
             continue;
 
            default:
-            if (!(v31 = (v31 = v33.trys).length > 0 && v31[v31.length - 1]) && (6 === p38[0] || 2 === p38[0])) {
-              v33 = 0;
+            if (!(v29 = (v29 = v31.trys).length > 0 && v29[v29.length - 1]) && (6 === p36[0] || 2 === p36[0])) {
+              v31 = 0;
               continue;
             }
-            if (3 === p38[0] && (!v31 || p38[1] > v31[0] && p38[1] < v31[3])) {
-              v33.label = p38[1];
+            if (3 === p36[0] && (!v29 || p36[1] > v29[0] && p36[1] < v29[3])) {
+              v31.label = p36[1];
               break;
             }
-            if (6 === p38[0] && v33.label < v31[1]) {
-              v33.label = v31[1];
-              v31 = p38;
+            if (6 === p36[0] && v31.label < v29[1]) {
+              v31.label = v29[1];
+              v29 = p36;
               break;
             }
-            if (v31 && v33.label < v31[2]) {
-              v33.label = v31[2];
-              v33.ops.push(p38);
+            if (v29 && v31.label < v29[2]) {
+              v31.label = v29[2];
+              v31.ops.push(p36);
               break;
             }
-            v31[2] && v33.ops.pop();
-            v33.trys.pop();
+            v29[2] && v31.ops.pop();
+            v31.trys.pop();
             continue;
           }
-          p38 = p28.call(p27, v33);
-        } catch (v39) {
-          p38 = [ 6, v39 ];
-          v30 = 0;
+          p36 = p26.call(p25, v31);
+        } catch (v37) {
+          p36 = [ 6, v37 ];
+          v28 = 0;
         } finally {
-          v29 = v31 = 0;
+          v27 = v29 = 0;
         }
-        if (5 & p38[0]) throw p38[1];
+        if (5 & p36[0]) throw p36[1];
         return {
-          value: p38[0] ? p38[1] : void 0,
+          value: p36[0] ? p36[1] : void 0,
           done: true
         };
       }
@@ -3218,32 +3225,32 @@ window.__require = function e(t, n, r) {
       constructor() {
         super(...arguments);
       }
-      show(p40, p41) {
-        var v42 = new Defines.ViewParams();
-        v42.uuid = this.getUuid("ab:resources/prefab/notify");
-        v42.prefabPath = "ab:resources/prefab/notify";
-        v42.params = {
-          content: p40,
-          otherData: p41
+      show(p38, p39) {
+        var v40 = new Defines.ViewParams();
+        v40.uuid = this.getUuid("ab:resources/prefab/notify");
+        v40.prefabPath = "ab:resources/prefab/notify";
+        v40.params = {
+          content: p38,
+          otherData: p39
         };
-        v42.callbacks = {};
-        v42.valid = true;
-        this.ui_nodes.set(v42.uuid, v42);
-        this.load(v42);
+        v40.callbacks = {};
+        v40.valid = true;
+        this.ui_nodes.set(v40.uuid, v40);
+        this.load(v40);
       }
-      load(p43) {
+      load(p41) {
         return __awaiter(this, void 0, void 0, function*() {
-          var v44, v45;
-          v44 = yield Res.default.load(p43.prefabPath, cc.Prefab);
-          v45 = cc.instantiate(v44);
-          p43.node = v45;
-          v45.addComponent(DelegateComponent.DelegateComponent).viewParams = p43;
-          this.createNode(p43);
+          var v42, v43;
+          v42 = yield Res.default.load(p41.prefabPath, cc.Prefab);
+          v43 = cc.instantiate(v42);
+          p41.node = v43;
+          v43.addComponent(DelegateComponent.DelegateComponent).viewParams = p41;
+          this.createNode(p41);
         });
       }
-      createNode(p46) {
-        var v47 = super.createNode(p46), v48 = v47.getComponent(Notify.Notify);
-        return v47.active = true, v48.toast(p46.params.content, p46.params.otherData), v47;
+      createNode(p44) {
+        var v45 = super.createNode(p44), v46 = v45.getComponent(Notify.Notify);
+        return v45.active = true, v46.toast(p44.params.content, p44.params.otherData), v45;
       }
     }
     exports.LayerNotify = LayerNotify;
@@ -3363,14 +3370,15 @@ window.__require = function e(t, n, r) {
       }
       load(p24, p25) {
         return __awaiter(this, void 0, void 0, function*() {
-          var v26 = this.ui_nodes.get(p24.uuid);
+          var v26, v27, v28, v29;
+          v26 = this.ui_nodes.get(p24.uuid);
           if (v26 && v26.node) {
             this.createNode(v26);
             return;
           }
-          var v27 = "ab:" + (p25 = p25 || "resources") + "/" + p24.prefabPath;
-          var v28 = yield Res.default.load(v27, cc.Prefab);
-          var v29 = cc.instantiate(v28);
+          v27 = "ab:" + (p25 = p25 || "resources") + "/" + p24.prefabPath;
+          v28 = yield Res.default.load(v27, cc.Prefab);
+          v29 = cc.instantiate(v28);
           p24.node = v29;
           v29.addComponent(DelegateComponent.DelegateComponent).viewParams = p24;
           this.createNode(p24);
@@ -4045,6 +4053,22 @@ window.__require = function e(t, n, r) {
       constructor() {
         super();
       }
+      showInterstitialAd() {}
+      showBannerAd() {}
+      hideBanner() {}
+      showGameClub(x, y, w, h) {}
+      hideGameClub() {}
+      posTrans(node, parent) {
+        return cc.v2(0, 0);
+      }
+      staticgetUseInfo(cb) {
+        cb && cb(null);
+      }
+      submitScoreForRank(score, cb) {
+        cb && cb();
+      }
+      shock() {}
+      reportEvent(key, obj) {}
       login(p2) {
         p2({
           nickname: "\u672c\u5730\u73a9\u5bb6",
@@ -4069,25 +4093,6 @@ window.__require = function e(t, n, r) {
       name() {
         return "local";
       }
-      showInterstitialAd() {}
-      showBannerAd() {}
-      hideBanner() {}
-      showModal(p24, p25) {
-        p25();
-      }
-      shock() {}
-      gc() {}
-      reportEvent() {}
-      staticgetUseInfo(p27) {
-        p27({
-          nickName: "\u672c\u5730\u73a9\u5bb6",
-          avatarUrl: ""
-        });
-      }
-      submitScoreForRank(p28, p29) {
-        p29 && p29();
-      }
-      setUserData() {}
     }
     exports.LocalPlatform = LocalPlatform;
     exports.default = LocalPlatform;
@@ -4420,7 +4425,6 @@ window.__require = function e(t, n, r) {
       if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
       return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
-    var MemuPanel_1;
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
@@ -4430,7 +4434,7 @@ window.__require = function e(t, n, r) {
     const Global_1 = require("../main/Global");
     const u = require("../main/Enum");
     const {ccclass: ccclass} = cc._decorator;
-    let MemuPanel = MemuPanel_1 = class MemuPanel extends cc.Component {
+    let MemuPanel = class MemuPanel extends cc.Component {
       onLoad() {
         this.closeBtn = cc.find("closeBtn", this.node);
         this.title = cc.find("title", this.node).getComponent(cc.Label);
@@ -4464,8 +4468,8 @@ window.__require = function e(t, n, r) {
         this.vibrateBtn.off(cc.Node.EventType.TOUCH_END, this.onClicked, this);
       }
       setBtn(t, _e) {
-        cc.find("img_sz_kai", t).active = MemuPanel_1;
-        var n = MemuPanel_1 ? cc.v2(-50, 0) : cc.v2(50, 0);
+        cc.find("img_sz_kai", t).active = _e;
+        var n = _e ? cc.v2(-50, 0) : cc.v2(50, 0);
         cc.find("img_sz_dian", t).position = cc.v3(n);
       }
       initPage() {
@@ -4521,7 +4525,7 @@ window.__require = function e(t, n, r) {
         Global_1.default.gui.remove(s.UIID.MemuPanel);
       }
     };
-    MemuPanel = MemuPanel_1 = __decorate([ ccclass ], MemuPanel);
+    MemuPanel = __decorate([ ccclass ], MemuPanel);
     exports.default = MemuPanel;
     cc._RF.pop();
   }, {
@@ -5354,7 +5358,6 @@ window.__require = function e(t, n, r) {
     const h = require("../main/GameUIConfig");
     const Global_1 = require("../main/Global");
     const Util_1 = require("../main/Util");
-    var o;
     const {ccclass: ccclass} = cc._decorator;
     let RankPanel = RankPanel_1 = class RankPanel extends cc.Component {
       constructor() {
@@ -5420,15 +5423,14 @@ window.__require = function e(t, n, r) {
         this.loadSprite(this.friendBtn.getComponent(cc.Sprite), "img_ph_btnlan"), Global_1.default.platform.getSubRank(PlatformBase_1.default.eventString.refresh, Global_1.default.user.level));
       }
       refreshPanel(t) {
-        var RankPanel, n, i, o = this;
-        for (RankPanel = t.myInfo, (n = RankPanel.scoreRank) > 100 ? (this.rankIcon.spriteFrame = null, 
+        for (RankPanel_1 = t.myInfo, (n = RankPanel_1.scoreRank) > 100 ? (this.rankIcon.spriteFrame = null, 
         this.rank.string = "\u672a\u4e0a\u699c") : n > 3 ? (this.rankIcon.spriteFrame = null, 
         this.rank.string = "" + n) : n > 0 && (this.loadSprite(this.rankIcon, "img_ph_jp" + n), 
         this.rank.string = ""), Global_1.default.user.avatarUrl && Util_1.default.Util.getUrlImage(Global_1.default.user.avatarUrl, function(t) {
           o.avater.spriteFrame = t;
-        }), this.nickName.string = Global_1.default.user.nickName, this.scoreLabel.string = RankPanel.score + "\u5173", 
+        }), this.nickName.string = Global_1.default.user.nickName, this.scoreLabel.string = RankPanel_1.score + "\u5173", 
         i = 0; i < t.userList.length; ++i) t.userList[i].scoreRank = i + 1;
-        this.scrollView.getComponent(ListView_1.default).setData(t.userList);
+        return this.scrollView.getComponent(ListView_1.default).setData(t.userList), [ 2 ];
       }
       loadSprite(t, _e) {
         return __awaiter(this, void 0, void 0, function*() {
@@ -5501,7 +5503,6 @@ window.__require = function e(t, n, r) {
     const h = require("../main/GameUIConfig");
     const Global_1 = require("../main/Global");
     const Util_1 = require("../main/Util");
-    var o;
     const {ccclass: ccclass} = cc._decorator;
     let ResultPanel = ResultPanel_1 = class ResultPanel extends cc.Component {
       onLoad() {
@@ -5600,15 +5601,14 @@ window.__require = function e(t, n, r) {
         });
       }
       refreshPanel(t) {
-        var ResultPanel, n, i, o = this;
-        for (ResultPanel = t.myInfo, (n = ResultPanel.scoreRank) > 100 ? (this.rankIcon.spriteFrame = null, 
+        for (ResultPanel_1 = t.myInfo, (n = ResultPanel_1.scoreRank) > 100 ? (this.rankIcon.spriteFrame = null, 
         this.rank.string = "\u672a\u4e0a\u699c") : n > 3 ? (this.rankIcon.spriteFrame = null, 
         this.rank.string = "" + n) : n > 0 && (this.loadSprite(this.rankIcon, "img_ph_jp" + n), 
         this.rank.string = ""), Global_1.default.user.avatarUrl && Util_1.default.Util.getUrlImage(Global_1.default.user.avatarUrl, function(t) {
           o.avater.spriteFrame = t;
-        }), this.nickName.string = Global_1.default.user.nickName, this.scoreLabel.string = ResultPanel.score + "\u5173", 
+        }), this.nickName.string = Global_1.default.user.nickName, this.scoreLabel.string = ResultPanel_1.score + "\u5173", 
         i = 0; i < t.userList.length; ++i) t.userList[i].scoreRank = i + 1;
-        this.scrollView.getComponent(ListView_1.default).setData(t.userList);
+        return this.scrollView.getComponent(ListView_1.default).setData(t.userList), [ 2 ];
       }
       loadSprite(t, _e) {
         return __awaiter(this, void 0, void 0, function*() {
@@ -5635,6 +5635,33 @@ window.__require = function e(t, n, r) {
     "use strict";
     cc._RF.push(module, "851a48ngGtDzL/rsqowzaBf", "Res");
     "use strict";
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
@@ -5643,298 +5670,282 @@ window.__require = function e(t, n, r) {
       if ("function" === typeof Symbol && "symbol" === typeof Symbol.iterator) return typeof obj;
       return obj && "function" === typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     }
-    var v11 = this && this.__awaiter || function(p14, p15, p16, p17) {
-      return new (p16 || (p16 = Promise))(function(p18, p19) {
-        function fn20(p23) {
+    var __awaiter = this && this.__awaiter || function(p12, p13, p14, p15) {
+      return new (p14 || (p14 = Promise))(function(p16, p17) {
+        function fn18(p21) {
           try {
-            fn22(p17.next(p23));
+            fn20(p15.next(p21));
+          } catch (v22) {
+            p17(v22);
+          }
+        }
+        function fn19(p23) {
+          try {
+            fn20(p15["throw"](p23));
           } catch (v24) {
-            p19(v24);
+            p17(v24);
           }
         }
-        function fn21(p25) {
-          try {
-            fn22(p17["throw"](p25));
-          } catch (v26) {
-            p19(v26);
-          }
+        function fn20(p25) {
+          var v26;
+          p25.done ? p16(p25.value) : (v26 = p25.value, v26 instanceof p14 ? v26 : new p14(function(p27) {
+            p27(v26);
+          })).then(fn18, fn19);
         }
-        function fn22(p27) {
-          var v28;
-          p27.done ? p18(p27.value) : (v28 = p27.value, v28 instanceof p16 ? v28 : new p16(function(p29) {
-            p29(v28);
-          })).then(fn20, fn21);
-        }
-        fn22((p17 = p17.apply(p14, p15 || [])).next());
+        fn20((p15 = p15.apply(p12, p13 || [])).next());
       });
-    }, v12 = this && this.__generator || function(p30, p31) {
-      var v32, v33, v34, v35, v36 = {
+    }, __generator = this && this.__generator || function(p28, p29) {
+      var v30, v31, v32, v33, v34 = {
         label: 0,
         sent: function sent() {
-          if (1 & v34[0]) throw v34[1];
-          return v34[1];
+          if (1 & v32[0]) throw v32[1];
+          return v32[1];
         },
         trys: [],
         ops: []
       };
-      return v35 = {
-        next: fn37(0),
-        throw: fn37(1),
-        return: fn37(2)
-      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v35[Symbol.iterator] = function() {
+      return v33 = {
+        next: fn35(0),
+        throw: fn35(1),
+        return: fn35(2)
+      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v33[Symbol.iterator] = function() {
         return this;
-      }), v35;
-      function fn37(p39) {
-        return function(p40) {
-          return fn38([ p39, p40 ]);
+      }), v33;
+      function fn35(p37) {
+        return function(p38) {
+          return fn36([ p37, p38 ]);
         };
       }
-      function fn38(p41) {
-        if (v32) throw new TypeError("Generator is already executing.");
-        for (;v36; ) try {
-          if (v32 = 1, v33 && (v34 = 2 & p41[0] ? v33["return"] : p41[0] ? v33["throw"] || ((v34 = v33["return"]) && v34.call(v33), 
-          0) : v33.next) && !(v34 = v34.call(v33, p41[1])).done) return v34;
-          switch (v33 = 0, v34 && (p41 = [ 2 & p41[0], v34.value ]), p41[0]) {
+      function fn36(p39) {
+        if (v30) throw new TypeError("Generator is already executing.");
+        for (;v34; ) try {
+          if (v30 = 1, v31 && (v32 = 2 & p39[0] ? v31["return"] : p39[0] ? v31["throw"] || ((v32 = v31["return"]) && v32.call(v31), 
+          0) : v31.next) && !(v32 = v32.call(v31, p39[1])).done) return v32;
+          switch (v31 = 0, v32 && (p39 = [ 2 & p39[0], v32.value ]), p39[0]) {
            case 0:
            case 1:
-            v34 = p41;
+            v32 = p39;
             break;
 
            case 4:
-            return v36.label++, {
-              value: p41[1],
+            return v34.label++, {
+              value: p39[1],
               done: false
             };
 
            case 5:
-            v36.label++;
-            v33 = p41[1];
-            p41 = [ 0 ];
+            v34.label++;
+            v31 = p39[1];
+            p39 = [ 0 ];
             continue;
 
            case 7:
-            p41 = v36.ops.pop();
-            v36.trys.pop();
+            p39 = v34.ops.pop();
+            v34.trys.pop();
             continue;
 
            default:
-            if (!(v34 = (v34 = v36.trys).length > 0 && v34[v34.length - 1]) && (6 === p41[0] || 2 === p41[0])) {
-              v36 = 0;
+            if (!(v32 = (v32 = v34.trys).length > 0 && v32[v32.length - 1]) && (6 === p39[0] || 2 === p39[0])) {
+              v34 = 0;
               continue;
             }
-            if (3 === p41[0] && (!v34 || p41[1] > v34[0] && p41[1] < v34[3])) {
-              v36.label = p41[1];
+            if (3 === p39[0] && (!v32 || p39[1] > v32[0] && p39[1] < v32[3])) {
+              v34.label = p39[1];
               break;
             }
-            if (6 === p41[0] && v36.label < v34[1]) {
-              v36.label = v34[1];
-              v34 = p41;
+            if (6 === p39[0] && v34.label < v32[1]) {
+              v34.label = v32[1];
+              v32 = p39;
               break;
             }
-            if (v34 && v36.label < v34[2]) {
-              v36.label = v34[2];
-              v36.ops.push(p41);
+            if (v32 && v34.label < v32[2]) {
+              v34.label = v32[2];
+              v34.ops.push(p39);
               break;
             }
-            v34[2] && v36.ops.pop();
-            v36.trys.pop();
+            v32[2] && v34.ops.pop();
+            v34.trys.pop();
             continue;
           }
-          p41 = p31.call(p30, v36);
-        } catch (v42) {
-          p41 = [ 6, v42 ];
-          v33 = 0;
+          p39 = p29.call(p28, v34);
+        } catch (v40) {
+          p39 = [ 6, v40 ];
+          v31 = 0;
         } finally {
-          v32 = v34 = 0;
+          v30 = v32 = 0;
         }
-        if (5 & p41[0]) throw p41[1];
+        if (5 & p39[0]) throw p39[1];
         return {
-          value: p41[0] ? p41[1] : void 0,
+          value: p39[0] ? p39[1] : void 0,
           done: true
         };
       }
     };
-    var v13 = function() {
-      function fn43() {}
-      return fn43.parseUrl = function(p44) {
-        if (p44.startsWith("ab:")) {
-          var v45 = p44.substring("ab:".length), v46 = v45.indexOf("/");
+    var v11 = function() {
+      function fn41() {}
+      return fn41.parseUrl = function(p42) {
+        if (p42.startsWith("ab:")) {
+          var v43 = p42.substring("ab:".length), v44 = v43.indexOf("/");
           return {
-            bundle: v45.substring(0, v46),
-            loadUrl: v45 = v45.substring(v46 + 1)
+            bundle: v43.substring(0, v44),
+            loadUrl: v43 = v43.substring(v44 + 1)
           };
         }
         return {
-          loadUrl: p44
+          loadUrl: p42
         };
-      }, fn43.getCachePrefabUrl = function(p47) {
-        var v48 = "";
-        if (p47 instanceof cc.Node) for (var v49 = p47; v49 && !(v49._prefab && v49._prefab.root && (v48 = this._nodePath.get(v49._prefab.root) || "")); ) v49 = v49.parent; else p47 instanceof cc.Prefab && (v48 = this._prefabPath.get(p47) || "");
-        return v48;
-      }, fn43.cacheAsset = function(p50, p51, p52) {
-        var v53 = this;
-        if (void 0 === p52 && (p52 = true), p51) {
-          var v54 = function v56(p55) {
-            if (!p55.has(p50)) {
-              p51.addRef();
-              p51 instanceof cc.Prefab && v53._prefabPath.set(p51, p50);
-              var v57 = {
-                asset: p51,
-                release: p52,
+      }, fn41.getCachePrefabUrl = function(p45) {
+        var v46 = "";
+        if (p45 instanceof cc.Node) for (var v47 = p45; v47 && !(v47._prefab && v47._prefab.root && (v46 = this._nodePath.get(v47._prefab.root) || "")); ) v47 = v47.parent; else p45 instanceof cc.Prefab && (v46 = this._prefabPath.get(p45) || "");
+        return v46;
+      }, fn41.cacheAsset = function(p48, p49, p50) {
+        var v51 = this;
+        if (void 0 === p50 && (p50 = true), p49) {
+          var v52 = function v54(p53) {
+            if (!p53.has(p48)) {
+              p49.addRef();
+              p49 instanceof cc.Prefab && v51._prefabPath.set(p49, p48);
+              var v55 = {
+                asset: p49,
+                release: p50,
                 lastLoadTime: Date.now() / 1e3
               };
-              p55.set(p50, v57);
+              p53.set(p48, v55);
             }
           };
-          if (p51 instanceof cc.Prefab) v54(this._prefabCache); else if (p51 instanceof cc.SpriteFrame) v54(this._spriteFrameCache); else if (p51 instanceof cc.SpriteAtlas) v54(this._spriteAtlasCache); else {
-            if (this._otherCache.has(p50)) return;
-            p51.addRef();
-            this._otherCache.set(p50, p51);
+          if (p49 instanceof cc.Prefab) v52(this._prefabCache); else if (p49 instanceof cc.SpriteFrame) v52(this._spriteFrameCache); else if (p49 instanceof cc.SpriteAtlas) v52(this._spriteAtlasCache); else {
+            if (this._otherCache.has(p48)) return;
+            p49.addRef();
+            this._otherCache.set(p48, p49);
           }
         }
-      }, fn43.cacheAssets = function(p58, p59, p60) {
-        var v61 = this;
-        if (void 0 === p60 && (p60 = true), p59 && !(p59.length <= 0)) {
-          var v62 = function v64(p63) {
-            if (!p63.has(p58)) {
-              for (var v65 = [], v66 = 0; v66 < p59.length; v66++) {
-                var v67 = p59[v66];
-                v67.addRef();
-                v67 instanceof cc.Prefab && v61._prefabPath.set(v67, p58);
-                var v68 = {
-                  asset: v67,
-                  release: p60,
+      }, fn41.cacheAssets = function(p56, p57, p58) {
+        var v59 = this;
+        if (void 0 === p58 && (p58 = true), p57 && !(p57.length <= 0)) {
+          var v60 = function v62(p61) {
+            if (!p61.has(p56)) {
+              for (var v63 = [], v64 = 0; v64 < p57.length; v64++) {
+                var v65 = p57[v64];
+                v65.addRef();
+                v65 instanceof cc.Prefab && v59._prefabPath.set(v65, p56);
+                var v66 = {
+                  asset: v65,
+                  release: p58,
                   lastLoadTime: Date.now() / 1e3
                 };
-                v65.push(v68);
+                v63.push(v66);
               }
-              p63.set(p58, v65);
+              p61.set(p56, v63);
             }
           };
-          p59[0] instanceof cc.Prefab ? v62(this._assertCaches) : p59[0] instanceof cc.SpriteFrame ? v62(this._assertCaches) : p59[0] instanceof cc.SpriteAtlas || p59[0] instanceof cc.AudioClip && v62(this._assertCaches);
+          p57[0] instanceof cc.Prefab ? v60(this._assertCaches) : p57[0] instanceof cc.SpriteFrame ? v60(this._assertCaches) : p57[0] instanceof cc.SpriteAtlas || p57[0] instanceof cc.AudioClip && v60(this._assertCaches);
         }
-      }, fn43.get = function(p69, p70) {
-        var v71 = null, v72 = function v74(p73) {
-          var v75 = p73.get(p69);
-          v75 && (v71 = v75.asset, v75.lastLoadTime = Date.now() / 1e3);
+      }, fn41.get = function(p67, p68) {
+        var v69 = null, v70 = function v72(p71) {
+          var v73 = p71.get(p67);
+          v73 && (v69 = v73.asset, v73.lastLoadTime = Date.now() / 1e3);
         };
-        return p70 === cc.Prefab ? v72(this._prefabCache) : p70 === cc.SpriteFrame ? v72(this._spriteFrameCache) : p70 === cc.SpriteAtlas ? v72(this._spriteAtlasCache) : v71 = this._otherCache.get(p69), 
-        v71;
-      }, fn43.gets = function(p76, p77) {
-        var v78 = [], v79 = function v81(p80) {
-          var v82 = p80.get(p76);
-          if (v82) for (var v83 = 0; v83 < v82.length; v83++) {
-            v78.push(v82[v83].asset);
-            v82[v83].lastLoadTime = Date.now() / 1e3;
+        return p68 === cc.Prefab ? v70(this._prefabCache) : p68 === cc.SpriteFrame ? v70(this._spriteFrameCache) : p68 === cc.SpriteAtlas ? v70(this._spriteAtlasCache) : v69 = this._otherCache.get(p67), 
+        v69;
+      }, fn41.gets = function(p74, p75) {
+        var v76 = [], v77 = function v79(p78) {
+          var v80 = p78.get(p74);
+          if (v80) for (var v81 = 0; v81 < v80.length; v81++) {
+            v76.push(v80[v81].asset);
+            v80[v81].lastLoadTime = Date.now() / 1e3;
           }
         };
-        return p77 === cc.Prefab || (p77 === cc.SpriteFrame ? v79(this._assertCaches) : p77 === cc.AudioClip ? v79(this._assertCaches) : p77 === cc.SpriteAtlas || sp.SkeletonData), 
-        v78;
-      }, fn43.loadBundle = function(p84) {
-        return new Promise(function(p85) {
-          cc.assetManager.loadBundle(p84, function(p86, p87) {
-            p86 ? (cc.error("[Res.loadBundle] error: " + p86), p85(null)) : p85(p87);
+        return p75 === cc.Prefab || (p75 === cc.SpriteFrame ? v77(this._assertCaches) : p75 === cc.AudioClip ? v77(this._assertCaches) : p75 === cc.SpriteAtlas || sp.SkeletonData), 
+        v76;
+      }, fn41.loadBundle = function(p82) {
+        return new Promise(function(p83) {
+          cc.assetManager.loadBundle(p82, function(p84, p85) {
+            p84 ? (cc.error("[Res.loadBundle] error: " + p84), p83(null)) : p83(p85);
           });
         });
-      }, fn43.load = function(p88, p89, p90) {
-        return void 0 === p90 && (p90 = true), v11(this, void 0, Promise, function() {
-          var v91, v92, v93 = this;
-          return v12(this, function(p94) {
-            switch (p94.label) {
-             case 0:
-              return (v91 = this.get(p88, p89)) ? [ 2, v91 ] : !(v92 = this.parseUrl(p88)).bundle || cc.assetManager.getBundle(v92.bundle) ? [ 3, 2 ] : [ 4, this.loadBundle(v92.bundle) ];
-
-             case 1:
-              p94.sent();
-              p94.label = 2;
-
-             case 2:
-              return [ 4, new Promise(function(p95) {
-                var v96 = v92.bundle ? cc.assetManager.getBundle(v92.bundle) : cc.resources;
-                if (!v96) return cc.error("[Res.load] cant find bundle: " + p88), void p95(null);
-                v96.load(v92.loadUrl, p89, function(p97, p98) {
-                  p97 ? (cc.error("[Res.load] load error: " + p97), p95(null)) : (v93.cacheAsset(p88, p98, p90), 
-                  p95(p98));
-                });
-              }) ];
-
-             case 3:
-              return [ 2, v91 = p94.sent() ];
-            }
+      }, fn41.load = function(p86, p87, p88) {
+        return __awaiter(this, void 0, void 0, function*() {
+          void 0 === p88 && (p88 = true);
+          var v89 = this.get(p86, p87);
+          if (v89) return v89;
+          var v90 = this.parseUrl(p86);
+          v90.bundle && !cc.assetManager.getBundle(v90.bundle) && (yield this.loadBundle(v90.bundle));
+          var v91 = this;
+          return yield new Promise(function(p92) {
+            var v93 = v90.bundle ? cc.assetManager.getBundle(v90.bundle) : cc.resources;
+            if (!v93) return cc.error("[Res.load] cant find bundle: " + p86), void p92(null);
+            v93.load(v90.loadUrl, p87, function(p94, p95) {
+              p94 ? (cc.error("[Res.load] load error: " + p94), p92(null)) : (v91.cacheAsset(p86, p95, p88), 
+              p92(p95));
+            });
           });
         });
-      }, fn43.loadDir = function(p99, p100, p101, p102, p103) {
-        return void 0 === p101 && (p101 = null), void 0 === p102 && (p102 = null), void 0 === p103 && (p103 = true), 
-        v11(this, void 0, Promise, function() {
-          var v104, v105, v106 = this;
-          return v12(this, function(p107) {
-            switch (p107.label) {
-             case 0:
-              return v104 = this.parseUrl(p99), (v105 = this.gets(p99, p100)) && v105.length > 0 ? [ 2, v105 ] : !v104.bundle || cc.assetManager.getBundle(v104.bundle) ? [ 3, 2 ] : [ 4, this.loadBundle(v104.bundle) ];
-
-             case 1:
-              p107.sent();
-              p107.label = 2;
-
-             case 2:
-              return [ 2, new Promise(function(p108) {
-                var v109 = v104.bundle ? cc.assetManager.getBundle(v104.bundle) : cc.resources;
-                if (!v109) return cc.error("[Res.loadDir] cant find bundle: " + p99), void p108(null);
-                v109.loadDir(v104.loadUrl, p100, p101, function(p110, p111) {
-                  p110 ? (cc.error("[Res.loadDir] load error: " + p110), p108([])) : (v106.cacheAssets(p99, p111, p103), 
-                  p102 && p102(p110, p111), p108(p111));
-                });
-              }) ];
-            }
+      }, fn41.loadDir = function(p96, p97, p98, p99, p100) {
+        return __awaiter(this, void 0, void 0, function*() {
+          void 0 === p98 && (p98 = null);
+          void 0 === p99 && (p99 = null);
+          void 0 === p100 && (p100 = true);
+          var v101 = this.parseUrl(p96);
+          var v102 = this.gets(p96, p97);
+          if (v102 && v102.length > 0) return v102;
+          v101.bundle && !cc.assetManager.getBundle(v101.bundle) && (yield this.loadBundle(v101.bundle));
+          var v103 = this;
+          return new Promise(function(p104) {
+            var v105 = v101.bundle ? cc.assetManager.getBundle(v101.bundle) : cc.resources;
+            if (!v105) return cc.error("[Res.loadDir] cant find bundle: " + p96), void p104(null);
+            v105.loadDir(v101.loadUrl, p97, p98, function(p106, p107) {
+              p106 ? (cc.error("[Res.loadDir] load error: " + p106), p104([])) : (v103.cacheAssets(p96, p107, p100), 
+              p99 && p99(p106, p107), p104(p107));
+            });
           });
         });
-      }, fn43.instantiate = function(p112, p113) {
-        if (!p112) return cc.error("[Res.instantiate] original is null"), null;
-        var v114 = cc.instantiate(p112), v115 = this.getCachePrefabUrl(p113) || this.getCachePrefabUrl(p112);
-        if (v115) {
-          var v116 = this._prefabCache.get(v115);
-          v116 && v116.release && (Array.isArray(v116.nodes) || (v116.nodes = []), v116.nodes.push(v114), 
-          this._nodePath.set(v114, v115));
+      }, fn41.instantiate = function(p108, p109) {
+        if (!p108) return cc.error("[Res.instantiate] original is null"), null;
+        var v110 = cc.instantiate(p108), v111 = this.getCachePrefabUrl(p109) || this.getCachePrefabUrl(p108);
+        if (v111) {
+          var v112 = this._prefabCache.get(v111);
+          v112 && v112.release && (Array.isArray(v112.nodes) || (v112.nodes = []), v112.nodes.push(v110), 
+          this._nodePath.set(v110, v111));
         }
-        return v114;
-      }, fn43.releaseAll = function() {
-        var v117 = this, v118 = Date.now() / 1e3;
+        return v110;
+      }, fn41.releaseAll = function() {
+        var v113 = this, v114 = Date.now() / 1e3;
         console.log(this._prefabCache);
-        this._prefabCache.forEach(function(p119, p120) {
-          if (p119.release && !(v118 - p119.lastLoadTime < v117.releaseSec)) {
-            if (Array.isArray(p119.nodes)) {
-              for (var v121 = p119.nodes.length - 1; v121 >= 0; v121--) {
-                var v122 = p119.nodes[v121];
-                v122.isValid || (v117._nodePath["delete"](v122), p119.nodes.splice(v121, 1));
+        this._prefabCache.forEach(function(p115, p116) {
+          if (p115.release && !(v114 - p115.lastLoadTime < v113.releaseSec)) {
+            if (Array.isArray(p115.nodes)) {
+              for (var v117 = p115.nodes.length - 1; v117 >= 0; v117--) {
+                var v118 = p115.nodes[v117];
+                v118.isValid || (v113._nodePath["delete"](v118), p115.nodes.splice(v117, 1));
               }
-              0 === p119.nodes.length && delete p119.nodes;
+              0 === p115.nodes.length && delete p115.nodes;
             }
-            Array.isArray(p119.nodes) || (p119.asset.decRef(), v117._prefabPath["delete"](p119.asset), 
-            v117._prefabCache["delete"](p120));
+            Array.isArray(p115.nodes) || (p115.asset.decRef(), v113._prefabPath["delete"](p115.asset), 
+            v113._prefabCache["delete"](p116));
           }
         });
-        [ this._spriteFrameCache, this._spriteAtlasCache, this._skeletonDataCache ].forEach(function(p123) {
-          p123.forEach(function(p124, p125) {
-            !p124.release || v118 - p124.lastLoadTime < v117.releaseSec || (p124.asset.decRef(), 
-            p123["delete"](p125));
+        [ this._spriteFrameCache, this._spriteAtlasCache, this._skeletonDataCache ].forEach(function(p119) {
+          p119.forEach(function(p120, p121) {
+            !p120.release || v114 - p120.lastLoadTime < v113.releaseSec || (p120.asset.decRef(), 
+            p119["delete"](p121));
           });
         });
-      }, fn43.releaseDir = function(p126) {
-        this._assertCaches.get(p126).forEach(function(p127) {
-          p127.asset.decRef();
+      }, fn41.releaseDir = function(p122) {
+        this._assertCaches.get(p122).forEach(function(p123) {
+          p123.asset.decRef();
         });
-        this._assertCaches["delete"](p126);
-      }, fn43.releaseSingle = function(p128) {
-        var v129 = this;
-        this._spriteFrameCache.forEach(function(p130, p131) {
-          p128 == p131 && (p130.asset.decRef(), v129._spriteFrameCache["delete"](p131));
+        this._assertCaches["delete"](p122);
+      }, fn41.releaseSingle = function(p124) {
+        var v125 = this;
+        this._spriteFrameCache.forEach(function(p126, p127) {
+          p124 == p127 && (p126.asset.decRef(), v125._spriteFrameCache["delete"](p127));
         });
-      }, fn43._nodePath = new Map(), fn43._prefabPath = new Map(), fn43._prefabCache = new Map(), 
-      fn43._spriteFrameCache = new Map(), fn43._assertCaches = new Map(), fn43._spriteAtlasCache = new Map(), 
-      fn43._skeletonDataCache = new Map(), fn43._otherCache = new Map(), fn43.releaseSec = 0, 
-      fn43;
+      }, fn41._nodePath = new Map(), fn41._prefabPath = new Map(), fn41._prefabCache = new Map(), 
+      fn41._spriteFrameCache = new Map(), fn41._assertCaches = new Map(), fn41._spriteAtlasCache = new Map(), 
+      fn41._skeletonDataCache = new Map(), fn41._otherCache = new Map(), fn41.releaseSec = 0, 
+      fn41;
     }();
-    exports.default = v13;
+    exports.default = v11;
     cc._RF.pop();
   }, {} ],
   RewardedVideoAd: [ function(require, module, exports) {
@@ -7775,24 +7786,10 @@ window.__require = function e(t, n, r) {
         return Math.floor(new Date().getTime() / 1e3);
       }
       get puzzleProgress() {
-        if (!this._puzzleProgress) {
-          var v15;
-          var v16 = ((v15 = {})[Enum.PuzzleData["\u4f01\u9e45"]] = 0, v15[Enum.PuzzleData["\u5154\u5b50"]] = 0, 
-          v15[Enum.PuzzleData["\u5927\u8c61"]] = 0, v15[Enum.PuzzleData["\u5b54\u96c0"]] = 0, 
-          v15[Enum.PuzzleData["\u6591\u9a6c"]] = 0, v15[Enum.PuzzleData["\u677e\u9f20"]] = 0, 
-          v15[Enum.PuzzleData["\u6cb3\u9a6c"]] = 0, v15[Enum.PuzzleData["\u706b\u70c8\u9e1f"]] = 0, 
-          v15[Enum.PuzzleData["\u718a\u732b"]] = 0, v15[Enum.PuzzleData["\u72d7"]] = 0, v15[Enum.PuzzleData["\u732b"]] = 0, 
-          v15[Enum.PuzzleData["\u732b\u5934\u9e70"]] = 0, v15[Enum.PuzzleData["\u7334\u5b50"]] = 0, 
-          v15[Enum.PuzzleData["\u767d\u72d7"]] = 0, v15[Enum.PuzzleData["\u767d\u9e3d"]] = 0, 
-          v15[Enum.PuzzleData["\u7f8a"]] = 0, v15[Enum.PuzzleData["\u7f8a\u9a7c"]] = 0, v15[Enum.PuzzleData["\u8001\u9f20"]] = 0, 
-          v15[Enum.PuzzleData["\u8003\u62c9"]] = 0, v15[Enum.PuzzleData["\u8682\u8681"]] = 0, 
-          v15[Enum.PuzzleData["\u86c7"]] = 0, v15[Enum.PuzzleData["\u871c\u8702"]] = 0, v15[Enum.PuzzleData["\u8774\u8776"]] = 0, 
-          v15[Enum.PuzzleData["\u8783\u87f9"]] = 0, v15[Enum.PuzzleData["\u888b\u9f20"]] = 0, 
-          v15[Enum.PuzzleData["\u9752\u86d9"]] = 0, v15[Enum.PuzzleData["\u9cc4\u9c7c"]] = 0, 
-          v15[Enum.PuzzleData["\u9e21"]] = 0, v15[Enum.PuzzleData["\u9e66\u9e49"]] = 0, v15[Enum.PuzzleData["\u4e4c\u9f9f"]] = 0, 
-          v15);
-          this._puzzleProgress = v16;
-          this.delaySave();
+        if (null == this._puzzleProgress) {
+          var v = {};
+          for (var i = 0; i < 30; i++) v[i] = 0;
+          this._puzzleProgress = v;
         }
         return this._puzzleProgress;
       }
@@ -7802,17 +7799,16 @@ window.__require = function e(t, n, r) {
       }
       initData() {
         var v15;
-        if (!this._level && !this._blockNum && !this._newPlayer) {
-          this._level = 0;
-          this._blockNum = 0;
-          this._newPlayer = 0;
-          this._illustrateLock = 0;
-          this._nickName = "\u672c\u5730\u73a9\u5bb6";
-          this._avatarUrl = "";
-          this._gender = 0;
-          this._date = new Date().getDate();
-        }
-        if (!this._puzzleProgress) {
+        null == this._level && (this._level = 0);
+        null == this._nickName && (this._nickName = "");
+        null == this._avatarUrl && (this._avatarUrl = "");
+        null == this._newPlayer && (this._newPlayer = 0);
+        null == this._date && (this._date = 0);
+        null == this._blockNum && (this._blockNum = 0);
+        null == this._gender && (this._gender = 0);
+        null == this._singleAnimal && (this._singleAnimal = 0);
+        null == this._illustrateLock && (this._illustrateLock = {});
+        if (0 == this._newPlayer) {
           var v16 = ((v15 = {})[Enum.PuzzleData["\u4f01\u9e45"]] = 0, v15[Enum.PuzzleData["\u5154\u5b50"]] = 0, 
           v15[Enum.PuzzleData["\u5927\u8c61"]] = 0, v15[Enum.PuzzleData["\u5b54\u96c0"]] = 0, 
           v15[Enum.PuzzleData["\u6591\u9a6c"]] = 0, v15[Enum.PuzzleData["\u677e\u9f20"]] = 0, 
@@ -7877,137 +7873,137 @@ window.__require = function e(t, n, r) {
       value: true
     });
     var v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13;
-    var v14 = this && this.__awaiter || function(p20, p21, p22, p23) {
-      return new (p22 || (p22 = Promise))(function(p24, p25) {
-        function fn26(p29) {
+    var __awaiter = this && this.__awaiter || function(p18, p19, p20, p21) {
+      return new (p20 || (p20 = Promise))(function(p22, p23) {
+        function fn24(p27) {
           try {
-            fn28(p23.next(p29));
+            fn26(p21.next(p27));
+          } catch (v28) {
+            p23(v28);
+          }
+        }
+        function fn25(p29) {
+          try {
+            fn26(p21["throw"](p29));
           } catch (v30) {
-            p25(v30);
+            p23(v30);
           }
         }
-        function fn27(p31) {
-          try {
-            fn28(p23["throw"](p31));
-          } catch (v32) {
-            p25(v32);
-          }
+        function fn26(p31) {
+          var v32;
+          p31.done ? p22(p31.value) : (v32 = p31.value, v32 instanceof p20 ? v32 : new p20(function(p33) {
+            p33(v32);
+          })).then(fn24, fn25);
         }
-        function fn28(p33) {
-          var v34;
-          p33.done ? p24(p33.value) : (v34 = p33.value, v34 instanceof p22 ? v34 : new p22(function(p35) {
-            p35(v34);
-          })).then(fn26, fn27);
-        }
-        fn28((p23 = p23.apply(p20, p21 || [])).next());
+        fn26((p21 = p21.apply(p18, p19 || [])).next());
       });
-    }, v15 = this && this.__generator || function(p36, p37) {
-      var v38, v39, v40, v41, v42 = {
+    }, __generator = this && this.__generator || function(p34, p35) {
+      var v36, v37, v38, v39, v40 = {
         label: 0,
         sent: function sent() {
-          if (1 & v40[0]) throw v40[1];
-          return v40[1];
+          if (1 & v38[0]) throw v38[1];
+          return v38[1];
         },
         trys: [],
         ops: []
       };
-      return v41 = {
-        next: fn43(0),
-        throw: fn43(1),
-        return: fn43(2)
-      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v41[Symbol.iterator] = function() {
+      return v39 = {
+        next: fn41(0),
+        throw: fn41(1),
+        return: fn41(2)
+      }, "function" == ("undefined" === typeof Symbol ? "undefined" : _typeof2(Symbol)) && (v39[Symbol.iterator] = function() {
         return this;
-      }), v41;
-      function fn43(p45) {
-        return function(p46) {
-          return fn44([ p45, p46 ]);
+      }), v39;
+      function fn41(p43) {
+        return function(p44) {
+          return fn42([ p43, p44 ]);
         };
       }
-      function fn44(p47) {
-        if (v38) throw new TypeError("Generator is already executing.");
-        for (;v42; ) try {
-          if (v38 = 1, v39 && (v40 = 2 & p47[0] ? v39["return"] : p47[0] ? v39["throw"] || ((v40 = v39["return"]) && v40.call(v39), 
-          0) : v39.next) && !(v40 = v40.call(v39, p47[1])).done) return v40;
-          switch (v39 = 0, v40 && (p47 = [ 2 & p47[0], v40.value ]), p47[0]) {
+      function fn42(p45) {
+        if (v36) throw new TypeError("Generator is already executing.");
+        for (;v40; ) try {
+          if (v36 = 1, v37 && (v38 = 2 & p45[0] ? v37["return"] : p45[0] ? v37["throw"] || ((v38 = v37["return"]) && v38.call(v37), 
+          0) : v37.next) && !(v38 = v38.call(v37, p45[1])).done) return v38;
+          switch (v37 = 0, v38 && (p45 = [ 2 & p45[0], v38.value ]), p45[0]) {
            case 0:
            case 1:
-            v40 = p47;
+            v38 = p45;
             break;
 
            case 4:
-            return v42.label++, {
-              value: p47[1],
+            return v40.label++, {
+              value: p45[1],
               done: false
             };
 
            case 5:
-            v42.label++;
-            v39 = p47[1];
-            p47 = [ 0 ];
+            v40.label++;
+            v37 = p45[1];
+            p45 = [ 0 ];
             continue;
 
            case 7:
-            p47 = v42.ops.pop();
-            v42.trys.pop();
+            p45 = v40.ops.pop();
+            v40.trys.pop();
             continue;
 
            default:
-            if (!(v40 = (v40 = v42.trys).length > 0 && v40[v40.length - 1]) && (6 === p47[0] || 2 === p47[0])) {
-              v42 = 0;
+            if (!(v38 = (v38 = v40.trys).length > 0 && v38[v38.length - 1]) && (6 === p45[0] || 2 === p45[0])) {
+              v40 = 0;
               continue;
             }
-            if (3 === p47[0] && (!v40 || p47[1] > v40[0] && p47[1] < v40[3])) {
-              v42.label = p47[1];
+            if (3 === p45[0] && (!v38 || p45[1] > v38[0] && p45[1] < v38[3])) {
+              v40.label = p45[1];
               break;
             }
-            if (6 === p47[0] && v42.label < v40[1]) {
-              v42.label = v40[1];
-              v40 = p47;
+            if (6 === p45[0] && v40.label < v38[1]) {
+              v40.label = v38[1];
+              v38 = p45;
               break;
             }
-            if (v40 && v42.label < v40[2]) {
-              v42.label = v40[2];
-              v42.ops.push(p47);
+            if (v38 && v40.label < v38[2]) {
+              v40.label = v38[2];
+              v40.ops.push(p45);
               break;
             }
-            v40[2] && v42.ops.pop();
-            v42.trys.pop();
+            v38[2] && v40.ops.pop();
+            v40.trys.pop();
             continue;
           }
-          p47 = p37.call(p36, v42);
-        } catch (v48) {
-          p47 = [ 6, v48 ];
-          v39 = 0;
+          p45 = p35.call(p34, v40);
+        } catch (v46) {
+          p45 = [ 6, v46 ];
+          v37 = 0;
         } finally {
-          v38 = v40 = 0;
+          v36 = v38 = 0;
         }
-        if (5 & p47[0]) throw p47[1];
+        if (5 & p45[0]) throw p45[1];
         return {
-          value: p47[0] ? p47[1] : void 0,
+          value: p45[0] ? p45[1] : void 0,
           done: true
         };
       }
-    }, v16 = this && this.__read || function(p49, p50) {
-      var v51 = "function" == typeof Symbol && p49[Symbol.iterator];
-      if (!v51) return p49;
-      var v52, v53, v54 = v51.call(p49), v55 = [];
+    }, v14 = this && this.__read || function(p47, p48) {
+      var v49 = "function" == typeof Symbol && p47[Symbol.iterator];
+      if (!v49) return p47;
+      var v50, v51, v52 = v49.call(p47), v53 = [];
       try {
-        for (;(void 0 === p50 || p50-- > 0) && !(v52 = v54.next()).done; ) v55.push(v52.value);
-      } catch (v56) {
-        v53 = {
-          error: v56
+        for (;(void 0 === p48 || p48-- > 0) && !(v50 = v52.next()).done; ) v53.push(v50.value);
+      } catch (v54) {
+        v51 = {
+          error: v54
         };
       } finally {
         try {
-          v52 && !v52.done && (v51 = v54["return"]) && v51.call(v54);
+          v50 && !v50.done && (v49 = v52["return"]) && v49.call(v52);
         } finally {
-          if (v53) throw v53.error;
+          if (v51) throw v51.error;
         }
       }
+      return v53;
+    }, v15 = this && this.__spread || function() {
+      for (var v55 = [], v56 = 0; v56 < arguments.length; v56++) v55 = v55.concat(v14(arguments[v56]));
       return v55;
-    }, v17 = this && this.__spread || function() {
-      for (var v57 = [], v58 = 0; v58 < arguments.length; v58++) v57 = v57.concat(v16(arguments[v58]));
-      return v57;
     };
     module.exports.Util = void 0;
     const Res = require("./Res");
@@ -8015,131 +8011,139 @@ window.__require = function e(t, n, r) {
       if ("function" === typeof Symbol && "symbol" === typeof Symbol.iterator) return typeof obj;
       return obj && "function" === typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     }
-    var v19 = function() {
-      function fn59() {}
-      return fn59.prototype.arrRemoveItem = function(p60, p61) {
-        return p60.splice(p60.indexOf(p61), 1);
-      }, fn59.prototype.rand = function(p62, p63, p64) {
-        void 0 === p64 && (p64 = true);
-        var v65 = p62 + Math.random() * (p63 - p62);
-        return p64 ? Math.floor(v65) : v65;
-      }, fn59.prototype.range = function(p66, p67, p68) {
-        return Math.max(p67, Math.min(p66, p68));
-      }, fn59.prototype.zeroFill = function(p69, p70) {
-        for (var v71 = p69.toString(), v72 = p70 - v71.length; v72 > 0; v72--) v71 = "0" + v71;
-        return v71;
-      }, fn59.prototype.fixed = function(p73, p74) {
-        return void 0 === p74 && (p74 = 1), parseFloat(p73.toFixed(p74));
-      }, fn59.prototype.arrConcatSet = function(p75, p76) {
-        return p75.concat(Array.from(p76));
-      }, fn59.prototype.compareVersion = function(p77, p78) {
-        p77 = p77.split(".");
-        p78 = p78.split(".");
-        for (var v79 = Math.max(p77.length, p78.length); p77.length < v79; ) p77.push("0");
-        for (;p78.length < v79; ) p78.push("0");
-        for (var v80 = 0; v80 < v79; v80++) {
-          var v81 = parseInt(p77[v80]), v82 = parseInt(p78[v80]);
-          if (v81 > v82) return 1;
-          if (v81 < v82) return -1;
+    var v17 = function() {
+      function fn57() {}
+      return fn57.prototype.arrRemoveItem = function(p58, p59) {
+        return p58.splice(p58.indexOf(p59), 1);
+      }, fn57.prototype.rand = function(p60, p61, p62) {
+        void 0 === p62 && (p62 = true);
+        var v63 = p60 + Math.random() * (p61 - p60);
+        return p62 ? Math.floor(v63) : v63;
+      }, fn57.prototype.range = function(p64, p65, p66) {
+        return Math.max(p65, Math.min(p64, p66));
+      }, fn57.prototype.zeroFill = function(p67, p68) {
+        for (var v69 = p67.toString(), v70 = p68 - v69.length; v70 > 0; v70--) v69 = "0" + v69;
+        return v69;
+      }, fn57.prototype.fixed = function(p71, p72) {
+        return void 0 === p72 && (p72 = 1), parseFloat(p71.toFixed(p72));
+      }, fn57.prototype.arrConcatSet = function(p73, p74) {
+        return p73.concat(Array.from(p74));
+      }, fn57.prototype.compareVersion = function(p75, p76) {
+        p75 = p75.split(".");
+        p76 = p76.split(".");
+        for (var v77 = Math.max(p75.length, p76.length); p75.length < v77; ) p75.push("0");
+        for (;p76.length < v77; ) p76.push("0");
+        for (var v78 = 0; v78 < v77; v78++) {
+          var v79 = parseInt(p75[v78]), v80 = parseInt(p76[v78]);
+          if (v79 > v80) return 1;
+          if (v79 < v80) return -1;
         }
         return 0;
-      }, fn59.prototype.objectToArray = function(p83) {
-        var v84 = [];
-        for (var v85 in p83) p83.hasOwnProperty(v85) && v84.push(p83[v85]);
-        return v84;
-      }, fn59.prototype.timeTransitionString = function(p86, p87) {
-        void 0 === p87 && (p87 = false);
-        var v88 = p86 % 60, v89 = Math.floor(p86 / 60) % 60, v90 = Math.floor(p86 / 60 / 60) % 24, v91 = Math.floor(p86 / 60 / 60 / 24), v92 = "";
-        return v91 && (v92 += v91 + "\u5929"), v90 ? v92 += v90 < 10 ? "0" + v90 + ":" : v90 + ":" : p87 && (v92 += "00:"), 
-        (v92 += v89 < 10 ? "0" + v89 + ":" : v89 + ":") + (v88 < 10 ? "0" + Math.floor(v88) : Math.floor(v88));
-      }, fn59.prototype.randomRange = function(p93, p94) {
-        return p93 == p94 ? p93 : p93 + Math.ceil(1e3 * Math.random()) % (p94 - p93);
-      }, fn59.prototype.btnAnimation = function(p95, p96) {
-        void 0 === p96 && (p96 = 1.1);
-        cc.Tween.stopAllByTarget(p95);
-        var v97 = cc.tween(p95).to(1, {
-          scale: p96
+      }, fn57.prototype.objectToArray = function(p81) {
+        var v82 = [];
+        for (var v83 in p81) p81.hasOwnProperty(v83) && v82.push(p81[v83]);
+        return v82;
+      }, fn57.prototype.timeTransitionString = function(p84, p85) {
+        void 0 === p85 && (p85 = false);
+        var v86 = p84 % 60, v87 = Math.floor(p84 / 60) % 60, v88 = Math.floor(p84 / 60 / 60) % 24, v89 = Math.floor(p84 / 60 / 60 / 24), v90 = "";
+        return v89 && (v90 += v89 + "\u5929"), v88 ? v90 += v88 < 10 ? "0" + v88 + ":" : v88 + ":" : p85 && (v90 += "00:"), 
+        (v90 += v87 < 10 ? "0" + v87 + ":" : v87 + ":") + (v86 < 10 ? "0" + Math.floor(v86) : Math.floor(v86));
+      }, fn57.prototype.randomRange = function(p91, p92) {
+        return p91 == p92 ? p91 : p91 + Math.ceil(1e3 * Math.random()) % (p92 - p91);
+      }, fn57.prototype.btnAnimation = function(p93, p94) {
+        void 0 === p94 && (p94 = 1.1);
+        cc.Tween.stopAllByTarget(p93);
+        var v95 = cc.tween(p93).to(1, {
+          scale: p94
         }).to(1, {
           scale: 1
         }).to(1, {
-          scale: p96
+          scale: p94
         }).to(1, {
           scale: 1
         });
-        cc.tween(p95).repeatForever(v97).start();
-      }, fn59.prototype.changeNodeParent = function(p98, p99) {
-        var v100 = this.getSpacePosition(p98, p99);
-        p98.parent = p99;
-        p98.position = v100;
-      }, fn59.prototype.getSpacePosition = function(p101, p102, p103) {
-        return void 0 === p102 && (p102 = null), void 0 === p103 && (p103 = cc.Vec2.ZERO), 
-        null == p102 ? p101.convertToWorldSpaceAR(p103) : p102.convertToNodeSpaceAR(p101.convertToWorldSpaceAR(p103));
-      }, fn59.prototype.getDistance = function(p104, p105) {
-        var v106 = cc.v2(p104.x - p105.x, p104.y - p105.y);
-        return Math.sqrt(v106.x * v106.x + v106.y * v106.y);
-      }, fn59.prototype.getAngle = function(p107, p108) {
-        var v109 = p108.x - p107.x, v110 = p108.y - p107.y;
-        return -cc.v2(v109, v110).signAngle(cc.v2(1, 0)) / Math.PI * 180;
-      }, fn59.prototype.shuffleArray = function(p111) {
-        for (var v112, v113 = p111.length - 1; v113 > 0; v113--) {
-          var v114 = Math.floor(Math.random() * (v113 + 1));
-          v112 = v16([ p111[v114], p111[v113] ], 2);
-          p111[v113] = v112[0];
-          p111[v114] = v112[1];
+        cc.tween(p93).repeatForever(v95).start();
+      }, fn57.prototype.changeNodeParent = function(p96, p97) {
+        var v98 = this.getSpacePosition(p96, p97);
+        p96.parent = p97;
+        p96.position = v98;
+      }, fn57.prototype.getSpacePosition = function(p99, p100, p101) {
+        return void 0 === p100 && (p100 = null), void 0 === p101 && (p101 = cc.Vec2.ZERO), 
+        null == p100 ? p99.convertToWorldSpaceAR(p101) : p100.convertToNodeSpaceAR(p99.convertToWorldSpaceAR(p101));
+      }, fn57.prototype.getDistance = function(p102, p103) {
+        var v104 = cc.v2(p102.x - p103.x, p102.y - p103.y);
+        return Math.sqrt(v104.x * v104.x + v104.y * v104.y);
+      }, fn57.prototype.getAngle = function(p105, p106) {
+        var v107 = p106.x - p105.x, v108 = p106.y - p105.y;
+        return -cc.v2(v107, v108).signAngle(cc.v2(1, 0)) / Math.PI * 180;
+      }, fn57.prototype.shuffleArray = function(p109) {
+        for (var v110, v111 = p109.length - 1; v111 > 0; v111--) {
+          var v112 = Math.floor(Math.random() * (v111 + 1));
+          v110 = v14([ p109[v112], p109[v111] ], 2);
+          p109[v111] = v110[0];
+          p109[v112] = v110[1];
         }
-        return p111;
-      }, fn59.prototype.getUrlImage = function(p115, p116) {
-        "" != p115 && null != p115 && cc.assetManager.loadRemote(p115, {
+        return p109;
+      }, fn57.prototype.getUrlImage = function(p113, p114) {
+        "" != p113 && null != p113 && cc.assetManager.loadRemote(p113, {
           ext: ".png"
-        }, function(p117, p118) {
-          var v119 = new cc.SpriteFrame(p118);
-          p116(v119);
+        }, function(p115, p116) {
+          var v117 = new cc.SpriteFrame(p116);
+          p114(v117);
         });
-      }, fn59.prototype.clone = function(p120, p121) {
-        p121 = p121 || [];
-        for (var v122 = 0; v122 < p120.length; ++v122) p121.push(p120[v122]);
-        return p121;
-      }, fn59.prototype.loadSpriteFrame = function(p123, p124, p125, p126, p127) {
+      }, fn57.prototype.clone = function(p118, p119) {
+        p119 = p119 || [];
+        for (var v120 = 0; v120 < p118.length; ++v120) p119.push(p118[v120]);
+        return p119;
+      }, fn57.prototype.loadSpriteFrame = function(p121, p122, p123, p124, p125) {
         return __awaiter(this, void 0, void 0, function*() {
-          var v128, v129, v130;
-          v128 = yield Res.default.load(p124, cc.SpriteFrame);
-          v129 = v128.getOriginalSize();
-          (v130 = p123.getComponent(cc.Sprite)).spriteFrame = v128;
-          p125 && p125 < v129.width && v129.width > v129.height ? (v130.sizeMode = cc.Sprite.SizeMode.CUSTOM, 
-          v130.node.width = p125, v130.node.height = p125 / v129.width * v129.height) : p126 && p126 < v129.height && v129.height > v129.width ? (v130.sizeMode = cc.Sprite.SizeMode.CUSTOM, 
-          v130.node.width = p126 / v129.height * v129.width, v130.node.height = p126) : (v130.node.width = v129.width, 
-          v130.node.height = v129.height);
-          p127 && (p123.active = true);
+          var v126, v127, v128;
+          v126 = yield Res.default.load(p122, cc.SpriteFrame);
+          v127 = v126.getOriginalSize();
+          (v128 = p121.getComponent(cc.Sprite)).spriteFrame = v126;
+          p123 && p123 < v127.width && v127.width > v127.height ? (v128.sizeMode = cc.Sprite.SizeMode.CUSTOM, 
+          v128.node.width = p123, v128.node.height = p123 / v127.width * v127.height) : p124 && p124 < v127.height && v127.height > v127.width ? (v128.sizeMode = cc.Sprite.SizeMode.CUSTOM, 
+          v128.node.width = p124 / v127.height * v127.width, v128.node.height = p124) : (v128.node.width = v127.width, 
+          v128.node.height = v127.height);
+          p125 && (p121.active = true);
         });
-      }, fn59.prototype.loadSpine = function(p131, p132, p133, p134) {
+      }, fn57.prototype.loadSpine = function(p129, p130, p131, p132) {
         return __awaiter(this, void 0, void 0, function*() {
-          var v135, v136;
-          (v135 = yield Res.default.load(p132, sp.SkeletonData)) && ((v136 = p131.getComponent(sp.Skeleton)).skeletonData = v135, 
-          v136.timeScale = .3, p133 && (p134 || (p134 = false), v136.setAnimation(0, p133, p134)));
+          var v133, v134;
+          v133 = yield Res.default.load(p130, sp.SkeletonData);
+          if (v133) {
+            v134 = p129.getComponent(sp.Skeleton);
+            v134.skeletonData = v133;
+            v134.timeScale = .3;
+            if (p131) {
+              p132 || (p132 = false);
+              v134.setAnimation(0, p131, p132);
+            }
+          }
         });
-      }, fn59.prototype.getRandomElements = function(p137, p138) {
-        if (p138 <= 0 || 0 === p137.length) return [];
-        if (p138 >= p137.length) return v17(p137);
-        for (var v139 = v17(p137), v140 = [], v141 = 0; v141 < p138; v141++) {
-          var v142 = Math.floor(Math.random() * v139.length);
-          v140.push(v139[v142]);
-          v139.splice(v142, 1);
+      }, fn57.prototype.getRandomElements = function(p135, p136) {
+        if (p136 <= 0 || 0 === p135.length) return [];
+        if (p136 >= p135.length) return v15(p135);
+        for (var v137 = v15(p135), v138 = [], v139 = 0; v139 < p136; v139++) {
+          var v140 = Math.floor(Math.random() * v137.length);
+          v138.push(v137[v140]);
+          v137.splice(v140, 1);
         }
-        return v140;
-      }, fn59.prototype.shuffle = function(p143) {
-        for (var v144 = 0; v144 < p143.length; ++v144) {
-          var v145 = this.randomRangeInt(0, p143.length), v146 = p143[v144];
-          p143[v144] = p143[v145];
-          p143[v145] = v146;
+        return v138;
+      }, fn57.prototype.shuffle = function(p141) {
+        for (var v142 = 0; v142 < p141.length; ++v142) {
+          var v143 = this.randomRangeInt(0, p141.length), v144 = p141[v142];
+          p141[v142] = p141[v143];
+          p141[v143] = v144;
         }
-        return p143;
-      }, fn59.prototype.randomRangeInt = function(p147, p148) {
-        var v149 = Math.random();
-        return p147 + Math.floor(v149 * (p148 - p147));
-      }, fn59.ins = new fn59(), fn59;
+        return p141;
+      }, fn57.prototype.randomRangeInt = function(p145, p146) {
+        var v147 = Math.random();
+        return p145 + Math.floor(v147 * (p146 - p145));
+      }, fn57.ins = new fn57(), fn57;
     }();
-    module.exports.Util = v19.ins;
-    exports.default = v19;
+    module.exports.Util = v17.ins;
+    exports.default = v17;
     cc._RF.pop();
   }, {
     "./Res": "Res"
@@ -8249,7 +8253,7 @@ window.__require = function e(t, n, r) {
     const StorageMgr = require("./StorageMgr");
     const WeappJwtDecode = require("./WeappJwtDecode");
     const Enum = require("./Enum");
-    const Res_1 = require("./Res");
+    const Res = require("./Res");
     var v8, v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20, v21, v22, v23, v24, v25, v26, v27, v28, v29, v30, v31, v32, v33, v34, v35, v36, v37, v38, v39, v40, v41, v42, v43, v44, v45, v46, v47, v48, v49, v50, v51, v52, v53, v54, v55, v56, v57, v58, v59, v60;
     var ReportName;
     (function(ReportName) {
@@ -8267,32 +8271,48 @@ window.__require = function e(t, n, r) {
           this.loadAdTime -= 1;
           this.loadAdState = true;
           var v62 = Global.default.request + "/v2-api/ad/multi-type-ads";
-          Global.default.http.get(v62, function(p63) {
-            return __awaiter(this, void 0, void 0, function*() {
-              var v64, v65, v66, v67, v68, v69, v70, v71;
-              v61.loadAdState = false;
-              if (!v61.childNode) {
-                v64 = yield Res_1.default.default.load("ab:resources/prefab/adNode", cc.Prefab);
-                v65 = cc.instantiate(v64);
-                v61.persistRootNode.addChild(v65);
-                v61.childNode = v65;
+          Global.default.http.get(v62, p63 => __awaiter(this, void 0, void 0, function*() {
+            this.loadAdState = false;
+            if (!this.childNode) {
+              var v64 = yield Res.default.load("ab:resources/prefab/adNode", cc.Prefab);
+              var v65 = cc.instantiate(v64);
+              this.persistRootNode.addChild(v65);
+              this.childNode = v65;
+            }
+            this.loadCustomAd();
+            if (p63 && p63.data) {
+              if (p63.data.rewardAdIds.length > 0) {
+                var v66 = Math.floor(Math.random() * p63.data.rewardAdIds.length);
+                this.rewardVideoAd = this.childNode.getChildByName("rewardedVideoAd").getComponent(RewardedVideoAd.default);
+                this.rewardVideoAd.adUnitId = p63.data.rewardAdIds[v66];
+                this.childNode.getChildByName("rewardedVideoAd").active = true;
+                this.rewardVideoAd.adUnitId && this.rewardVideoAd.init();
               }
-              v61.loadCustomAd(), p63 && p63.data && (p63.data.rewardAdIds.length > 0 && (v66 = Math.floor(Math.random() * p63.data.rewardAdIds.length), 
-              v61.rewardVideoAd = v61.childNode.getChildByName("rewardedVideoAd").getComponent(RewardedVideoAd.default), 
-              v61.rewardVideoAd.adUnitId = p63.data.rewardAdIds[v66], v61.childNode.getChildByName("rewardedVideoAd").active = true, 
-              v61.rewardVideoAd.adUnitId && v61.rewardVideoAd.init()), p63.data.bannerAdIds.length > 0 ? (v61.mistakeBannerId = null === (v70 = null == p63 ? void 0 : p63.data) || void 0 === v70 ? void 0 : v70.bannerAdIds[1], 
-              v67 = null === (v71 = null == p63 ? void 0 : p63.data) || void 0 === v71 ? void 0 : v71.bannerAdIds[0], 
-              v61.bannerAd = v61.childNode.getChildByName("bannerAd").getComponent(BannerAd.default), 
-              v61.bannerAd.adUnitId = v67, v61.childNode.getChildByName("bannerAd").active = false, 
-              v61.bannerAd.isCustom = false, v61.bannerAd.adUnitId && v61.bannerAd.init()) : p63.data.tempBannerAdIds.length > 0 && (v68 = Math.floor(Math.random() * p63.data.tempBannerAdIds.length), 
-              v61.bannerAd = v61.childNode.getChildByName("bannerAd").getComponent(BannerAd.default), 
-              v61.bannerAd.adUnitId = p63.data.tempBannerAdIds[v68], v61.childNode.getChildByName("bannerAd").active = false, 
-              v61.bannerAd.isCustom = true, v61.bannerAd.adUnitId && v61.bannerAd.init()), p63.data.intersAdIds.length > 0 && (v69 = Math.floor(Math.random() * p63.data.intersAdIds.length), 
-              v61.interstitialAd = v61.childNode.getChildByName("interstitialAd").getComponent(InterstitialAd.default), 
-              v61.interstitialAd.adUnitId = p63.data.intersAdIds[v69], v61.childNode.getChildByName("interstitialAd").active = true, 
-              v61.interstitialAd.adUnitId && v61.interstitialAd.init()));
-            });
-          }, null, [ {
+              if (p63.data.bannerAdIds.length > 0) {
+                this.mistakeBannerId = p63.data.bannerAdIds[1];
+                var v67 = p63.data.bannerAdIds[0];
+                this.bannerAd = this.childNode.getChildByName("bannerAd").getComponent(BannerAd.default);
+                this.bannerAd.adUnitId = v67;
+                this.childNode.getChildByName("bannerAd").active = false;
+                this.bannerAd.isCustom = false;
+                this.bannerAd.adUnitId && this.bannerAd.init();
+              } else if (p63.data.tempBannerAdIds.length > 0) {
+                var v68 = Math.floor(Math.random() * p63.data.tempBannerAdIds.length);
+                this.bannerAd = this.childNode.getChildByName("bannerAd").getComponent(BannerAd.default);
+                this.bannerAd.adUnitId = p63.data.tempBannerAdIds[v68];
+                this.childNode.getChildByName("bannerAd").active = false;
+                this.bannerAd.isCustom = true;
+                this.bannerAd.adUnitId && this.bannerAd.init();
+              }
+              if (p63.data.intersAdIds.length > 0) {
+                var v69 = Math.floor(Math.random() * p63.data.intersAdIds.length);
+                this.interstitialAd = this.childNode.getChildByName("interstitialAd").getComponent(InterstitialAd.default);
+                this.interstitialAd.adUnitId = p63.data.intersAdIds[v69];
+                this.childNode.getChildByName("interstitialAd").active = true;
+                this.interstitialAd.adUnitId && this.interstitialAd.init();
+              }
+            }
+          }), null, [ {
             key: "M-AppId",
             value: Global.default.appId
           } ]);
@@ -8871,12 +8891,12 @@ window.__require = function e(t, n, r) {
         this.isLock = false;
       }
       updateView(t) {
-        this.animalData = t, this.node.on(cc.Node.EventType.TOUCH_END, this.onClickItem, this), 
+        return this.animalData = t, this.node.on(cc.Node.EventType.TOUCH_END, this.onClickItem, this), 
         this.gray = cc.find("gray", this.node).getComponent(cc.Sprite), this.animal = cc.find("animal", this.node).getComponent(cc.Sprite), 
         this.aName = cc.find("aName", this.node).getComponent(cc.Label), this.loadSprite(this.gray, "animalGray/" + t.name), 
         this.loadSprite(this.animal, "animal/" + t.name), t.index >= Global_1.default.user.illustrateLock ? (this.aName.string = "\u672a\u89e3\u9501", 
         this.animal.node.active = false, this.isLock = true) : (this.animal.node.active = true, 
-        this.aName.string = t.name, this.isLock = false);
+        this.aName.string = t.name, this.isLock = false), [ 2 ];
       }
       loadSprite(t, _e) {
         return __awaiter(this, void 0, void 0, function*() {
@@ -8950,8 +8970,7 @@ window.__require = function e(t, n, r) {
     const {ccclass: ccclass} = cc._decorator;
     let RankItem = RankItem_1 = class RankItem extends cc.Component {
       updateView(t) {
-        var RankItem = this;
-        this.rankBg = cc.find("rankBg", this.node).getComponent(cc.Sprite), this.rank = cc.find("rank", this.node).getComponent(cc.Label), 
+        return this.rankBg = cc.find("rankBg", this.node).getComponent(cc.Sprite), this.rank = cc.find("rank", this.node).getComponent(cc.Label), 
         this.scoreLabel = cc.find("scoreLabel", this.node).getComponent(cc.Label), this.nickName = cc.find("nickName", this.node).getComponent(cc.Label), 
         this.rankIcon = cc.find("rankIcon", this.node).getComponent(cc.Sprite), this.avater = cc.find("avater", this.node).getComponent(cc.Sprite), 
         t.scoreRank <= 3 ? (this.loadSprite(this.rankIcon, "img_ph_jp" + t.scoreRank), this.rank.string = "", 
@@ -8959,8 +8978,8 @@ window.__require = function e(t, n, r) {
         this.rank.string = "" + t.scoreRank, this.loadSprite(this.rankBg, "img_ph_dk4")), 
         this.nickName.string = t.nickname, this.scoreLabel.string = t.score ? t.score + "\u5173" : "0\u5173", 
         Util_1.default.Util.getUrlImage(t.avatarUrl, function(t) {
-          RankItem.avater.spriteFrame = t;
-        });
+          RankItem_1.avater.spriteFrame = t;
+        }), [ 2 ];
       }
       loadSprite(t, _e) {
         return __awaiter(this, void 0, void 0, function*() {
