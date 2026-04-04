@@ -17,7 +17,7 @@
             "textures/img_bgg",
             "cc.Texture2D"
         ],
-        "4dlTEmzDlGlrN2Ytl3Jsbk": [
+        "997XVfBOdEr4PT7Oval0t8": [
             "textures/img_l_jdt",
             "cc.Texture2D"
         ],
@@ -26,14 +26,14 @@
             "cc.SpriteFrame",
             1
         ],
+        "82cCKiKAREX5aiAt7ub0n5": [
+            "textures/img_l_jdt_dk",
+            "cc.Texture2D"
+        ],
         "c92HnuQ2dFnLAuej5KPG6w": [
             "textures/img_l_jdt_dk",
             "cc.SpriteFrame",
             1
-        ],
-        "fcZfi8lvpN+aVkRDIN7NOV": [
-            "textures/img_l_jdt_dk",
-            "cc.Texture2D"
         ],
         "6dRY34Z91DkaaCFDl9LjPU": [
             "uiPrefab/loadPanel",
@@ -43,28 +43,28 @@
     "uuids": [
         "0ekKKIjHJBlbWS9YEwuuTc",
         "14MHSvrTlHkZwvc4rM7Gb/",
-        "4dlTEmzDlGlrN2Ytl3Jsbk",
         "57+ou/ttBMQqhAi2F6gWVE",
         "6dRY34Z91DkaaCFDl9LjPU",
+        "82cCKiKAREX5aiAt7ub0n5",
         "84Zd+5akVLSrlci6QR3LDm",
+        "997XVfBOdEr4PT7Oval0t8",
         "c6mJ7FPTRNf57WcdDnL/9I",
-        "c92HnuQ2dFnLAuej5KPG6w",
-        "fcZfi8lvpN+aVkRDIN7NOV"
+        "c92HnuQ2dFnLAuej5KPG6w"
     ],
     "scenes": {},
     "redirect": [],
     "deps": [],
     "packs": {
+        "022e850ef": [
+            "82cCKiKAREX5aiAt7ub0n5",
+            "84Zd+5akVLSrlci6QR3LDm",
+            "997XVfBOdEr4PT7Oval0t8"
+        ],
         "0262133ec": [
             "0ekKKIjHJBlbWS9YEwuuTc",
             "6dRY34Z91DkaaCFDl9LjPU",
             "c6mJ7FPTRNf57WcdDnL/9I",
             "c92HnuQ2dFnLAuej5KPG6w"
-        ],
-        "07ea7baa2": [
-            "4dlTEmzDlGlrN2Ytl3Jsbk",
-            "84Zd+5akVLSrlci6QR3LDm",
-            "fcZfi8lvpN+aVkRDIN7NOV"
         ]
     },
     "name": "resources",
@@ -75,22 +75,22 @@
     "encrypted": false,
     "versions": {
         "import": [
-            "0262133ec",
-            "69484",
-            "07ea7baa2",
+            "022e850ef",
             "01145",
+            "0262133ec",
+            "e20d3",
             "14MHSvrTlHkZwvc4rM7Gb/",
             "62eab",
             "57+ou/ttBMQqhAi2F6gWVE",
             "b267b"
         ],
         "native": [
-            "4dlTEmzDlGlrN2Ytl3Jsbk",
-            "1c447",
+            "82cCKiKAREX5aiAt7ub0n5",
+            "cb23a",
             "84Zd+5akVLSrlci6QR3LDm",
             "d34e1",
-            "fcZfi8lvpN+aVkRDIN7NOV",
-            "cb23a"
+            "997XVfBOdEr4PT7Oval0t8",
+            "1c447"
         ]
     }
 }

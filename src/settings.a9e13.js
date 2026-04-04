@@ -20,8 +20,8 @@ window._CCSettings = {
         internal: "cb4f5",
         audio: "adc88",
         game: "4d18e",
-        game2: "1c4f1",
-        resources: "2e4a7",
-        main: "aa486"
+        game2: "558c6",
+        resources: "d9674",
+        main: "e032a"
     }
 };
