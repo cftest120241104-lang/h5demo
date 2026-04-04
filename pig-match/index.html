@@ -48,18 +48,15 @@
     </div>
   </div>
 
-<script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js" async></script>
+<script>window.onerror=function(m,s,l,c,e){var d=document.createElement('div');d.style.cssText='position:fixed;top:0;left:0;right:0;background:red;color:white;padding:10px;z-index:99999;font-size:12px;word-break:break-all';d.textContent='ERROR: '+m+' at '+s+':'+l;document.body.appendChild(d);}</script>
+<script src="https://unpkg.com/vconsole@3.15.1/dist/vconsole.min.js"></script>
+<script>if(typeof VConsole!=='undefined')window.vConsole=new VConsole();</script>
 <script src="src/settings.a9e13.js" charset="utf-8"></script>
 
 <script src="main.7e9d5.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
-    // open web debugger console
-    if (typeof VConsole !== 'undefined') {
-        window.vConsole = new VConsole();
-    }
-
     var debug = window._CCSettings.debug;
     var splash = document.getElementById('splash');
     splash.style.display = 'block';
