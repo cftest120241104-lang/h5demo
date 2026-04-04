@@ -336,16 +336,11 @@ window.__require = function e(t, n, r) {
         this.flipNum = 0;
       }
       init(p13, p14, p15) {
-        return __awaiter(this, void 0, void 0, function() {
-          return __generator(this, function() {
-            return this.tailing_smoke = cc.find("tailing_smoke", this.node), this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.CHANGE_SKIN, this.onChangeSkin, this)), 
-            this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.ANIMAL_LIGHT, this.onLight, this)), 
-            this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.ANIMAL_IDLE, this.onIdle, this)), 
-            this.state = Enum.AnimalState.IDLE, this.aniData = p13, this.aniScale = p14, this.aniAngle = p15, 
-            this.node.scale = p14, this.node.angle = p15, this.curAngle = p15, this.flipNum = 0, 
-            [ 2 ];
-          });
-        });
+        this.tailing_smoke = cc.find("tailing_smoke", this.node), this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.CHANGE_SKIN, this.onChangeSkin, this)), 
+        this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.ANIMAL_LIGHT, this.onLight, this)), 
+        this.listenerList.push(ClientEvent.ED.on(ClientEvent.ClientEvent.ANIMAL_IDLE, this.onIdle, this)), 
+        this.state = Enum.AnimalState.IDLE, this.aniData = p13, this.aniScale = p14, this.aniAngle = p15, 
+        this.node.scale = p14, this.node.angle = p15, this.curAngle = p15, this.flipNum = 0;
       }
       init2(p16, p17, p18) {
         return __awaiter(this, void 0, void 0, function*() {
@@ -587,10 +582,13 @@ window.__require = function e(t, n, r) {
       }
       playMusic(p4, p5) {
         return __awaiter(this, void 0, void 0, function*() {
-          var v6;
           void 0 === p5 && (p5 = true);
-          return this.url = p4, this._switch_music ? (this.music && cc.audioEngine.stop(this.music), 
-          [ 4, Res.default.load(p4, cc.AudioClip) ]) : [ 3, 2 ];
+          this.url = p4;
+          if (this._switch_music) {
+            this.music && cc.audioEngine.stop(this.music);
+            var v6 = yield Res.default.load(p4, cc.AudioClip);
+            this.music = cc.audioEngine.play(v6, p5, 1);
+          }
         });
       }
       get switchMusic() {
@@ -602,9 +600,12 @@ window.__require = function e(t, n, r) {
       }
       playEffect(p8, p9) {
         return __awaiter(this, void 0, void 0, function*() {
-          var v10;
           void 0 === p9 && (p9 = false);
-          return this._switch_effect ? [ 4, Res.default.load(p8, cc.AudioClip) ] : [ 3, 2 ];
+          if (this._switch_effect) {
+            var v10 = yield Res.default.load(p8, cc.AudioClip);
+            this.effect = cc.audioEngine.play(v10, false, 1);
+            p9 && (this.effectObj[p8] || (this.effectObj[p8] = this.effect));
+          }
         });
       }
       stopEffect(p11) {
@@ -1505,8 +1506,21 @@ window.__require = function e(t, n, r) {
       }
       return fn44.prototype.init = function(p45) {
         return __awaiter(this, void 0, void 0, function*() {
-          return this.isInited ? (p45(), [ 2 ]) : (cc.sys.platform == cc.sys.WECHAT_GAME ? Global.default.platform = new WechatPlatform.default() : Global.default.platform = new LocalPlatform.default(), 
-          this.isInited = true, this.login(p45), [ 4, Res.default.loadBundle("game") ]);
+          if (this.isInited) {
+            p45();
+            return;
+          }
+          cc.sys.platform == cc.sys.WECHAT_GAME ? Global.default.platform = new WechatPlatform.default() : Global.default.platform = new LocalPlatform.default();
+          this.isInited = true;
+          this.login(p45);
+          yield Res.default.loadBundle("game");
+          yield this.loadAnimalPrefab();
+          Global.default.loadFinish = true;
+          yield Res.default.loadBundle("game2");
+          yield this.loadcdPrefab();
+          yield this.loadBlockPrefab();
+          yield Res.default.loadBundle("audio");
+          Global.default.platform.playMusic("ab:audio/bgm");
         });
       }, fn44.prototype.login = function(p46) {
         Global.default.platform.login(function(p47) {
@@ -1533,40 +1547,25 @@ window.__require = function e(t, n, r) {
         return /micromessenger/.test(v51) && /windows/.test(v51);
       }, fn44.prototype.loadAnimalPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          var v52;
-          v52 = this;
-          yield Res.default.load("ab:game/prefab/animal", cc.Prefab);
-          v52.animalPrefab = _0x428d44.sent();
+          this.animalPrefab = yield Res.default.load("ab:game/prefab/animal", cc.Prefab);
           this.prefabObj.animal = this.animalPrefab;
           PoolMgr.PoolMgr.prePool([ this.animalPrefab ], 5);
         });
       }, fn44.prototype.loadAnimalMPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          var v53;
-          v53 = this;
-          yield Res.default.load("ab:game/prefab/animalM", cc.Prefab);
-          v53.animalMPrefab = _0x259f9f.sent();
+          this.animalMPrefab = yield Res.default.load("ab:game/prefab/animalM", cc.Prefab);
         });
       }, fn44.prototype.loadcdPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          var v54;
-          v54 = this;
-          yield Res.default.load("ab:game/prefab/cd", cc.Prefab);
-          v54.cdPrefab = _0x216c3e.sent();
+          this.cdPrefab = yield Res.default.load("ab:game/prefab/cd", cc.Prefab);
         });
       }, fn44.prototype.loadGridPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          var v55;
-          v55 = this;
-          yield Res.default.load("ab:game/prefab/grid", cc.Prefab);
-          v55.gridPrefab = _0x3256ca.sent();
+          this.gridPrefab = yield Res.default.load("ab:game/prefab/grid", cc.Prefab);
         });
       }, fn44.prototype.loadBlockPrefab = function() {
         return __awaiter(this, void 0, void 0, function*() {
-          var v56;
-          v56 = this;
-          yield Res.default.load("ab:game/prefab/block", cc.Prefab);
-          v56.blockPrefab = _0x58c82e.sent();
+          this.blockPrefab = yield Res.default.load("ab:game/prefab/block", cc.Prefab);
         });
       }, fn44.ins = new fn44(), fn44;
     }();
@@ -3235,8 +3234,7 @@ window.__require = function e(t, n, r) {
       load(p43) {
         return __awaiter(this, void 0, void 0, function*() {
           var v44, v45;
-          yield Res.default.load(p43.prefabPath, cc.Prefab);
-          v44 = _0x46420d.sent();
+          v44 = yield Res.default.load(p43.prefabPath, cc.Prefab);
           v45 = cc.instantiate(v44);
           p43.node = v45;
           v45.addComponent(DelegateComponent.DelegateComponent).viewParams = p43;
@@ -3365,9 +3363,17 @@ window.__require = function e(t, n, r) {
       }
       load(p24, p25) {
         return __awaiter(this, void 0, void 0, function*() {
-          var v26, v27, v28, v29;
-          return (v26 = this.ui_nodes.get(p24.uuid)) && v26.node ? (this.createNode(v26), 
-          [ 3, 3 ]) : [ 3, 1 ];
+          var v26 = this.ui_nodes.get(p24.uuid);
+          if (v26 && v26.node) {
+            this.createNode(v26);
+            return;
+          }
+          var v27 = "ab:" + (p25 = p25 || "resources") + "/" + p24.prefabPath;
+          var v28 = yield Res.default.load(v27, cc.Prefab);
+          var v29 = cc.instantiate(v28);
+          p24.node = v29;
+          v29.addComponent(DelegateComponent.DelegateComponent).viewParams = p24;
+          this.createNode(p24);
         });
       }
       createNode(p30) {
@@ -5414,19 +5420,15 @@ window.__require = function e(t, n, r) {
         this.loadSprite(this.friendBtn.getComponent(cc.Sprite), "img_ph_btnlan"), Global_1.default.platform.getSubRank(PlatformBase_1.default.eventString.refresh, Global_1.default.user.level));
       }
       refreshPanel(t) {
-        return __awaiter(this, void 0, void 0, function() {
-          var RankPanel, n, i, o = this;
-          return __generator(this, function() {
-            for (RankPanel = t.myInfo, (n = RankPanel.scoreRank) > 100 ? (this.rankIcon.spriteFrame = null, 
-            this.rank.string = "\u672a\u4e0a\u699c") : n > 3 ? (this.rankIcon.spriteFrame = null, 
-            this.rank.string = "" + n) : n > 0 && (this.loadSprite(this.rankIcon, "img_ph_jp" + n), 
-            this.rank.string = ""), Global_1.default.user.avatarUrl && Util_1.default.Util.getUrlImage(Global_1.default.user.avatarUrl, function(t) {
-              o.avater.spriteFrame = t;
-            }), this.nickName.string = Global_1.default.user.nickName, this.scoreLabel.string = RankPanel.score + "\u5173", 
-            i = 0; i < t.userList.length; ++i) t.userList[i].scoreRank = i + 1;
-            return this.scrollView.getComponent(ListView_1.default).setData(t.userList), [ 2 ];
-          });
-        });
+        var RankPanel, n, i, o = this;
+        for (RankPanel = t.myInfo, (n = RankPanel.scoreRank) > 100 ? (this.rankIcon.spriteFrame = null, 
+        this.rank.string = "\u672a\u4e0a\u699c") : n > 3 ? (this.rankIcon.spriteFrame = null, 
+        this.rank.string = "" + n) : n > 0 && (this.loadSprite(this.rankIcon, "img_ph_jp" + n), 
+        this.rank.string = ""), Global_1.default.user.avatarUrl && Util_1.default.Util.getUrlImage(Global_1.default.user.avatarUrl, function(t) {
+          o.avater.spriteFrame = t;
+        }), this.nickName.string = Global_1.default.user.nickName, this.scoreLabel.string = RankPanel.score + "\u5173", 
+        i = 0; i < t.userList.length; ++i) t.userList[i].scoreRank = i + 1;
+        this.scrollView.getComponent(ListView_1.default).setData(t.userList);
       }
       loadSprite(t, _e) {
         return __awaiter(this, void 0, void 0, function*() {
@@ -5598,19 +5600,15 @@ window.__require = function e(t, n, r) {
         });
       }
       refreshPanel(t) {
-        return __awaiter(this, void 0, void 0, function() {
-          var ResultPanel, n, i, o = this;
-          return __generator(this, function() {
-            for (ResultPanel = t.myInfo, (n = ResultPanel.scoreRank) > 100 ? (this.rankIcon.spriteFrame = null, 
-            this.rank.string = "\u672a\u4e0a\u699c") : n > 3 ? (this.rankIcon.spriteFrame = null, 
-            this.rank.string = "" + n) : n > 0 && (this.loadSprite(this.rankIcon, "img_ph_jp" + n), 
-            this.rank.string = ""), Global_1.default.user.avatarUrl && Util_1.default.Util.getUrlImage(Global_1.default.user.avatarUrl, function(t) {
-              o.avater.spriteFrame = t;
-            }), this.nickName.string = Global_1.default.user.nickName, this.scoreLabel.string = ResultPanel.score + "\u5173", 
-            i = 0; i < t.userList.length; ++i) t.userList[i].scoreRank = i + 1;
-            return this.scrollView.getComponent(ListView_1.default).setData(t.userList), [ 2 ];
-          });
-        });
+        var ResultPanel, n, i, o = this;
+        for (ResultPanel = t.myInfo, (n = ResultPanel.scoreRank) > 100 ? (this.rankIcon.spriteFrame = null, 
+        this.rank.string = "\u672a\u4e0a\u699c") : n > 3 ? (this.rankIcon.spriteFrame = null, 
+        this.rank.string = "" + n) : n > 0 && (this.loadSprite(this.rankIcon, "img_ph_jp" + n), 
+        this.rank.string = ""), Global_1.default.user.avatarUrl && Util_1.default.Util.getUrlImage(Global_1.default.user.avatarUrl, function(t) {
+          o.avater.spriteFrame = t;
+        }), this.nickName.string = Global_1.default.user.nickName, this.scoreLabel.string = ResultPanel.score + "\u5173", 
+        i = 0; i < t.userList.length; ++i) t.userList[i].scoreRank = i + 1;
+        this.scrollView.getComponent(ListView_1.default).setData(t.userList);
       }
       loadSprite(t, _e) {
         return __awaiter(this, void 0, void 0, function*() {
@@ -8212,6 +8210,33 @@ window.__require = function e(t, n, r) {
     "use strict";
     cc._RF.push(module, "5add2a74D1ElbpmE9rRTm0x", "WechatPlatform");
     "use strict";
+    var __awaiter = this && this.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
@@ -8224,6 +8249,7 @@ window.__require = function e(t, n, r) {
     const StorageMgr = require("./StorageMgr");
     const WeappJwtDecode = require("./WeappJwtDecode");
     const Enum = require("./Enum");
+    const Res_1 = require("./Res");
     var v8, v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20, v21, v22, v23, v24, v25, v26, v27, v28, v29, v30, v31, v32, v33, v34, v35, v36, v37, v38, v39, v40, v41, v42, v43, v44, v45, v46, v47, v48, v49, v50, v51, v52, v53, v54, v55, v56, v57, v58, v59, v60;
     var ReportName;
     (function(ReportName) {
@@ -8242,38 +8268,29 @@ window.__require = function e(t, n, r) {
           this.loadAdState = true;
           var v62 = Global.default.request + "/v2-api/ad/multi-type-ads";
           Global.default.http.get(v62, function(p63) {
-            return _0x589f34(v61, void 0, void 0, function() {
+            return __awaiter(this, void 0, void 0, function*() {
               var v64, v65, v66, v67, v68, v69, v70, v71;
-              return __generator(this, function(p72) {
-                switch (p72.label) {
-                 case 0:
-                  return this.loadAdState = false, this.childNode ? [ 3, 2 ] : [ 4, _0x4782f0.default.load("ab:resources/prefab/adNode", cc.Prefab) ];
-
-                 case 1:
-                  v64 = p72.sent();
-                  v65 = cc.instantiate(v64);
-                  this.persistRootNode.addChild(v65);
-                  this.childNode = v65;
-                  p72.label = 2;
-
-                 case 2:
-                  return this.loadCustomAd(), p63 && p63.data && (p63.data.rewardAdIds.length > 0 && (v66 = Math.floor(Math.random() * p63.data.rewardAdIds.length), 
-                  this.rewardVideoAd = this.childNode.getChildByName("rewardedVideoAd").getComponent(RewardedVideoAd.default), 
-                  this.rewardVideoAd.adUnitId = p63.data.rewardAdIds[v66], this.childNode.getChildByName("rewardedVideoAd").active = true, 
-                  this.rewardVideoAd.adUnitId && this.rewardVideoAd.init()), p63.data.bannerAdIds.length > 0 ? (this.mistakeBannerId = null === (v70 = null == p63 ? void 0 : p63.data) || void 0 === v70 ? void 0 : v70.bannerAdIds[1], 
-                  v67 = null === (v71 = null == p63 ? void 0 : p63.data) || void 0 === v71 ? void 0 : v71.bannerAdIds[0], 
-                  this.bannerAd = this.childNode.getChildByName("bannerAd").getComponent(BannerAd.default), 
-                  this.bannerAd.adUnitId = v67, this.childNode.getChildByName("bannerAd").active = false, 
-                  this.bannerAd.isCustom = false, this.bannerAd.adUnitId && this.bannerAd.init()) : p63.data.tempBannerAdIds.length > 0 && (v68 = Math.floor(Math.random() * p63.data.tempBannerAdIds.length), 
-                  this.bannerAd = this.childNode.getChildByName("bannerAd").getComponent(BannerAd.default), 
-                  this.bannerAd.adUnitId = p63.data.tempBannerAdIds[v68], this.childNode.getChildByName("bannerAd").active = false, 
-                  this.bannerAd.isCustom = true, this.bannerAd.adUnitId && this.bannerAd.init()), 
-                  p63.data.intersAdIds.length > 0 && (v69 = Math.floor(Math.random() * p63.data.intersAdIds.length), 
-                  this.interstitialAd = this.childNode.getChildByName("interstitialAd").getComponent(InterstitialAd.default), 
-                  this.interstitialAd.adUnitId = p63.data.intersAdIds[v69], this.childNode.getChildByName("interstitialAd").active = true, 
-                  this.interstitialAd.adUnitId && this.interstitialAd.init())), [ 2 ];
-                }
-              });
+              v61.loadAdState = false;
+              if (!v61.childNode) {
+                v64 = yield Res_1.default.default.load("ab:resources/prefab/adNode", cc.Prefab);
+                v65 = cc.instantiate(v64);
+                v61.persistRootNode.addChild(v65);
+                v61.childNode = v65;
+              }
+              v61.loadCustomAd(), p63 && p63.data && (p63.data.rewardAdIds.length > 0 && (v66 = Math.floor(Math.random() * p63.data.rewardAdIds.length), 
+              v61.rewardVideoAd = v61.childNode.getChildByName("rewardedVideoAd").getComponent(RewardedVideoAd.default), 
+              v61.rewardVideoAd.adUnitId = p63.data.rewardAdIds[v66], v61.childNode.getChildByName("rewardedVideoAd").active = true, 
+              v61.rewardVideoAd.adUnitId && v61.rewardVideoAd.init()), p63.data.bannerAdIds.length > 0 ? (v61.mistakeBannerId = null === (v70 = null == p63 ? void 0 : p63.data) || void 0 === v70 ? void 0 : v70.bannerAdIds[1], 
+              v67 = null === (v71 = null == p63 ? void 0 : p63.data) || void 0 === v71 ? void 0 : v71.bannerAdIds[0], 
+              v61.bannerAd = v61.childNode.getChildByName("bannerAd").getComponent(BannerAd.default), 
+              v61.bannerAd.adUnitId = v67, v61.childNode.getChildByName("bannerAd").active = false, 
+              v61.bannerAd.isCustom = false, v61.bannerAd.adUnitId && v61.bannerAd.init()) : p63.data.tempBannerAdIds.length > 0 && (v68 = Math.floor(Math.random() * p63.data.tempBannerAdIds.length), 
+              v61.bannerAd = v61.childNode.getChildByName("bannerAd").getComponent(BannerAd.default), 
+              v61.bannerAd.adUnitId = p63.data.tempBannerAdIds[v68], v61.childNode.getChildByName("bannerAd").active = false, 
+              v61.bannerAd.isCustom = true, v61.bannerAd.adUnitId && v61.bannerAd.init()), p63.data.intersAdIds.length > 0 && (v69 = Math.floor(Math.random() * p63.data.intersAdIds.length), 
+              v61.interstitialAd = v61.childNode.getChildByName("interstitialAd").getComponent(InterstitialAd.default), 
+              v61.interstitialAd.adUnitId = p63.data.intersAdIds[v69], v61.childNode.getChildByName("interstitialAd").active = true, 
+              v61.interstitialAd.adUnitId && v61.interstitialAd.init()));
             });
           }, null, [ {
             key: "M-AppId",
@@ -8799,6 +8816,7 @@ window.__require = function e(t, n, r) {
     "./Global": "Global",
     "./InterstitialAd": "InterstitialAd",
     "./PlatformBase": "PlatformBase",
+    "./Res": "Res",
     "./RewardedVideoAd": "RewardedVideoAd",
     "./StorageMgr": "StorageMgr",
     "./WeappJwtDecode": "WeappJwtDecode"
@@ -8853,16 +8871,12 @@ window.__require = function e(t, n, r) {
         this.isLock = false;
       }
       updateView(t) {
-        return __awaiter(this, void 0, void 0, function() {
-          return __generator(this, function() {
-            return this.animalData = t, this.node.on(cc.Node.EventType.TOUCH_END, this.onClickItem, this), 
-            this.gray = cc.find("gray", this.node).getComponent(cc.Sprite), this.animal = cc.find("animal", this.node).getComponent(cc.Sprite), 
-            this.aName = cc.find("aName", this.node).getComponent(cc.Label), this.loadSprite(this.gray, "animalGray/" + t.name), 
-            this.loadSprite(this.animal, "animal/" + t.name), t.index >= Global_1.default.user.illustrateLock ? (this.aName.string = "\u672a\u89e3\u9501", 
-            this.animal.node.active = false, this.isLock = true) : (this.animal.node.active = true, 
-            this.aName.string = t.name, this.isLock = false), [ 2 ];
-          });
-        });
+        this.animalData = t, this.node.on(cc.Node.EventType.TOUCH_END, this.onClickItem, this), 
+        this.gray = cc.find("gray", this.node).getComponent(cc.Sprite), this.animal = cc.find("animal", this.node).getComponent(cc.Sprite), 
+        this.aName = cc.find("aName", this.node).getComponent(cc.Label), this.loadSprite(this.gray, "animalGray/" + t.name), 
+        this.loadSprite(this.animal, "animal/" + t.name), t.index >= Global_1.default.user.illustrateLock ? (this.aName.string = "\u672a\u89e3\u9501", 
+        this.animal.node.active = false, this.isLock = true) : (this.animal.node.active = true, 
+        this.aName.string = t.name, this.isLock = false);
       }
       loadSprite(t, _e) {
         return __awaiter(this, void 0, void 0, function*() {
@@ -8936,20 +8950,16 @@ window.__require = function e(t, n, r) {
     const {ccclass: ccclass} = cc._decorator;
     let RankItem = RankItem_1 = class RankItem extends cc.Component {
       updateView(t) {
-        return __awaiter(this, void 0, void 0, function() {
-          var RankItem = this;
-          return __generator(this, function() {
-            return this.rankBg = cc.find("rankBg", this.node).getComponent(cc.Sprite), this.rank = cc.find("rank", this.node).getComponent(cc.Label), 
-            this.scoreLabel = cc.find("scoreLabel", this.node).getComponent(cc.Label), this.nickName = cc.find("nickName", this.node).getComponent(cc.Label), 
-            this.rankIcon = cc.find("rankIcon", this.node).getComponent(cc.Sprite), this.avater = cc.find("avater", this.node).getComponent(cc.Sprite), 
-            t.scoreRank <= 3 ? (this.loadSprite(this.rankIcon, "img_ph_jp" + t.scoreRank), this.rank.string = "", 
-            this.loadSprite(this.rankBg, "img_ph_dk" + t.scoreRank)) : (this.rankIcon.spriteFrame = null, 
-            this.rank.string = "" + t.scoreRank, this.loadSprite(this.rankBg, "img_ph_dk4")), 
-            this.nickName.string = t.nickname, this.scoreLabel.string = t.score ? t.score + "\u5173" : "0\u5173", 
-            Util_1.default.Util.getUrlImage(t.avatarUrl, function(t) {
-              RankItem.avater.spriteFrame = t;
-            }), [ 2 ];
-          });
+        var RankItem = this;
+        this.rankBg = cc.find("rankBg", this.node).getComponent(cc.Sprite), this.rank = cc.find("rank", this.node).getComponent(cc.Label), 
+        this.scoreLabel = cc.find("scoreLabel", this.node).getComponent(cc.Label), this.nickName = cc.find("nickName", this.node).getComponent(cc.Label), 
+        this.rankIcon = cc.find("rankIcon", this.node).getComponent(cc.Sprite), this.avater = cc.find("avater", this.node).getComponent(cc.Sprite), 
+        t.scoreRank <= 3 ? (this.loadSprite(this.rankIcon, "img_ph_jp" + t.scoreRank), this.rank.string = "", 
+        this.loadSprite(this.rankBg, "img_ph_dk" + t.scoreRank)) : (this.rankIcon.spriteFrame = null, 
+        this.rank.string = "" + t.scoreRank, this.loadSprite(this.rankBg, "img_ph_dk4")), 
+        this.nickName.string = t.nickname, this.scoreLabel.string = t.score ? t.score + "\u5173" : "0\u5173", 
+        Util_1.default.Util.getUrlImage(t.avatarUrl, function(t) {
+          RankItem.avater.spriteFrame = t;
         });
       }
       loadSprite(t, _e) {

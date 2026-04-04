@@ -22,6 +22,6 @@ window._CCSettings = {
         game: "4d18e",
         game2: "558c6",
         resources: "d9674",
-        main: "e032a"
+        main: "aef9b"
     }
 };
