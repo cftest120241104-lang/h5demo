@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "ecjZZuE91DnbJ/oSPPCaAj"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "FansTeam1",
+      "rect": [
+        23,
+        11,
+        55,
+        77
+      ],
+      "offset": [
+        0.5,
+        0.5
+      ],
+      "originalSize": [
+        100,
+        100
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

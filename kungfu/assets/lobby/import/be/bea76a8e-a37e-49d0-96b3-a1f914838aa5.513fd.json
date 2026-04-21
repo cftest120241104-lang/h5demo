@@ -1,0 +1,267 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "LevelInfo_bea76a8e",
+      [
+        {
+          "id": 1,
+          "name": "1.小山城寨",
+          "goldPer": 1,
+          "gjGode": 8,
+          "gjGem": 0.05,
+          "wave": 80,
+          "tiliMax2": 30,
+          "tiliMax": 20,
+          "tiliNeed": 5
+        },
+        {
+          "id": 2,
+          "name": "2.断水流道场",
+          "goldPer": 3,
+          "gjGode": 16,
+          "gjGem": 0.1,
+          "wave": 80,
+          "tiliMax2": 30,
+          "tiliMax": 20,
+          "tiliNeed": 5
+        },
+        {
+          "id": 3,
+          "name": "3.戚家大院",
+          "goldPer": 6,
+          "gjGode": 40,
+          "gjGem": 0.15,
+          "wave": 80,
+          "tiliMax2": 35,
+          "tiliMax": 25,
+          "tiliNeed": 5
+        },
+        {
+          "id": 4,
+          "name": "4.牌神风云",
+          "goldPer": 9,
+          "gjGode": 106,
+          "gjGem": 0.2,
+          "wave": 80,
+          "tiliMax2": 35,
+          "tiliMax": 25,
+          "tiliNeed": 5
+        },
+        {
+          "id": 5,
+          "name": "5.盘丝洞",
+          "goldPer": 12,
+          "gjGode": 204,
+          "gjGem": 0.24,
+          "wave": 80,
+          "tiliMax2": 40,
+          "tiliMax": 30,
+          "tiliNeed": 5
+        },
+        {
+          "id": 6,
+          "name": "6.新武擂台",
+          "goldPer": 15,
+          "gjGode": 408,
+          "gjGem": 0.28,
+          "wave": 80,
+          "tiliMax2": 40,
+          "tiliMax": 30,
+          "tiliNeed": 5
+        },
+        {
+          "id": 7,
+          "name": "7.华府大堂",
+          "goldPer": 19,
+          "gjGode": 776,
+          "gjGem": 0.32,
+          "wave": 80,
+          "tiliMax2": 45,
+          "tiliMax": 35,
+          "tiliNeed": 5
+        },
+        {
+          "id": 8,
+          "name": "8.东郊皇陵",
+          "goldPer": 23,
+          "gjGode": 1126,
+          "gjGem": 0.36,
+          "wave": 80,
+          "tiliMax2": 45,
+          "tiliMax": 35,
+          "tiliNeed": 5
+        },
+        {
+          "id": 9,
+          "name": "9.猪肉摊",
+          "goldPer": 27,
+          "gjGode": 1530,
+          "gjGem": 0.4,
+          "wave": 80,
+          "tiliMax2": 50,
+          "tiliMax": 40,
+          "tiliNeed": 5
+        },
+        {
+          "id": 10,
+          "name": "10.研究中心",
+          "goldPer": 31,
+          "gjGode": 2162,
+          "gjGem": 0.44,
+          "wave": 80,
+          "tiliMax2": 50,
+          "tiliMax": 45,
+          "tiliNeed": 5
+        },
+        {
+          "id": 11,
+          "name": "11.破茧成蝶I",
+          "goldPer": 37,
+          "gjGode": 4739,
+          "gjGem": 0.48,
+          "wave": 450,
+          "tiliMax2": 55,
+          "tiliMax": 50,
+          "tiliNeed": 10
+        },
+        {
+          "id": 12,
+          "name": "12.破茧成蝶II",
+          "goldPer": 44,
+          "gjGode": 7452,
+          "gjGem": 0.52,
+          "wave": 450,
+          "tiliMax2": 55,
+          "tiliMax": 55,
+          "tiliNeed": 10
+        },
+        {
+          "id": 13,
+          "name": "13.破茧成蝶III",
+          "goldPer": 52,
+          "gjGode": 11313,
+          "gjGem": 0.56,
+          "wave": 450,
+          "tiliMax2": 60,
+          "tiliMax": 60,
+          "tiliNeed": 10
+        },
+        {
+          "id": 14,
+          "name": "14.破茧成蝶IV",
+          "goldPer": 61,
+          "gjGode": 15694,
+          "gjGem": 0.6,
+          "wave": 450,
+          "tiliMax2": 60,
+          "tiliMax": 65,
+          "tiliNeed": 10
+        },
+        {
+          "id": 15,
+          "name": "15.月光宝盒",
+          "goldPer": 78,
+          "gjGode": 20774,
+          "gjGem": 0.64,
+          "wave": 80,
+          "tiliMax2": 60,
+          "tiliMax": 70,
+          "tiliNeed": 5
+        },
+        {
+          "id": 16,
+          "name": "16.霍家武馆",
+          "goldPer": 98,
+          "gjGode": 26606,
+          "gjGem": 0.68,
+          "wave": 80,
+          "tiliMax2": 60,
+          "tiliMax": 75,
+          "tiliNeed": 5
+        },
+        {
+          "id": 17,
+          "name": "17.今晚打老虎",
+          "goldPer": 120,
+          "gjGode": 33242,
+          "gjGem": 0.72,
+          "wave": 80,
+          "tiliMax2": 60,
+          "tiliMax": 80,
+          "tiliNeed": 5
+        },
+        {
+          "id": 18,
+          "name": "18.自由搏击赛",
+          "goldPer": 145,
+          "gjGode": 40733,
+          "gjGem": 0.76,
+          "wave": 80,
+          "tiliMax2": 60,
+          "tiliMax": 85,
+          "tiliNeed": 5
+        },
+        {
+          "id": 19,
+          "name": "19.包府宅院",
+          "goldPer": 170,
+          "gjGode": 49131,
+          "gjGem": 0.8,
+          "wave": 80,
+          "tiliMax2": 60,
+          "tiliMax": 90,
+          "tiliNeed": 5
+        },
+        {
+          "id": 20,
+          "name": "20.千王之王",
+          "goldPer": 195,
+          "gjGode": 58488,
+          "gjGem": 0.84,
+          "wave": 80,
+          "tiliMax2": 60,
+          "tiliMax": 95,
+          "tiliNeed": 5
+        },
+        {
+          "id": 21,
+          "name": "21.大圣娶亲",
+          "goldPer": 220,
+          "gjGode": 69600,
+          "gjGem": 0.88,
+          "wave": 80,
+          "tiliMax2": 60,
+          "tiliMax": 100,
+          "tiliNeed": 5
+        }
+      ]
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

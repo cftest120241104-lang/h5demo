@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "0cKkb1wuRBorJHAc4fZ5uD"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "qipaokuang2",
+      "rect": [
+        1,
+        0,
+        132,
+        120
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        134,
+        120
+      ],
+      "capInsets": [
+        91,
+        19,
+        41,
+        31
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

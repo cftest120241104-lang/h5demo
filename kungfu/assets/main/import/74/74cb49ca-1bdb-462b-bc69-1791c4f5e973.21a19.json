@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "e831vglB5BEJDvKJadKv0Z"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "ADbuff3",
+      "rect": [
+        0,
+        0,
+        39,
+        41
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        39,
+        41
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

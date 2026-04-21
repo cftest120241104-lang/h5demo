@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "5eMt5mQ2BARaPAeu6cxgB6"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "map7other1",
+      "rect": [
+        0,
+        0,
+        720,
+        412
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        720,
+        412
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

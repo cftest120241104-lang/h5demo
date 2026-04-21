@@ -1,0 +1,153 @@
+
+tGame.png
+size: 1923,631
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+d1
+  rotate: false
+  xy: 1450, 94
+  size: 156, 174
+  orig: 156, 174
+  offset: 0, 0
+  index: -1
+d2
+  rotate: false
+  xy: 1608, 201
+  size: 156, 156
+  orig: 156, 156
+  offset: 0, 0
+  index: -1
+d3
+  rotate: false
+  xy: 1766, 201
+  size: 156, 156
+  orig: 156, 156
+  offset: 0, 0
+  index: -1
+d4
+  rotate: false
+  xy: 1608, 43
+  size: 156, 156
+  orig: 156, 156
+  offset: 0, 0
+  index: -1
+d5
+  rotate: false
+  xy: 1766, 43
+  size: 156, 156
+  orig: 156, 156
+  offset: 0, 0
+  index: -1
+dd_g1
+  rotate: false
+  xy: 1608, 359
+  size: 298, 134
+  orig: 298, 134
+  offset: 0, 0
+  index: -1
+dd_g2
+  rotate: true
+  xy: 401, 48
+  size: 220, 173
+  orig: 220, 173
+  offset: 0, 0
+  index: -1
+dd_g3
+  rotate: false
+  xy: 576, 88
+  size: 177, 180
+  orig: 177, 180
+  offset: 0, 0
+  index: -1
+dd_g4
+  rotate: true
+  xy: 225, 44
+  size: 224, 174
+  orig: 224, 174
+  offset: 0, 0
+  index: -1
+dd_g5
+  rotate: false
+  xy: 1608, 495
+  size: 299, 135
+  orig: 299, 135
+  offset: 0, 0
+  index: -1
+dg1
+  rotate: false
+  xy: 212, 5
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+dg2
+  rotate: true
+  xy: 137, 4
+  size: 36, 73
+  orig: 36, 73
+  offset: 0, 0
+  index: -1
+dg_1
+  rotate: false
+  xy: 755, 89
+  size: 693, 179
+  orig: 693, 179
+  offset: 0, 0
+  index: -1
+dg_2
+  rotate: true
+  xy: 1, 18
+  size: 250, 134
+  orig: 250, 134
+  offset: 0, 0
+  index: -1
+sg1
+  rotate: false
+  xy: 916, 1
+  size: 278, 86
+  orig: 278, 86
+  offset: 0, 0
+  index: -1
+sg2
+  rotate: true
+  xy: 137, 42
+  size: 226, 86
+  orig: 226, 86
+  offset: 0, 0
+  index: -1
+sg3
+  rotate: false
+  xy: 1196, 1
+  size: 166, 86
+  orig: 166, 86
+  offset: 0, 0
+  index: -1
+sg4
+  rotate: false
+  xy: 1364, 1
+  size: 101, 86
+  orig: 101, 86
+  offset: 0, 0
+  index: -1
+t_g1
+  rotate: false
+  xy: 576, 1
+  size: 338, 85
+  orig: 338, 85
+  offset: 0, 0
+  index: -1
+z_g1
+  rotate: true
+  xy: 1, 270
+  size: 360, 800
+  orig: 360, 800
+  offset: 0, 0
+  index: -1
+z_g2
+  rotate: true
+  xy: 803, 270
+  size: 360, 754
+  orig: 360, 754
+  offset: 0, 0
+  index: -1

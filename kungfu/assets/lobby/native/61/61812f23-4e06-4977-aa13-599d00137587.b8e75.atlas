@@ -1,0 +1,27 @@
+
+cardeft.png
+size: 612,265
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+G1
+  rotate: true
+  xy: 0, 0
+  size: 35, 252
+  orig: 35, 252
+  offset: 0, 0
+  index: -1
+G3
+  rotate: false
+  xy: 468, 81
+  size: 144, 184
+  orig: 144, 184
+  offset: 0, 0
+  index: -1
+blessing_di
+  rotate: true
+  xy: 0, 37
+  size: 228, 466
+  orig: 228, 466
+  offset: 0, 0
+  index: -1

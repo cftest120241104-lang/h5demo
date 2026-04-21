@@ -1,0 +1,139 @@
+
+GuaJi.png
+size: 411,110
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: true
+  xy: 275, 3
+  size: 39, 52
+  orig: 39, 52
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: true
+  xy: 329, 3
+  size: 39, 52
+  orig: 39, 52
+  offset: 0, 0
+  index: -1
+body1
+  rotate: true
+  xy: 95, 32
+  size: 77, 88
+  orig: 77, 88
+  offset: 0, 0
+  index: -1
+body1_1
+  rotate: true
+  xy: 275, 44
+  size: 65, 82
+  orig: 65, 82
+  offset: 0, 0
+  index: -1
+body3
+  rotate: false
+  xy: 215, 10
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+ear1
+  rotate: false
+  xy: 383, 18
+  size: 27, 31
+  orig: 27, 31
+  offset: 0, 0
+  index: -1
+ear2
+  rotate: false
+  xy: 153, 3
+  size: 24, 27
+  orig: 24, 27
+  offset: 0, 0
+  index: -1
+eye1_1
+  rotate: true
+  xy: 137, 1
+  size: 29, 14
+  orig: 29, 14
+  offset: 0, 0
+  index: -1
+eye1_2
+  rotate: false
+  xy: 242, 9
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+eye1_3
+  rotate: false
+  xy: 383, 5
+  size: 24, 11
+  orig: 24, 11
+  offset: 0, 0
+  index: -1
+eye2_1
+  rotate: false
+  xy: 185, 21
+  size: 28, 14
+  orig: 28, 14
+  offset: 0, 0
+  index: -1
+eye2_2
+  rotate: false
+  xy: 257, 9
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+eye2_3
+  rotate: false
+  xy: 242, 24
+  size: 24, 11
+  orig: 24, 11
+  offset: 0, 0
+  index: -1
+head1
+  rotate: false
+  xy: 185, 37
+  size: 88, 72
+  orig: 88, 72
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: true
+  xy: 49, 1
+  size: 21, 45
+  orig: 21, 45
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: true
+  xy: 1, 1
+  size: 21, 46
+  orig: 21, 46
+  offset: 0, 0
+  index: -1
+mouth1
+  rotate: false
+  xy: 96, 7
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+zs
+  rotate: true
+  xy: 359, 51
+  size: 58, 50
+  orig: 58, 50
+  offset: 0, 0
+  index: -1
+zs_g
+  rotate: false
+  xy: 1, 24
+  size: 92, 85
+  orig: 94, 87
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,69 @@
+
+quaKuang.png
+size: 244,305
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b_g1
+  rotate: false
+  xy: 1, 3
+  size: 116, 116
+  orig: 116, 116
+  offset: 0, 0
+  index: -1
+b_g2
+  rotate: false
+  xy: 103, 121
+  size: 102, 102
+  orig: 102, 102
+  offset: 0, 0
+  index: -1
+b_g_h
+  rotate: false
+  xy: 119, 1
+  size: 118, 118
+  orig: 118, 118
+  offset: 0, 0
+  index: -1
+n_g_h
+  rotate: false
+  xy: 1, 123
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+sg1
+  rotate: true
+  xy: 97, 225
+  size: 46, 94
+  orig: 53, 94
+  offset: 7, 0
+  index: -1
+sg2
+  rotate: true
+  xy: 1, 232
+  size: 43, 94
+  orig: 48, 94
+  offset: 5, 0
+  index: -1
+sg3
+  rotate: true
+  xy: 97, 273
+  size: 31, 94
+  orig: 40, 94
+  offset: 9, 0
+  index: -1
+sg4
+  rotate: true
+  xy: 1, 277
+  size: 27, 94
+  orig: 36, 94
+  offset: 9, 0
+  index: -1
+xx1
+  rotate: false
+  xy: 193, 254
+  size: 50, 50
+  orig: 52, 52
+  offset: 1, 1
+  index: -1

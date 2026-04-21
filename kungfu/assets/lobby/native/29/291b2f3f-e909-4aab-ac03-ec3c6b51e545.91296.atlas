@@ -1,0 +1,125 @@
+
+zhaomu.png
+size: 476,1087
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+G2
+  rotate: false
+  xy: 284, 1
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+c1
+  rotate: false
+  xy: 1, 20
+  size: 281, 131
+  orig: 281, 131
+  offset: 0, 0
+  index: -1
+c1_2
+  rotate: false
+  xy: 363, 286
+  size: 106, 117
+  orig: 106, 117
+  offset: 0, 0
+  index: -1
+c2
+  rotate: false
+  xy: 363, 548
+  size: 73, 84
+  orig: 73, 84
+  offset: 0, 0
+  index: -1
+c2_xy
+  rotate: false
+  xy: 1, 153
+  size: 414, 131
+  orig: 414, 131
+  offset: 0, 0
+  index: -1
+d_g1
+  rotate: false
+  xy: 1, 286
+  size: 360, 800
+  orig: 360, 800
+  offset: 0, 0
+  index: -1
+yw1
+  rotate: true
+  xy: 427, 989
+  size: 65, 38
+  orig: 65, 38
+  offset: 0, 0
+  index: -1
+yw10
+  rotate: true
+  xy: 427, 926
+  size: 61, 48
+  orig: 61, 48
+  offset: 0, 0
+  index: -1
+yw2
+  rotate: false
+  xy: 363, 862
+  size: 85, 62
+  orig: 85, 62
+  offset: 0, 0
+  index: -1
+yw3
+  rotate: false
+  xy: 363, 479
+  size: 92, 67
+  orig: 92, 67
+  offset: 0, 0
+  index: -1
+yw4
+  rotate: false
+  xy: 363, 405
+  size: 86, 72
+  orig: 86, 72
+  offset: 0, 0
+  index: -1
+yw5
+  rotate: false
+  xy: 363, 634
+  size: 84, 73
+  orig: 84, 73
+  offset: 0, 0
+  index: -1
+yw6
+  rotate: false
+  xy: 363, 709
+  size: 82, 74
+  orig: 82, 74
+  offset: 0, 0
+  index: -1
+yw7
+  rotate: false
+  xy: 363, 785
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+yw8
+  rotate: false
+  xy: 363, 926
+  size: 62, 74
+  orig: 62, 74
+  offset: 0, 0
+  index: -1
+yw9
+  rotate: false
+  xy: 363, 1002
+  size: 62, 53
+  orig: 62, 53
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 436, 1
+  size: 274, 24
+  orig: 274, 24
+  offset: 0, 0
+  index: -1

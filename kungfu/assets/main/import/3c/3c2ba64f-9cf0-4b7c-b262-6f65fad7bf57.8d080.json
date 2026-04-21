@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "31tuUcPstFsaMkONJkKO1/"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "bar_m3",
+      "rect": [
+        0,
+        0,
+        42,
+        5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        42,
+        5
+      ],
+      "capInsets": [
+        1,
+        1,
+        2,
+        2
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,41 @@
+
+character10.png
+size: 312,373
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mz1
+  rotate: false
+  xy: 1, 17
+  size: 164, 116
+  orig: 164, 116
+  offset: 0, 0
+  index: -1
+mz2
+  rotate: true
+  xy: 167, 1
+  size: 132, 106
+  orig: 132, 106
+  offset: 0, 0
+  index: -1
+mz2 _xy
+  rotate: false
+  xy: 1, 135
+  size: 229, 237
+  orig: 229, 237
+  offset: 0, 0
+  index: -1
+mz3
+  rotate: true
+  xy: 232, 135
+  size: 157, 79
+  orig: 157, 79
+  offset: 0, 0
+  index: -1
+yinying
+  rotate: true
+  xy: 275, 50
+  size: 83, 34
+  orig: 83, 34
+  offset: 0, 0
+  index: -1

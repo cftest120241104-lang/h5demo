@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "618SbnzeJKEo/w0T54hKh6"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "challenge_icon5",
+      "rect": [
+        0,
+        0,
+        326,
+        210
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        326,
+        210
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

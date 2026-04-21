@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "bbInVmyxVFHINIn4D+nmSd"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "weapon_icon_di",
+      "rect": [
+        0,
+        0,
+        123,
+        123
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        123,
+        123
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

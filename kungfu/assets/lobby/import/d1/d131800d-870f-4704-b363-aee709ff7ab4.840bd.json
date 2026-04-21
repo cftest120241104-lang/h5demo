@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "33SWolk3hGPYfCpPYee0xR"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "hero_head4",
+      "rect": [
+        0,
+        0,
+        119,
+        134
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        119,
+        134
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

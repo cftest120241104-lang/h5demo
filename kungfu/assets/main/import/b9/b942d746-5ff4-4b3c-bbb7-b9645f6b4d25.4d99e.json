@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "ffiyuUxn1BbKnxBSTWs78m"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "bardi",
+      "rect": [
+        0,
+        0,
+        111,
+        13
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        111,
+        13
+      ],
+      "capInsets": [
+        16,
+        13,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

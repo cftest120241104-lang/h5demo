@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "51q6OlmPpJALNMw+/XTqV7"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "spin_btn_ad2",
+      "rect": [
+        0,
+        0,
+        262,
+        124
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        262,
+        124
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

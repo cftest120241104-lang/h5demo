@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "799fFGt2NP1q30mqhbHguj"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "equip_icon2",
+      "rect": [
+        8,
+        13,
+        84,
+        73
+      ],
+      "offset": [
+        0,
+        0.5
+      ],
+      "originalSize": [
+        100,
+        100
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

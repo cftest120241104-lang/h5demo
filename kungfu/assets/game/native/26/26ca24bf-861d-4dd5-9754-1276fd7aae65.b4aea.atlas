@@ -1,0 +1,27 @@
+
+drop.png
+size: 233,91
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mj_g1
+  rotate: true
+  xy: 94, 1
+  size: 89, 84
+  orig: 90, 85
+  offset: 0, 0
+  index: -1
+mj_gs1
+  rotate: false
+  xy: 1, 1
+  size: 91, 89
+  orig: 92, 91
+  offset: 1, 1
+  index: -1
+sj1
+  rotate: true
+  xy: 180, 34
+  size: 56, 52
+  orig: 56, 52
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "9bIUVka6VBPKF0PuEUo2mC"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "weapon_3",
+      "rect": [
+        18,
+        15,
+        105,
+        110
+      ],
+      "offset": [
+        0.5,
+        0
+      ],
+      "originalSize": [
+        140,
+        140
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

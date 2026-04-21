@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "2cf43jfXBAbZewKIRYLMTW"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "formation_btn",
+      "rect": [
+        0,
+        0,
+        183,
+        96
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        183,
+        96
+      ],
+      "capInsets": [
+        34,
+        29,
+        33,
+        20
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

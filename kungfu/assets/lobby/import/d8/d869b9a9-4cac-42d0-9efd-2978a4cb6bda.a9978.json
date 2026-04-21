@@ -1,0 +1,6536 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "FBGold_d869b9a9",
+      [
+        {
+          "id": 1,
+          "name": "难度1",
+          "mids": 3,
+          "baseHp": 2,
+          "baseAttack": 1,
+          "count": 10,
+          "rwd": [
+            1,
+            2,
+            30
+          ]
+        },
+        {
+          "id": 2,
+          "name": "难度2",
+          "mids": 3,
+          "baseHp": 10,
+          "baseAttack": 2,
+          "count": 11,
+          "rwd": [
+            1,
+            2,
+            50
+          ]
+        },
+        {
+          "id": 3,
+          "name": "难度3",
+          "mids": 3,
+          "baseHp": 22,
+          "baseAttack": 4,
+          "count": 12,
+          "rwd": [
+            1,
+            2,
+            80
+          ]
+        },
+        {
+          "id": 4,
+          "name": "难度4",
+          "mids": 3,
+          "baseHp": 38,
+          "baseAttack": 8,
+          "count": 13,
+          "rwd": [
+            1,
+            2,
+            120
+          ]
+        },
+        {
+          "id": 5,
+          "name": "难度5",
+          "mids": 3,
+          "baseHp": 58,
+          "baseAttack": 12,
+          "count": 14,
+          "rwd": [
+            1,
+            2,
+            170
+          ]
+        },
+        {
+          "id": 6,
+          "name": "难度6",
+          "mids": 3,
+          "baseHp": 82,
+          "baseAttack": 16,
+          "count": 15,
+          "rwd": [
+            1,
+            2,
+            230
+          ]
+        },
+        {
+          "id": 7,
+          "name": "难度7",
+          "mids": 3,
+          "baseHp": 110,
+          "baseAttack": 22,
+          "count": 16,
+          "rwd": [
+            1,
+            2,
+            300
+          ]
+        },
+        {
+          "id": 8,
+          "name": "难度8",
+          "mids": 3,
+          "baseHp": 142,
+          "baseAttack": 28,
+          "count": 17,
+          "rwd": [
+            1,
+            2,
+            380
+          ]
+        },
+        {
+          "id": 9,
+          "name": "难度9",
+          "mids": 3,
+          "baseHp": 178,
+          "baseAttack": 36,
+          "count": 18,
+          "rwd": [
+            1,
+            2,
+            470
+          ]
+        },
+        {
+          "id": 10,
+          "name": "难度10",
+          "mids": 3,
+          "baseHp": 218,
+          "baseAttack": 44,
+          "count": 19,
+          "rwd": [
+            1,
+            2,
+            570
+          ]
+        },
+        {
+          "id": 11,
+          "name": "难度11",
+          "mids": 3,
+          "baseHp": 262,
+          "baseAttack": 52,
+          "count": 20,
+          "rwd": [
+            1,
+            2,
+            680
+          ]
+        },
+        {
+          "id": 12,
+          "name": "难度12",
+          "mids": 3,
+          "baseHp": 310,
+          "baseAttack": 62,
+          "count": 21,
+          "rwd": [
+            1,
+            2,
+            800
+          ]
+        },
+        {
+          "id": 13,
+          "name": "难度13",
+          "mids": 3,
+          "baseHp": 362,
+          "baseAttack": 72,
+          "count": 22,
+          "rwd": [
+            1,
+            2,
+            930
+          ]
+        },
+        {
+          "id": 14,
+          "name": "难度14",
+          "mids": 3,
+          "baseHp": 418,
+          "baseAttack": 84,
+          "count": 23,
+          "rwd": [
+            1,
+            2,
+            1070
+          ]
+        },
+        {
+          "id": 15,
+          "name": "难度15",
+          "mids": 3,
+          "baseHp": 478,
+          "baseAttack": 96,
+          "count": 24,
+          "rwd": [
+            1,
+            2,
+            1220
+          ]
+        },
+        {
+          "id": 16,
+          "name": "难度16",
+          "mids": 3,
+          "baseHp": 542,
+          "baseAttack": 108,
+          "count": 25,
+          "rwd": [
+            1,
+            2,
+            1380
+          ]
+        },
+        {
+          "id": 17,
+          "name": "难度17",
+          "mids": 3,
+          "baseHp": 610,
+          "baseAttack": 122,
+          "count": 26,
+          "rwd": [
+            1,
+            2,
+            1550
+          ]
+        },
+        {
+          "id": 18,
+          "name": "难度18",
+          "mids": 3,
+          "baseHp": 682,
+          "baseAttack": 136,
+          "count": 27,
+          "rwd": [
+            1,
+            2,
+            1730
+          ]
+        },
+        {
+          "id": 19,
+          "name": "难度19",
+          "mids": 3,
+          "baseHp": 758,
+          "baseAttack": 152,
+          "count": 28,
+          "rwd": [
+            1,
+            2,
+            1920
+          ]
+        },
+        {
+          "id": 20,
+          "name": "难度20",
+          "mids": 3,
+          "baseHp": 838,
+          "baseAttack": 168,
+          "count": 29,
+          "rwd": [
+            1,
+            2,
+            2120
+          ]
+        },
+        {
+          "id": 21,
+          "name": "难度21",
+          "mids": 3,
+          "baseHp": 922,
+          "baseAttack": 184,
+          "count": 30,
+          "rwd": [
+            1,
+            2,
+            2330
+          ]
+        },
+        {
+          "id": 22,
+          "name": "难度22",
+          "mids": 3,
+          "baseHp": 1010,
+          "baseAttack": 202,
+          "count": 31,
+          "rwd": [
+            1,
+            2,
+            2550
+          ]
+        },
+        {
+          "id": 23,
+          "name": "难度23",
+          "mids": 3,
+          "baseHp": 1102,
+          "baseAttack": 220,
+          "count": 32,
+          "rwd": [
+            1,
+            2,
+            2780
+          ]
+        },
+        {
+          "id": 24,
+          "name": "难度24",
+          "mids": 3,
+          "baseHp": 1198,
+          "baseAttack": 240,
+          "count": 33,
+          "rwd": [
+            1,
+            2,
+            3020
+          ]
+        },
+        {
+          "id": 25,
+          "name": "难度25",
+          "mids": 3,
+          "baseHp": 1298,
+          "baseAttack": 260,
+          "count": 34,
+          "rwd": [
+            1,
+            2,
+            3270
+          ]
+        },
+        {
+          "id": 26,
+          "name": "难度26",
+          "mids": 3,
+          "baseHp": 1402,
+          "baseAttack": 280,
+          "count": 35,
+          "rwd": [
+            1,
+            2,
+            3530
+          ]
+        },
+        {
+          "id": 27,
+          "name": "难度27",
+          "mids": 3,
+          "baseHp": 1510,
+          "baseAttack": 302,
+          "count": 36,
+          "rwd": [
+            1,
+            2,
+            3800
+          ]
+        },
+        {
+          "id": 28,
+          "name": "难度28",
+          "mids": 3,
+          "baseHp": 1622,
+          "baseAttack": 324,
+          "count": 37,
+          "rwd": [
+            1,
+            2,
+            4080
+          ]
+        },
+        {
+          "id": 29,
+          "name": "难度29",
+          "mids": 3,
+          "baseHp": 1738,
+          "baseAttack": 348,
+          "count": 38,
+          "rwd": [
+            1,
+            2,
+            4370
+          ]
+        },
+        {
+          "id": 30,
+          "name": "难度30",
+          "mids": 3,
+          "baseHp": 1858,
+          "baseAttack": 372,
+          "count": 39,
+          "rwd": [
+            1,
+            2,
+            4670
+          ]
+        },
+        {
+          "id": 31,
+          "name": "难度31",
+          "mids": 3,
+          "baseHp": 1982,
+          "baseAttack": 396,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            4980
+          ]
+        },
+        {
+          "id": 32,
+          "name": "难度32",
+          "mids": 3,
+          "baseHp": 2110,
+          "baseAttack": 422,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            5300
+          ]
+        },
+        {
+          "id": 33,
+          "name": "难度33",
+          "mids": 3,
+          "baseHp": 2242,
+          "baseAttack": 448,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            5630
+          ]
+        },
+        {
+          "id": 34,
+          "name": "难度34",
+          "mids": 3,
+          "baseHp": 2378,
+          "baseAttack": 476,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            5970
+          ]
+        },
+        {
+          "id": 35,
+          "name": "难度35",
+          "mids": 3,
+          "baseHp": 2518,
+          "baseAttack": 504,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            6320
+          ]
+        },
+        {
+          "id": 36,
+          "name": "难度36",
+          "mids": 3,
+          "baseHp": 2662,
+          "baseAttack": 532,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            6680
+          ]
+        },
+        {
+          "id": 37,
+          "name": "难度37",
+          "mids": 3,
+          "baseHp": 2810,
+          "baseAttack": 562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            7050
+          ]
+        },
+        {
+          "id": 38,
+          "name": "难度38",
+          "mids": 3,
+          "baseHp": 2962,
+          "baseAttack": 592,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            7430
+          ]
+        },
+        {
+          "id": 39,
+          "name": "难度39",
+          "mids": 3,
+          "baseHp": 3118,
+          "baseAttack": 624,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            7820
+          ]
+        },
+        {
+          "id": 40,
+          "name": "难度40",
+          "mids": 3,
+          "baseHp": 3278,
+          "baseAttack": 656,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            8220
+          ]
+        },
+        {
+          "id": 41,
+          "name": "难度41",
+          "mids": 3,
+          "baseHp": 3442,
+          "baseAttack": 688,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            8630
+          ]
+        },
+        {
+          "id": 42,
+          "name": "难度42",
+          "mids": 3,
+          "baseHp": 3610,
+          "baseAttack": 722,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            9050
+          ]
+        },
+        {
+          "id": 43,
+          "name": "难度43",
+          "mids": 3,
+          "baseHp": 3782,
+          "baseAttack": 756,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            9480
+          ]
+        },
+        {
+          "id": 44,
+          "name": "难度44",
+          "mids": 3,
+          "baseHp": 3958,
+          "baseAttack": 792,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            9920
+          ]
+        },
+        {
+          "id": 45,
+          "name": "难度45",
+          "mids": 3,
+          "baseHp": 4138,
+          "baseAttack": 828,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            10370
+          ]
+        },
+        {
+          "id": 46,
+          "name": "难度46",
+          "mids": 3,
+          "baseHp": 4322,
+          "baseAttack": 864,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            10830
+          ]
+        },
+        {
+          "id": 47,
+          "name": "难度47",
+          "mids": 3,
+          "baseHp": 4510,
+          "baseAttack": 902,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            11300
+          ]
+        },
+        {
+          "id": 48,
+          "name": "难度48",
+          "mids": 3,
+          "baseHp": 4702,
+          "baseAttack": 940,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            11780
+          ]
+        },
+        {
+          "id": 49,
+          "name": "难度49",
+          "mids": 3,
+          "baseHp": 4898,
+          "baseAttack": 980,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            12270
+          ]
+        },
+        {
+          "id": 50,
+          "name": "难度50",
+          "mids": 3,
+          "baseHp": 5098,
+          "baseAttack": 1020,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            12770
+          ]
+        },
+        {
+          "id": 51,
+          "name": "难度51",
+          "mids": 3,
+          "baseHp": 5302,
+          "baseAttack": 1060,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            13280
+          ]
+        },
+        {
+          "id": 52,
+          "name": "难度52",
+          "mids": 3,
+          "baseHp": 5510,
+          "baseAttack": 1102,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            13800
+          ]
+        },
+        {
+          "id": 53,
+          "name": "难度53",
+          "mids": 3,
+          "baseHp": 5722,
+          "baseAttack": 1144,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            14330
+          ]
+        },
+        {
+          "id": 54,
+          "name": "难度54",
+          "mids": 3,
+          "baseHp": 5938,
+          "baseAttack": 1188,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            14870
+          ]
+        },
+        {
+          "id": 55,
+          "name": "难度55",
+          "mids": 3,
+          "baseHp": 6158,
+          "baseAttack": 1232,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            15420
+          ]
+        },
+        {
+          "id": 56,
+          "name": "难度56",
+          "mids": 3,
+          "baseHp": 6382,
+          "baseAttack": 1276,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            15980
+          ]
+        },
+        {
+          "id": 57,
+          "name": "难度57",
+          "mids": 3,
+          "baseHp": 6610,
+          "baseAttack": 1322,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            16550
+          ]
+        },
+        {
+          "id": 58,
+          "name": "难度58",
+          "mids": 3,
+          "baseHp": 6842,
+          "baseAttack": 1368,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            17130
+          ]
+        },
+        {
+          "id": 59,
+          "name": "难度59",
+          "mids": 3,
+          "baseHp": 7078,
+          "baseAttack": 1416,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            17720
+          ]
+        },
+        {
+          "id": 60,
+          "name": "难度60",
+          "mids": 3,
+          "baseHp": 7318,
+          "baseAttack": 1464,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            18320
+          ]
+        },
+        {
+          "id": 61,
+          "name": "难度61",
+          "mids": 3,
+          "baseHp": 7562,
+          "baseAttack": 1512,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            18930
+          ]
+        },
+        {
+          "id": 62,
+          "name": "难度62",
+          "mids": 3,
+          "baseHp": 7810,
+          "baseAttack": 1562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            19550
+          ]
+        },
+        {
+          "id": 63,
+          "name": "难度63",
+          "mids": 3,
+          "baseHp": 8062,
+          "baseAttack": 1612,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            20180
+          ]
+        },
+        {
+          "id": 64,
+          "name": "难度64",
+          "mids": 3,
+          "baseHp": 8318,
+          "baseAttack": 1664,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            20820
+          ]
+        },
+        {
+          "id": 65,
+          "name": "难度65",
+          "mids": 3,
+          "baseHp": 8578,
+          "baseAttack": 1716,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            21470
+          ]
+        },
+        {
+          "id": 66,
+          "name": "难度66",
+          "mids": 3,
+          "baseHp": 8842,
+          "baseAttack": 1768,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            22130
+          ]
+        },
+        {
+          "id": 67,
+          "name": "难度67",
+          "mids": 3,
+          "baseHp": 9110,
+          "baseAttack": 1822,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            22800
+          ]
+        },
+        {
+          "id": 68,
+          "name": "难度68",
+          "mids": 3,
+          "baseHp": 9382,
+          "baseAttack": 1876,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            23480
+          ]
+        },
+        {
+          "id": 69,
+          "name": "难度69",
+          "mids": 3,
+          "baseHp": 9658,
+          "baseAttack": 1932,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            24170
+          ]
+        },
+        {
+          "id": 70,
+          "name": "难度70",
+          "mids": 3,
+          "baseHp": 9938,
+          "baseAttack": 1988,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            24870
+          ]
+        },
+        {
+          "id": 71,
+          "name": "难度71",
+          "mids": 3,
+          "baseHp": 10222,
+          "baseAttack": 2044,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            25580
+          ]
+        },
+        {
+          "id": 72,
+          "name": "难度72",
+          "mids": 3,
+          "baseHp": 10510,
+          "baseAttack": 2102,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            26300
+          ]
+        },
+        {
+          "id": 73,
+          "name": "难度73",
+          "mids": 3,
+          "baseHp": 10802,
+          "baseAttack": 2160,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            27030
+          ]
+        },
+        {
+          "id": 74,
+          "name": "难度74",
+          "mids": 3,
+          "baseHp": 11098,
+          "baseAttack": 2220,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            27770
+          ]
+        },
+        {
+          "id": 75,
+          "name": "难度75",
+          "mids": 3,
+          "baseHp": 11398,
+          "baseAttack": 2280,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            28520
+          ]
+        },
+        {
+          "id": 76,
+          "name": "难度76",
+          "mids": 3,
+          "baseHp": 11702,
+          "baseAttack": 2340,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            29280
+          ]
+        },
+        {
+          "id": 77,
+          "name": "难度77",
+          "mids": 3,
+          "baseHp": 12010,
+          "baseAttack": 2402,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            30050
+          ]
+        },
+        {
+          "id": 78,
+          "name": "难度78",
+          "mids": 3,
+          "baseHp": 12322,
+          "baseAttack": 2464,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            30830
+          ]
+        },
+        {
+          "id": 79,
+          "name": "难度79",
+          "mids": 3,
+          "baseHp": 12638,
+          "baseAttack": 2528,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            31620
+          ]
+        },
+        {
+          "id": 80,
+          "name": "难度80",
+          "mids": 3,
+          "baseHp": 12958,
+          "baseAttack": 2592,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            32420
+          ]
+        },
+        {
+          "id": 81,
+          "name": "难度81",
+          "mids": 3,
+          "baseHp": 13282,
+          "baseAttack": 2656,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            33230
+          ]
+        },
+        {
+          "id": 82,
+          "name": "难度82",
+          "mids": 3,
+          "baseHp": 13610,
+          "baseAttack": 2722,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            34050
+          ]
+        },
+        {
+          "id": 83,
+          "name": "难度83",
+          "mids": 3,
+          "baseHp": 13942,
+          "baseAttack": 2788,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            34880
+          ]
+        },
+        {
+          "id": 84,
+          "name": "难度84",
+          "mids": 3,
+          "baseHp": 14278,
+          "baseAttack": 2856,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            35720
+          ]
+        },
+        {
+          "id": 85,
+          "name": "难度85",
+          "mids": 3,
+          "baseHp": 14618,
+          "baseAttack": 2924,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            36570
+          ]
+        },
+        {
+          "id": 86,
+          "name": "难度86",
+          "mids": 3,
+          "baseHp": 14962,
+          "baseAttack": 2992,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            37430
+          ]
+        },
+        {
+          "id": 87,
+          "name": "难度87",
+          "mids": 3,
+          "baseHp": 15310,
+          "baseAttack": 3062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            38300
+          ]
+        },
+        {
+          "id": 88,
+          "name": "难度88",
+          "mids": 3,
+          "baseHp": 15662,
+          "baseAttack": 3132,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            39180
+          ]
+        },
+        {
+          "id": 89,
+          "name": "难度89",
+          "mids": 3,
+          "baseHp": 16018,
+          "baseAttack": 3204,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            40070
+          ]
+        },
+        {
+          "id": 90,
+          "name": "难度90",
+          "mids": 3,
+          "baseHp": 16378,
+          "baseAttack": 3276,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            40970
+          ]
+        },
+        {
+          "id": 91,
+          "name": "难度91",
+          "mids": 3,
+          "baseHp": 16742,
+          "baseAttack": 3348,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            41880
+          ]
+        },
+        {
+          "id": 92,
+          "name": "难度92",
+          "mids": 3,
+          "baseHp": 17110,
+          "baseAttack": 3422,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            42800
+          ]
+        },
+        {
+          "id": 93,
+          "name": "难度93",
+          "mids": 3,
+          "baseHp": 17482,
+          "baseAttack": 3496,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            43730
+          ]
+        },
+        {
+          "id": 94,
+          "name": "难度94",
+          "mids": 3,
+          "baseHp": 17858,
+          "baseAttack": 3572,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            44670
+          ]
+        },
+        {
+          "id": 95,
+          "name": "难度95",
+          "mids": 3,
+          "baseHp": 18238,
+          "baseAttack": 3648,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            45620
+          ]
+        },
+        {
+          "id": 96,
+          "name": "难度96",
+          "mids": 3,
+          "baseHp": 18622,
+          "baseAttack": 3724,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            46580
+          ]
+        },
+        {
+          "id": 97,
+          "name": "难度97",
+          "mids": 3,
+          "baseHp": 19010,
+          "baseAttack": 3802,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            47550
+          ]
+        },
+        {
+          "id": 98,
+          "name": "难度98",
+          "mids": 3,
+          "baseHp": 19402,
+          "baseAttack": 3880,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            48530
+          ]
+        },
+        {
+          "id": 99,
+          "name": "难度99",
+          "mids": 3,
+          "baseHp": 19798,
+          "baseAttack": 3960,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            49520
+          ]
+        },
+        {
+          "id": 100,
+          "name": "难度100",
+          "mids": 3,
+          "baseHp": 20198,
+          "baseAttack": 4040,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            50520
+          ]
+        },
+        {
+          "id": 101,
+          "name": "难度101",
+          "mids": 3,
+          "baseHp": 20602,
+          "baseAttack": 4120,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            51530
+          ]
+        },
+        {
+          "id": 102,
+          "name": "难度102",
+          "mids": 3,
+          "baseHp": 21010,
+          "baseAttack": 4202,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            52550
+          ]
+        },
+        {
+          "id": 103,
+          "name": "难度103",
+          "mids": 3,
+          "baseHp": 21422,
+          "baseAttack": 4284,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            53580
+          ]
+        },
+        {
+          "id": 104,
+          "name": "难度104",
+          "mids": 3,
+          "baseHp": 21838,
+          "baseAttack": 4368,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            54620
+          ]
+        },
+        {
+          "id": 105,
+          "name": "难度105",
+          "mids": 3,
+          "baseHp": 22258,
+          "baseAttack": 4452,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            55670
+          ]
+        },
+        {
+          "id": 106,
+          "name": "难度106",
+          "mids": 3,
+          "baseHp": 22682,
+          "baseAttack": 4536,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            56730
+          ]
+        },
+        {
+          "id": 107,
+          "name": "难度107",
+          "mids": 3,
+          "baseHp": 23110,
+          "baseAttack": 4622,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            57800
+          ]
+        },
+        {
+          "id": 108,
+          "name": "难度108",
+          "mids": 3,
+          "baseHp": 23542,
+          "baseAttack": 4708,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            58880
+          ]
+        },
+        {
+          "id": 109,
+          "name": "难度109",
+          "mids": 3,
+          "baseHp": 23978,
+          "baseAttack": 4796,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            59970
+          ]
+        },
+        {
+          "id": 110,
+          "name": "难度110",
+          "mids": 3,
+          "baseHp": 24418,
+          "baseAttack": 4884,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            61070
+          ]
+        },
+        {
+          "id": 111,
+          "name": "难度111",
+          "mids": 3,
+          "baseHp": 24862,
+          "baseAttack": 4972,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            62180
+          ]
+        },
+        {
+          "id": 112,
+          "name": "难度112",
+          "mids": 3,
+          "baseHp": 25310,
+          "baseAttack": 5062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            63300
+          ]
+        },
+        {
+          "id": 113,
+          "name": "难度113",
+          "mids": 3,
+          "baseHp": 25762,
+          "baseAttack": 5152,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            64430
+          ]
+        },
+        {
+          "id": 114,
+          "name": "难度114",
+          "mids": 3,
+          "baseHp": 26218,
+          "baseAttack": 5244,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            65570
+          ]
+        },
+        {
+          "id": 115,
+          "name": "难度115",
+          "mids": 3,
+          "baseHp": 26678,
+          "baseAttack": 5336,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            66720
+          ]
+        },
+        {
+          "id": 116,
+          "name": "难度116",
+          "mids": 3,
+          "baseHp": 27142,
+          "baseAttack": 5428,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            67880
+          ]
+        },
+        {
+          "id": 117,
+          "name": "难度117",
+          "mids": 3,
+          "baseHp": 27610,
+          "baseAttack": 5522,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            69050
+          ]
+        },
+        {
+          "id": 118,
+          "name": "难度118",
+          "mids": 3,
+          "baseHp": 28082,
+          "baseAttack": 5616,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            70230
+          ]
+        },
+        {
+          "id": 119,
+          "name": "难度119",
+          "mids": 3,
+          "baseHp": 28558,
+          "baseAttack": 5712,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            71420
+          ]
+        },
+        {
+          "id": 120,
+          "name": "难度120",
+          "mids": 3,
+          "baseHp": 29038,
+          "baseAttack": 5808,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            72620
+          ]
+        },
+        {
+          "id": 121,
+          "name": "难度121",
+          "mids": 3,
+          "baseHp": 29522,
+          "baseAttack": 5904,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            73830
+          ]
+        },
+        {
+          "id": 122,
+          "name": "难度122",
+          "mids": 3,
+          "baseHp": 30010,
+          "baseAttack": 6002,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            75050
+          ]
+        },
+        {
+          "id": 123,
+          "name": "难度123",
+          "mids": 3,
+          "baseHp": 30502,
+          "baseAttack": 6100,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            76280
+          ]
+        },
+        {
+          "id": 124,
+          "name": "难度124",
+          "mids": 3,
+          "baseHp": 30998,
+          "baseAttack": 6200,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            77520
+          ]
+        },
+        {
+          "id": 125,
+          "name": "难度125",
+          "mids": 3,
+          "baseHp": 31498,
+          "baseAttack": 6300,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            78770
+          ]
+        },
+        {
+          "id": 126,
+          "name": "难度126",
+          "mids": 3,
+          "baseHp": 32002,
+          "baseAttack": 6400,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            80030
+          ]
+        },
+        {
+          "id": 127,
+          "name": "难度127",
+          "mids": 3,
+          "baseHp": 32510,
+          "baseAttack": 6502,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            81300
+          ]
+        },
+        {
+          "id": 128,
+          "name": "难度128",
+          "mids": 3,
+          "baseHp": 33022,
+          "baseAttack": 6604,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            82580
+          ]
+        },
+        {
+          "id": 129,
+          "name": "难度129",
+          "mids": 3,
+          "baseHp": 33538,
+          "baseAttack": 6708,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            83870
+          ]
+        },
+        {
+          "id": 130,
+          "name": "难度130",
+          "mids": 3,
+          "baseHp": 34058,
+          "baseAttack": 6812,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            85170
+          ]
+        },
+        {
+          "id": 131,
+          "name": "难度131",
+          "mids": 3,
+          "baseHp": 34582,
+          "baseAttack": 6916,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            86480
+          ]
+        },
+        {
+          "id": 132,
+          "name": "难度132",
+          "mids": 3,
+          "baseHp": 35110,
+          "baseAttack": 7022,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            87800
+          ]
+        },
+        {
+          "id": 133,
+          "name": "难度133",
+          "mids": 3,
+          "baseHp": 35642,
+          "baseAttack": 7128,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            89130
+          ]
+        },
+        {
+          "id": 134,
+          "name": "难度134",
+          "mids": 3,
+          "baseHp": 36178,
+          "baseAttack": 7236,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            90470
+          ]
+        },
+        {
+          "id": 135,
+          "name": "难度135",
+          "mids": 3,
+          "baseHp": 36718,
+          "baseAttack": 7344,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            91820
+          ]
+        },
+        {
+          "id": 136,
+          "name": "难度136",
+          "mids": 3,
+          "baseHp": 37262,
+          "baseAttack": 7452,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            93180
+          ]
+        },
+        {
+          "id": 137,
+          "name": "难度137",
+          "mids": 3,
+          "baseHp": 37810,
+          "baseAttack": 7562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            94550
+          ]
+        },
+        {
+          "id": 138,
+          "name": "难度138",
+          "mids": 3,
+          "baseHp": 38362,
+          "baseAttack": 7672,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            95930
+          ]
+        },
+        {
+          "id": 139,
+          "name": "难度139",
+          "mids": 3,
+          "baseHp": 38918,
+          "baseAttack": 7784,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            97320
+          ]
+        },
+        {
+          "id": 140,
+          "name": "难度140",
+          "mids": 3,
+          "baseHp": 39478,
+          "baseAttack": 7896,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            98720
+          ]
+        },
+        {
+          "id": 141,
+          "name": "难度141",
+          "mids": 3,
+          "baseHp": 40042,
+          "baseAttack": 8008,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            100130
+          ]
+        },
+        {
+          "id": 142,
+          "name": "难度142",
+          "mids": 3,
+          "baseHp": 40610,
+          "baseAttack": 8122,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            101550
+          ]
+        },
+        {
+          "id": 143,
+          "name": "难度143",
+          "mids": 3,
+          "baseHp": 41182,
+          "baseAttack": 8236,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            102980
+          ]
+        },
+        {
+          "id": 144,
+          "name": "难度144",
+          "mids": 3,
+          "baseHp": 41758,
+          "baseAttack": 8352,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            104420
+          ]
+        },
+        {
+          "id": 145,
+          "name": "难度145",
+          "mids": 3,
+          "baseHp": 42338,
+          "baseAttack": 8468,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            105870
+          ]
+        },
+        {
+          "id": 146,
+          "name": "难度146",
+          "mids": 3,
+          "baseHp": 42922,
+          "baseAttack": 8584,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            107330
+          ]
+        },
+        {
+          "id": 147,
+          "name": "难度147",
+          "mids": 3,
+          "baseHp": 43510,
+          "baseAttack": 8702,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            108800
+          ]
+        },
+        {
+          "id": 148,
+          "name": "难度148",
+          "mids": 3,
+          "baseHp": 44102,
+          "baseAttack": 8820,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            110280
+          ]
+        },
+        {
+          "id": 149,
+          "name": "难度149",
+          "mids": 3,
+          "baseHp": 44698,
+          "baseAttack": 8940,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            111770
+          ]
+        },
+        {
+          "id": 150,
+          "name": "难度150",
+          "mids": 3,
+          "baseHp": 45298,
+          "baseAttack": 9060,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            113270
+          ]
+        },
+        {
+          "id": 151,
+          "name": "难度151",
+          "mids": 3,
+          "baseHp": 45902,
+          "baseAttack": 9180,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            114780
+          ]
+        },
+        {
+          "id": 152,
+          "name": "难度152",
+          "mids": 3,
+          "baseHp": 46510,
+          "baseAttack": 9302,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            116300
+          ]
+        },
+        {
+          "id": 153,
+          "name": "难度153",
+          "mids": 3,
+          "baseHp": 47122,
+          "baseAttack": 9424,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            117830
+          ]
+        },
+        {
+          "id": 154,
+          "name": "难度154",
+          "mids": 3,
+          "baseHp": 47738,
+          "baseAttack": 9548,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            119370
+          ]
+        },
+        {
+          "id": 155,
+          "name": "难度155",
+          "mids": 3,
+          "baseHp": 48358,
+          "baseAttack": 9672,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            120920
+          ]
+        },
+        {
+          "id": 156,
+          "name": "难度156",
+          "mids": 3,
+          "baseHp": 48982,
+          "baseAttack": 9796,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            122480
+          ]
+        },
+        {
+          "id": 157,
+          "name": "难度157",
+          "mids": 3,
+          "baseHp": 49610,
+          "baseAttack": 9922,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            124050
+          ]
+        },
+        {
+          "id": 158,
+          "name": "难度158",
+          "mids": 3,
+          "baseHp": 50242,
+          "baseAttack": 10048,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            125630
+          ]
+        },
+        {
+          "id": 159,
+          "name": "难度159",
+          "mids": 3,
+          "baseHp": 50878,
+          "baseAttack": 10176,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            127220
+          ]
+        },
+        {
+          "id": 160,
+          "name": "难度160",
+          "mids": 3,
+          "baseHp": 51518,
+          "baseAttack": 10304,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            128820
+          ]
+        },
+        {
+          "id": 161,
+          "name": "难度161",
+          "mids": 3,
+          "baseHp": 52162,
+          "baseAttack": 10432,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            130430
+          ]
+        },
+        {
+          "id": 162,
+          "name": "难度162",
+          "mids": 3,
+          "baseHp": 52810,
+          "baseAttack": 10562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            132050
+          ]
+        },
+        {
+          "id": 163,
+          "name": "难度163",
+          "mids": 3,
+          "baseHp": 53462,
+          "baseAttack": 10692,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            133680
+          ]
+        },
+        {
+          "id": 164,
+          "name": "难度164",
+          "mids": 3,
+          "baseHp": 54118,
+          "baseAttack": 10824,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            135320
+          ]
+        },
+        {
+          "id": 165,
+          "name": "难度165",
+          "mids": 3,
+          "baseHp": 54778,
+          "baseAttack": 10956,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            136970
+          ]
+        },
+        {
+          "id": 166,
+          "name": "难度166",
+          "mids": 3,
+          "baseHp": 55442,
+          "baseAttack": 11088,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            138630
+          ]
+        },
+        {
+          "id": 167,
+          "name": "难度167",
+          "mids": 3,
+          "baseHp": 56110,
+          "baseAttack": 11222,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            140300
+          ]
+        },
+        {
+          "id": 168,
+          "name": "难度168",
+          "mids": 3,
+          "baseHp": 56782,
+          "baseAttack": 11356,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            141980
+          ]
+        },
+        {
+          "id": 169,
+          "name": "难度169",
+          "mids": 3,
+          "baseHp": 57458,
+          "baseAttack": 11492,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            143670
+          ]
+        },
+        {
+          "id": 170,
+          "name": "难度170",
+          "mids": 3,
+          "baseHp": 58138,
+          "baseAttack": 11628,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            145370
+          ]
+        },
+        {
+          "id": 171,
+          "name": "难度171",
+          "mids": 3,
+          "baseHp": 58822,
+          "baseAttack": 11764,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            147080
+          ]
+        },
+        {
+          "id": 172,
+          "name": "难度172",
+          "mids": 3,
+          "baseHp": 59510,
+          "baseAttack": 11902,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            148800
+          ]
+        },
+        {
+          "id": 173,
+          "name": "难度173",
+          "mids": 3,
+          "baseHp": 60202,
+          "baseAttack": 12040,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            150530
+          ]
+        },
+        {
+          "id": 174,
+          "name": "难度174",
+          "mids": 3,
+          "baseHp": 60898,
+          "baseAttack": 12180,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            152270
+          ]
+        },
+        {
+          "id": 175,
+          "name": "难度175",
+          "mids": 3,
+          "baseHp": 61598,
+          "baseAttack": 12320,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            154020
+          ]
+        },
+        {
+          "id": 176,
+          "name": "难度176",
+          "mids": 3,
+          "baseHp": 62302,
+          "baseAttack": 12460,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            155780
+          ]
+        },
+        {
+          "id": 177,
+          "name": "难度177",
+          "mids": 3,
+          "baseHp": 63010,
+          "baseAttack": 12602,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            157550
+          ]
+        },
+        {
+          "id": 178,
+          "name": "难度178",
+          "mids": 3,
+          "baseHp": 63722,
+          "baseAttack": 12744,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            159330
+          ]
+        },
+        {
+          "id": 179,
+          "name": "难度179",
+          "mids": 3,
+          "baseHp": 64438,
+          "baseAttack": 12888,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            161120
+          ]
+        },
+        {
+          "id": 180,
+          "name": "难度180",
+          "mids": 3,
+          "baseHp": 65158,
+          "baseAttack": 13032,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            162920
+          ]
+        },
+        {
+          "id": 181,
+          "name": "难度181",
+          "mids": 3,
+          "baseHp": 65882,
+          "baseAttack": 13176,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            164730
+          ]
+        },
+        {
+          "id": 182,
+          "name": "难度182",
+          "mids": 3,
+          "baseHp": 66610,
+          "baseAttack": 13322,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            166550
+          ]
+        },
+        {
+          "id": 183,
+          "name": "难度183",
+          "mids": 3,
+          "baseHp": 67342,
+          "baseAttack": 13468,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            168380
+          ]
+        },
+        {
+          "id": 184,
+          "name": "难度184",
+          "mids": 3,
+          "baseHp": 68078,
+          "baseAttack": 13616,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            170220
+          ]
+        },
+        {
+          "id": 185,
+          "name": "难度185",
+          "mids": 3,
+          "baseHp": 68818,
+          "baseAttack": 13764,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            172070
+          ]
+        },
+        {
+          "id": 186,
+          "name": "难度186",
+          "mids": 3,
+          "baseHp": 69562,
+          "baseAttack": 13912,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            173930
+          ]
+        },
+        {
+          "id": 187,
+          "name": "难度187",
+          "mids": 3,
+          "baseHp": 70310,
+          "baseAttack": 14062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            175800
+          ]
+        },
+        {
+          "id": 188,
+          "name": "难度188",
+          "mids": 3,
+          "baseHp": 71062,
+          "baseAttack": 14212,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            177680
+          ]
+        },
+        {
+          "id": 189,
+          "name": "难度189",
+          "mids": 3,
+          "baseHp": 71818,
+          "baseAttack": 14364,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            179570
+          ]
+        },
+        {
+          "id": 190,
+          "name": "难度190",
+          "mids": 3,
+          "baseHp": 72578,
+          "baseAttack": 14516,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            181470
+          ]
+        },
+        {
+          "id": 191,
+          "name": "难度191",
+          "mids": 3,
+          "baseHp": 73342,
+          "baseAttack": 14668,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            183380
+          ]
+        },
+        {
+          "id": 192,
+          "name": "难度192",
+          "mids": 3,
+          "baseHp": 74110,
+          "baseAttack": 14822,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            185300
+          ]
+        },
+        {
+          "id": 193,
+          "name": "难度193",
+          "mids": 3,
+          "baseHp": 74882,
+          "baseAttack": 14976,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            187230
+          ]
+        },
+        {
+          "id": 194,
+          "name": "难度194",
+          "mids": 3,
+          "baseHp": 75658,
+          "baseAttack": 15132,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            189170
+          ]
+        },
+        {
+          "id": 195,
+          "name": "难度195",
+          "mids": 3,
+          "baseHp": 76438,
+          "baseAttack": 15288,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            191120
+          ]
+        },
+        {
+          "id": 196,
+          "name": "难度196",
+          "mids": 3,
+          "baseHp": 77222,
+          "baseAttack": 15444,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            193080
+          ]
+        },
+        {
+          "id": 197,
+          "name": "难度197",
+          "mids": 3,
+          "baseHp": 78010,
+          "baseAttack": 15602,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            195050
+          ]
+        },
+        {
+          "id": 198,
+          "name": "难度198",
+          "mids": 3,
+          "baseHp": 78802,
+          "baseAttack": 15760,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            197030
+          ]
+        },
+        {
+          "id": 199,
+          "name": "难度199",
+          "mids": 3,
+          "baseHp": 79598,
+          "baseAttack": 15920,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            199020
+          ]
+        },
+        {
+          "id": 200,
+          "name": "难度200",
+          "mids": 3,
+          "baseHp": 80398,
+          "baseAttack": 16080,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            201020
+          ]
+        },
+        {
+          "id": 201,
+          "name": "难度201",
+          "mids": 3,
+          "baseHp": 81202,
+          "baseAttack": 16240,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            203030
+          ]
+        },
+        {
+          "id": 202,
+          "name": "难度202",
+          "mids": 3,
+          "baseHp": 82010,
+          "baseAttack": 16402,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            205050
+          ]
+        },
+        {
+          "id": 203,
+          "name": "难度203",
+          "mids": 3,
+          "baseHp": 82822,
+          "baseAttack": 16564,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            207080
+          ]
+        },
+        {
+          "id": 204,
+          "name": "难度204",
+          "mids": 3,
+          "baseHp": 83638,
+          "baseAttack": 16728,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            209120
+          ]
+        },
+        {
+          "id": 205,
+          "name": "难度205",
+          "mids": 3,
+          "baseHp": 84458,
+          "baseAttack": 16892,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            211170
+          ]
+        },
+        {
+          "id": 206,
+          "name": "难度206",
+          "mids": 3,
+          "baseHp": 85282,
+          "baseAttack": 17056,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            213230
+          ]
+        },
+        {
+          "id": 207,
+          "name": "难度207",
+          "mids": 3,
+          "baseHp": 86110,
+          "baseAttack": 17222,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            215300
+          ]
+        },
+        {
+          "id": 208,
+          "name": "难度208",
+          "mids": 3,
+          "baseHp": 86942,
+          "baseAttack": 17388,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            217380
+          ]
+        },
+        {
+          "id": 209,
+          "name": "难度209",
+          "mids": 3,
+          "baseHp": 87778,
+          "baseAttack": 17556,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            219470
+          ]
+        },
+        {
+          "id": 210,
+          "name": "难度210",
+          "mids": 3,
+          "baseHp": 88618,
+          "baseAttack": 17724,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            221570
+          ]
+        },
+        {
+          "id": 211,
+          "name": "难度211",
+          "mids": 3,
+          "baseHp": 89462,
+          "baseAttack": 17892,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            223680
+          ]
+        },
+        {
+          "id": 212,
+          "name": "难度212",
+          "mids": 3,
+          "baseHp": 90310,
+          "baseAttack": 18062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            225800
+          ]
+        },
+        {
+          "id": 213,
+          "name": "难度213",
+          "mids": 3,
+          "baseHp": 91162,
+          "baseAttack": 18232,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            227930
+          ]
+        },
+        {
+          "id": 214,
+          "name": "难度214",
+          "mids": 3,
+          "baseHp": 92018,
+          "baseAttack": 18404,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            230070
+          ]
+        },
+        {
+          "id": 215,
+          "name": "难度215",
+          "mids": 3,
+          "baseHp": 92878,
+          "baseAttack": 18576,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            232220
+          ]
+        },
+        {
+          "id": 216,
+          "name": "难度216",
+          "mids": 3,
+          "baseHp": 93742,
+          "baseAttack": 18748,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            234380
+          ]
+        },
+        {
+          "id": 217,
+          "name": "难度217",
+          "mids": 3,
+          "baseHp": 94610,
+          "baseAttack": 18922,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            236550
+          ]
+        },
+        {
+          "id": 218,
+          "name": "难度218",
+          "mids": 3,
+          "baseHp": 95482,
+          "baseAttack": 19096,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            238730
+          ]
+        },
+        {
+          "id": 219,
+          "name": "难度219",
+          "mids": 3,
+          "baseHp": 96358,
+          "baseAttack": 19272,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            240920
+          ]
+        },
+        {
+          "id": 220,
+          "name": "难度220",
+          "mids": 3,
+          "baseHp": 97238,
+          "baseAttack": 19448,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            243120
+          ]
+        },
+        {
+          "id": 221,
+          "name": "难度221",
+          "mids": 3,
+          "baseHp": 98122,
+          "baseAttack": 19624,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            245330
+          ]
+        },
+        {
+          "id": 222,
+          "name": "难度222",
+          "mids": 3,
+          "baseHp": 99010,
+          "baseAttack": 19802,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            247550
+          ]
+        },
+        {
+          "id": 223,
+          "name": "难度223",
+          "mids": 3,
+          "baseHp": 99902,
+          "baseAttack": 19980,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            249780
+          ]
+        },
+        {
+          "id": 224,
+          "name": "难度224",
+          "mids": 3,
+          "baseHp": 100798,
+          "baseAttack": 20160,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            252020
+          ]
+        },
+        {
+          "id": 225,
+          "name": "难度225",
+          "mids": 3,
+          "baseHp": 101698,
+          "baseAttack": 20340,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            254270
+          ]
+        },
+        {
+          "id": 226,
+          "name": "难度226",
+          "mids": 3,
+          "baseHp": 102602,
+          "baseAttack": 20520,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            256530
+          ]
+        },
+        {
+          "id": 227,
+          "name": "难度227",
+          "mids": 3,
+          "baseHp": 103510,
+          "baseAttack": 20702,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            258800
+          ]
+        },
+        {
+          "id": 228,
+          "name": "难度228",
+          "mids": 3,
+          "baseHp": 104422,
+          "baseAttack": 20884,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            261080
+          ]
+        },
+        {
+          "id": 229,
+          "name": "难度229",
+          "mids": 3,
+          "baseHp": 105338,
+          "baseAttack": 21068,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            263370
+          ]
+        },
+        {
+          "id": 230,
+          "name": "难度230",
+          "mids": 3,
+          "baseHp": 106258,
+          "baseAttack": 21252,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            265670
+          ]
+        },
+        {
+          "id": 231,
+          "name": "难度231",
+          "mids": 3,
+          "baseHp": 107182,
+          "baseAttack": 21436,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            267980
+          ]
+        },
+        {
+          "id": 232,
+          "name": "难度232",
+          "mids": 3,
+          "baseHp": 108110,
+          "baseAttack": 21622,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            270300
+          ]
+        },
+        {
+          "id": 233,
+          "name": "难度233",
+          "mids": 3,
+          "baseHp": 109042,
+          "baseAttack": 21808,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            272630
+          ]
+        },
+        {
+          "id": 234,
+          "name": "难度234",
+          "mids": 3,
+          "baseHp": 109978,
+          "baseAttack": 21996,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            274970
+          ]
+        },
+        {
+          "id": 235,
+          "name": "难度235",
+          "mids": 3,
+          "baseHp": 110918,
+          "baseAttack": 22184,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            277320
+          ]
+        },
+        {
+          "id": 236,
+          "name": "难度236",
+          "mids": 3,
+          "baseHp": 111862,
+          "baseAttack": 22372,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            279680
+          ]
+        },
+        {
+          "id": 237,
+          "name": "难度237",
+          "mids": 3,
+          "baseHp": 112810,
+          "baseAttack": 22562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            282050
+          ]
+        },
+        {
+          "id": 238,
+          "name": "难度238",
+          "mids": 3,
+          "baseHp": 113762,
+          "baseAttack": 22752,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            284430
+          ]
+        },
+        {
+          "id": 239,
+          "name": "难度239",
+          "mids": 3,
+          "baseHp": 114718,
+          "baseAttack": 22944,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            286820
+          ]
+        },
+        {
+          "id": 240,
+          "name": "难度240",
+          "mids": 3,
+          "baseHp": 115678,
+          "baseAttack": 23136,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            289220
+          ]
+        },
+        {
+          "id": 241,
+          "name": "难度241",
+          "mids": 3,
+          "baseHp": 116642,
+          "baseAttack": 23328,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            291630
+          ]
+        },
+        {
+          "id": 242,
+          "name": "难度242",
+          "mids": 3,
+          "baseHp": 117610,
+          "baseAttack": 23522,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            294050
+          ]
+        },
+        {
+          "id": 243,
+          "name": "难度243",
+          "mids": 3,
+          "baseHp": 118582,
+          "baseAttack": 23716,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            296480
+          ]
+        },
+        {
+          "id": 244,
+          "name": "难度244",
+          "mids": 3,
+          "baseHp": 119558,
+          "baseAttack": 23912,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            298920
+          ]
+        },
+        {
+          "id": 245,
+          "name": "难度245",
+          "mids": 3,
+          "baseHp": 120538,
+          "baseAttack": 24108,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            301370
+          ]
+        },
+        {
+          "id": 246,
+          "name": "难度246",
+          "mids": 3,
+          "baseHp": 121522,
+          "baseAttack": 24304,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            303830
+          ]
+        },
+        {
+          "id": 247,
+          "name": "难度247",
+          "mids": 3,
+          "baseHp": 122510,
+          "baseAttack": 24502,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            306300
+          ]
+        },
+        {
+          "id": 248,
+          "name": "难度248",
+          "mids": 3,
+          "baseHp": 123502,
+          "baseAttack": 24700,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            308780
+          ]
+        },
+        {
+          "id": 249,
+          "name": "难度249",
+          "mids": 3,
+          "baseHp": 124498,
+          "baseAttack": 24900,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            311270
+          ]
+        },
+        {
+          "id": 250,
+          "name": "难度250",
+          "mids": 3,
+          "baseHp": 125498,
+          "baseAttack": 25100,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            313770
+          ]
+        },
+        {
+          "id": 251,
+          "name": "难度251",
+          "mids": 3,
+          "baseHp": 126502,
+          "baseAttack": 25300,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            316280
+          ]
+        },
+        {
+          "id": 252,
+          "name": "难度252",
+          "mids": 3,
+          "baseHp": 127510,
+          "baseAttack": 25502,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            318800
+          ]
+        },
+        {
+          "id": 253,
+          "name": "难度253",
+          "mids": 3,
+          "baseHp": 128522,
+          "baseAttack": 25704,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            321330
+          ]
+        },
+        {
+          "id": 254,
+          "name": "难度254",
+          "mids": 3,
+          "baseHp": 129538,
+          "baseAttack": 25908,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            323870
+          ]
+        },
+        {
+          "id": 255,
+          "name": "难度255",
+          "mids": 3,
+          "baseHp": 130558,
+          "baseAttack": 26112,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            326420
+          ]
+        },
+        {
+          "id": 256,
+          "name": "难度256",
+          "mids": 3,
+          "baseHp": 131582,
+          "baseAttack": 26316,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            328980
+          ]
+        },
+        {
+          "id": 257,
+          "name": "难度257",
+          "mids": 3,
+          "baseHp": 132610,
+          "baseAttack": 26522,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            331550
+          ]
+        },
+        {
+          "id": 258,
+          "name": "难度258",
+          "mids": 3,
+          "baseHp": 133642,
+          "baseAttack": 26728,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            334130
+          ]
+        },
+        {
+          "id": 259,
+          "name": "难度259",
+          "mids": 3,
+          "baseHp": 134678,
+          "baseAttack": 26936,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            336720
+          ]
+        },
+        {
+          "id": 260,
+          "name": "难度260",
+          "mids": 3,
+          "baseHp": 135718,
+          "baseAttack": 27144,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            339320
+          ]
+        },
+        {
+          "id": 261,
+          "name": "难度261",
+          "mids": 3,
+          "baseHp": 136762,
+          "baseAttack": 27352,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            341930
+          ]
+        },
+        {
+          "id": 262,
+          "name": "难度262",
+          "mids": 3,
+          "baseHp": 137810,
+          "baseAttack": 27562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            344550
+          ]
+        },
+        {
+          "id": 263,
+          "name": "难度263",
+          "mids": 3,
+          "baseHp": 138862,
+          "baseAttack": 27772,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            347180
+          ]
+        },
+        {
+          "id": 264,
+          "name": "难度264",
+          "mids": 3,
+          "baseHp": 139918,
+          "baseAttack": 27984,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            349820
+          ]
+        },
+        {
+          "id": 265,
+          "name": "难度265",
+          "mids": 3,
+          "baseHp": 140978,
+          "baseAttack": 28196,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            352470
+          ]
+        },
+        {
+          "id": 266,
+          "name": "难度266",
+          "mids": 3,
+          "baseHp": 142042,
+          "baseAttack": 28408,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            355130
+          ]
+        },
+        {
+          "id": 267,
+          "name": "难度267",
+          "mids": 3,
+          "baseHp": 143110,
+          "baseAttack": 28622,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            357800
+          ]
+        },
+        {
+          "id": 268,
+          "name": "难度268",
+          "mids": 3,
+          "baseHp": 144182,
+          "baseAttack": 28836,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            360480
+          ]
+        },
+        {
+          "id": 269,
+          "name": "难度269",
+          "mids": 3,
+          "baseHp": 145258,
+          "baseAttack": 29052,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            363170
+          ]
+        },
+        {
+          "id": 270,
+          "name": "难度270",
+          "mids": 3,
+          "baseHp": 146338,
+          "baseAttack": 29268,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            365870
+          ]
+        },
+        {
+          "id": 271,
+          "name": "难度271",
+          "mids": 3,
+          "baseHp": 147422,
+          "baseAttack": 29484,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            368580
+          ]
+        },
+        {
+          "id": 272,
+          "name": "难度272",
+          "mids": 3,
+          "baseHp": 148510,
+          "baseAttack": 29702,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            371300
+          ]
+        },
+        {
+          "id": 273,
+          "name": "难度273",
+          "mids": 3,
+          "baseHp": 149602,
+          "baseAttack": 29920,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            374030
+          ]
+        },
+        {
+          "id": 274,
+          "name": "难度274",
+          "mids": 3,
+          "baseHp": 150698,
+          "baseAttack": 30140,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            376770
+          ]
+        },
+        {
+          "id": 275,
+          "name": "难度275",
+          "mids": 3,
+          "baseHp": 151798,
+          "baseAttack": 30360,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            379520
+          ]
+        },
+        {
+          "id": 276,
+          "name": "难度276",
+          "mids": 3,
+          "baseHp": 152902,
+          "baseAttack": 30580,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            382280
+          ]
+        },
+        {
+          "id": 277,
+          "name": "难度277",
+          "mids": 3,
+          "baseHp": 154010,
+          "baseAttack": 30802,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            385050
+          ]
+        },
+        {
+          "id": 278,
+          "name": "难度278",
+          "mids": 3,
+          "baseHp": 155122,
+          "baseAttack": 31024,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            387830
+          ]
+        },
+        {
+          "id": 279,
+          "name": "难度279",
+          "mids": 3,
+          "baseHp": 156238,
+          "baseAttack": 31248,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            390620
+          ]
+        },
+        {
+          "id": 280,
+          "name": "难度280",
+          "mids": 3,
+          "baseHp": 157358,
+          "baseAttack": 31472,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            393420
+          ]
+        },
+        {
+          "id": 281,
+          "name": "难度281",
+          "mids": 3,
+          "baseHp": 158482,
+          "baseAttack": 31696,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            396230
+          ]
+        },
+        {
+          "id": 282,
+          "name": "难度282",
+          "mids": 3,
+          "baseHp": 159610,
+          "baseAttack": 31922,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            399050
+          ]
+        },
+        {
+          "id": 283,
+          "name": "难度283",
+          "mids": 3,
+          "baseHp": 160742,
+          "baseAttack": 32148,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            401880
+          ]
+        },
+        {
+          "id": 284,
+          "name": "难度284",
+          "mids": 3,
+          "baseHp": 161878,
+          "baseAttack": 32376,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            404720
+          ]
+        },
+        {
+          "id": 285,
+          "name": "难度285",
+          "mids": 3,
+          "baseHp": 163018,
+          "baseAttack": 32604,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            407570
+          ]
+        },
+        {
+          "id": 286,
+          "name": "难度286",
+          "mids": 3,
+          "baseHp": 164162,
+          "baseAttack": 32832,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            410430
+          ]
+        },
+        {
+          "id": 287,
+          "name": "难度287",
+          "mids": 3,
+          "baseHp": 165310,
+          "baseAttack": 33062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            413300
+          ]
+        },
+        {
+          "id": 288,
+          "name": "难度288",
+          "mids": 3,
+          "baseHp": 166462,
+          "baseAttack": 33292,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            416180
+          ]
+        },
+        {
+          "id": 289,
+          "name": "难度289",
+          "mids": 3,
+          "baseHp": 167618,
+          "baseAttack": 33524,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            419070
+          ]
+        },
+        {
+          "id": 290,
+          "name": "难度290",
+          "mids": 3,
+          "baseHp": 168778,
+          "baseAttack": 33756,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            421970
+          ]
+        },
+        {
+          "id": 291,
+          "name": "难度291",
+          "mids": 3,
+          "baseHp": 169942,
+          "baseAttack": 33988,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            424880
+          ]
+        },
+        {
+          "id": 292,
+          "name": "难度292",
+          "mids": 3,
+          "baseHp": 171110,
+          "baseAttack": 34222,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            427800
+          ]
+        },
+        {
+          "id": 293,
+          "name": "难度293",
+          "mids": 3,
+          "baseHp": 172282,
+          "baseAttack": 34456,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            430730
+          ]
+        },
+        {
+          "id": 294,
+          "name": "难度294",
+          "mids": 3,
+          "baseHp": 173458,
+          "baseAttack": 34692,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            433670
+          ]
+        },
+        {
+          "id": 295,
+          "name": "难度295",
+          "mids": 3,
+          "baseHp": 174638,
+          "baseAttack": 34928,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            436620
+          ]
+        },
+        {
+          "id": 296,
+          "name": "难度296",
+          "mids": 3,
+          "baseHp": 175822,
+          "baseAttack": 35164,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            439580
+          ]
+        },
+        {
+          "id": 297,
+          "name": "难度297",
+          "mids": 3,
+          "baseHp": 177010,
+          "baseAttack": 35402,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            442550
+          ]
+        },
+        {
+          "id": 298,
+          "name": "难度298",
+          "mids": 3,
+          "baseHp": 178202,
+          "baseAttack": 35640,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            445530
+          ]
+        },
+        {
+          "id": 299,
+          "name": "难度299",
+          "mids": 3,
+          "baseHp": 179398,
+          "baseAttack": 35880,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            448520
+          ]
+        },
+        {
+          "id": 300,
+          "name": "难度300",
+          "mids": 3,
+          "baseHp": 180598,
+          "baseAttack": 36120,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            451520
+          ]
+        },
+        {
+          "id": 301,
+          "name": "难度301",
+          "mids": 3,
+          "baseHp": 181802,
+          "baseAttack": 36360,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            454530
+          ]
+        },
+        {
+          "id": 302,
+          "name": "难度302",
+          "mids": 3,
+          "baseHp": 183010,
+          "baseAttack": 36602,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            457550
+          ]
+        },
+        {
+          "id": 303,
+          "name": "难度303",
+          "mids": 3,
+          "baseHp": 184222,
+          "baseAttack": 36844,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            460580
+          ]
+        },
+        {
+          "id": 304,
+          "name": "难度304",
+          "mids": 3,
+          "baseHp": 185438,
+          "baseAttack": 37088,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            463620
+          ]
+        },
+        {
+          "id": 305,
+          "name": "难度305",
+          "mids": 3,
+          "baseHp": 186658,
+          "baseAttack": 37332,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            466670
+          ]
+        },
+        {
+          "id": 306,
+          "name": "难度306",
+          "mids": 3,
+          "baseHp": 187882,
+          "baseAttack": 37576,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            469730
+          ]
+        },
+        {
+          "id": 307,
+          "name": "难度307",
+          "mids": 3,
+          "baseHp": 189110,
+          "baseAttack": 37822,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            472800
+          ]
+        },
+        {
+          "id": 308,
+          "name": "难度308",
+          "mids": 3,
+          "baseHp": 190342,
+          "baseAttack": 38068,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            475880
+          ]
+        },
+        {
+          "id": 309,
+          "name": "难度309",
+          "mids": 3,
+          "baseHp": 191578,
+          "baseAttack": 38316,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            478970
+          ]
+        },
+        {
+          "id": 310,
+          "name": "难度310",
+          "mids": 3,
+          "baseHp": 192818,
+          "baseAttack": 38564,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            482070
+          ]
+        },
+        {
+          "id": 311,
+          "name": "难度311",
+          "mids": 3,
+          "baseHp": 194062,
+          "baseAttack": 38812,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            485180
+          ]
+        },
+        {
+          "id": 312,
+          "name": "难度312",
+          "mids": 3,
+          "baseHp": 195310,
+          "baseAttack": 39062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            488300
+          ]
+        },
+        {
+          "id": 313,
+          "name": "难度313",
+          "mids": 3,
+          "baseHp": 196562,
+          "baseAttack": 39312,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            491430
+          ]
+        },
+        {
+          "id": 314,
+          "name": "难度314",
+          "mids": 3,
+          "baseHp": 197818,
+          "baseAttack": 39564,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            494570
+          ]
+        },
+        {
+          "id": 315,
+          "name": "难度315",
+          "mids": 3,
+          "baseHp": 199078,
+          "baseAttack": 39816,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            497720
+          ]
+        },
+        {
+          "id": 316,
+          "name": "难度316",
+          "mids": 3,
+          "baseHp": 200342,
+          "baseAttack": 40068,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            500880
+          ]
+        },
+        {
+          "id": 317,
+          "name": "难度317",
+          "mids": 3,
+          "baseHp": 201610,
+          "baseAttack": 40322,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            504050
+          ]
+        },
+        {
+          "id": 318,
+          "name": "难度318",
+          "mids": 3,
+          "baseHp": 202882,
+          "baseAttack": 40576,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            507230
+          ]
+        },
+        {
+          "id": 319,
+          "name": "难度319",
+          "mids": 3,
+          "baseHp": 204158,
+          "baseAttack": 40832,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            510420
+          ]
+        },
+        {
+          "id": 320,
+          "name": "难度320",
+          "mids": 3,
+          "baseHp": 205438,
+          "baseAttack": 41088,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            513620
+          ]
+        },
+        {
+          "id": 321,
+          "name": "难度321",
+          "mids": 3,
+          "baseHp": 206722,
+          "baseAttack": 41344,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            516830
+          ]
+        },
+        {
+          "id": 322,
+          "name": "难度322",
+          "mids": 3,
+          "baseHp": 208010,
+          "baseAttack": 41602,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            520050
+          ]
+        },
+        {
+          "id": 323,
+          "name": "难度323",
+          "mids": 3,
+          "baseHp": 209302,
+          "baseAttack": 41860,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            523280
+          ]
+        },
+        {
+          "id": 324,
+          "name": "难度324",
+          "mids": 3,
+          "baseHp": 210598,
+          "baseAttack": 42120,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            526520
+          ]
+        },
+        {
+          "id": 325,
+          "name": "难度325",
+          "mids": 3,
+          "baseHp": 211898,
+          "baseAttack": 42380,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            529770
+          ]
+        },
+        {
+          "id": 326,
+          "name": "难度326",
+          "mids": 3,
+          "baseHp": 213202,
+          "baseAttack": 42640,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            533030
+          ]
+        },
+        {
+          "id": 327,
+          "name": "难度327",
+          "mids": 3,
+          "baseHp": 214510,
+          "baseAttack": 42902,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            536300
+          ]
+        },
+        {
+          "id": 328,
+          "name": "难度328",
+          "mids": 3,
+          "baseHp": 215822,
+          "baseAttack": 43164,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            539580
+          ]
+        },
+        {
+          "id": 329,
+          "name": "难度329",
+          "mids": 3,
+          "baseHp": 217138,
+          "baseAttack": 43428,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            542870
+          ]
+        },
+        {
+          "id": 330,
+          "name": "难度330",
+          "mids": 3,
+          "baseHp": 218458,
+          "baseAttack": 43692,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            546170
+          ]
+        },
+        {
+          "id": 331,
+          "name": "难度331",
+          "mids": 3,
+          "baseHp": 219782,
+          "baseAttack": 43956,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            549480
+          ]
+        },
+        {
+          "id": 332,
+          "name": "难度332",
+          "mids": 3,
+          "baseHp": 221110,
+          "baseAttack": 44222,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            552800
+          ]
+        },
+        {
+          "id": 333,
+          "name": "难度333",
+          "mids": 3,
+          "baseHp": 222442,
+          "baseAttack": 44488,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            556130
+          ]
+        },
+        {
+          "id": 334,
+          "name": "难度334",
+          "mids": 3,
+          "baseHp": 223778,
+          "baseAttack": 44756,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            559470
+          ]
+        },
+        {
+          "id": 335,
+          "name": "难度335",
+          "mids": 3,
+          "baseHp": 225118,
+          "baseAttack": 45024,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            562820
+          ]
+        },
+        {
+          "id": 336,
+          "name": "难度336",
+          "mids": 3,
+          "baseHp": 226462,
+          "baseAttack": 45292,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            566180
+          ]
+        },
+        {
+          "id": 337,
+          "name": "难度337",
+          "mids": 3,
+          "baseHp": 227810,
+          "baseAttack": 45562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            569550
+          ]
+        },
+        {
+          "id": 338,
+          "name": "难度338",
+          "mids": 3,
+          "baseHp": 229162,
+          "baseAttack": 45832,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            572930
+          ]
+        },
+        {
+          "id": 339,
+          "name": "难度339",
+          "mids": 3,
+          "baseHp": 230518,
+          "baseAttack": 46104,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            576320
+          ]
+        },
+        {
+          "id": 340,
+          "name": "难度340",
+          "mids": 3,
+          "baseHp": 231878,
+          "baseAttack": 46376,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            579720
+          ]
+        },
+        {
+          "id": 341,
+          "name": "难度341",
+          "mids": 3,
+          "baseHp": 233242,
+          "baseAttack": 46648,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            583130
+          ]
+        },
+        {
+          "id": 342,
+          "name": "难度342",
+          "mids": 3,
+          "baseHp": 234610,
+          "baseAttack": 46922,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            586550
+          ]
+        },
+        {
+          "id": 343,
+          "name": "难度343",
+          "mids": 3,
+          "baseHp": 235982,
+          "baseAttack": 47196,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            589980
+          ]
+        },
+        {
+          "id": 344,
+          "name": "难度344",
+          "mids": 3,
+          "baseHp": 237358,
+          "baseAttack": 47472,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            593420
+          ]
+        },
+        {
+          "id": 345,
+          "name": "难度345",
+          "mids": 3,
+          "baseHp": 238738,
+          "baseAttack": 47748,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            596870
+          ]
+        },
+        {
+          "id": 346,
+          "name": "难度346",
+          "mids": 3,
+          "baseHp": 240122,
+          "baseAttack": 48024,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            600330
+          ]
+        },
+        {
+          "id": 347,
+          "name": "难度347",
+          "mids": 3,
+          "baseHp": 241510,
+          "baseAttack": 48302,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            603800
+          ]
+        },
+        {
+          "id": 348,
+          "name": "难度348",
+          "mids": 3,
+          "baseHp": 242902,
+          "baseAttack": 48580,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            607280
+          ]
+        },
+        {
+          "id": 349,
+          "name": "难度349",
+          "mids": 3,
+          "baseHp": 244298,
+          "baseAttack": 48860,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            610770
+          ]
+        },
+        {
+          "id": 350,
+          "name": "难度350",
+          "mids": 3,
+          "baseHp": 245698,
+          "baseAttack": 49140,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            614270
+          ]
+        },
+        {
+          "id": 351,
+          "name": "难度351",
+          "mids": 3,
+          "baseHp": 247102,
+          "baseAttack": 49420,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            617780
+          ]
+        },
+        {
+          "id": 352,
+          "name": "难度352",
+          "mids": 3,
+          "baseHp": 248510,
+          "baseAttack": 49702,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            621300
+          ]
+        },
+        {
+          "id": 353,
+          "name": "难度353",
+          "mids": 3,
+          "baseHp": 249922,
+          "baseAttack": 49984,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            624830
+          ]
+        },
+        {
+          "id": 354,
+          "name": "难度354",
+          "mids": 3,
+          "baseHp": 251338,
+          "baseAttack": 50268,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            628370
+          ]
+        },
+        {
+          "id": 355,
+          "name": "难度355",
+          "mids": 3,
+          "baseHp": 252758,
+          "baseAttack": 50552,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            631920
+          ]
+        },
+        {
+          "id": 356,
+          "name": "难度356",
+          "mids": 3,
+          "baseHp": 254182,
+          "baseAttack": 50836,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            635480
+          ]
+        },
+        {
+          "id": 357,
+          "name": "难度357",
+          "mids": 3,
+          "baseHp": 255610,
+          "baseAttack": 51122,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            639050
+          ]
+        },
+        {
+          "id": 358,
+          "name": "难度358",
+          "mids": 3,
+          "baseHp": 257042,
+          "baseAttack": 51408,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            642630
+          ]
+        },
+        {
+          "id": 359,
+          "name": "难度359",
+          "mids": 3,
+          "baseHp": 258478,
+          "baseAttack": 51696,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            646220
+          ]
+        },
+        {
+          "id": 360,
+          "name": "难度360",
+          "mids": 3,
+          "baseHp": 259918,
+          "baseAttack": 51984,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            649820
+          ]
+        },
+        {
+          "id": 361,
+          "name": "难度361",
+          "mids": 3,
+          "baseHp": 261362,
+          "baseAttack": 52272,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            653430
+          ]
+        },
+        {
+          "id": 362,
+          "name": "难度362",
+          "mids": 3,
+          "baseHp": 262810,
+          "baseAttack": 52562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            657050
+          ]
+        },
+        {
+          "id": 363,
+          "name": "难度363",
+          "mids": 3,
+          "baseHp": 264262,
+          "baseAttack": 52852,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            660680
+          ]
+        },
+        {
+          "id": 364,
+          "name": "难度364",
+          "mids": 3,
+          "baseHp": 265718,
+          "baseAttack": 53144,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            664320
+          ]
+        },
+        {
+          "id": 365,
+          "name": "难度365",
+          "mids": 3,
+          "baseHp": 267178,
+          "baseAttack": 53436,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            667970
+          ]
+        },
+        {
+          "id": 366,
+          "name": "难度366",
+          "mids": 3,
+          "baseHp": 268642,
+          "baseAttack": 53728,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            671630
+          ]
+        },
+        {
+          "id": 367,
+          "name": "难度367",
+          "mids": 3,
+          "baseHp": 270110,
+          "baseAttack": 54022,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            675300
+          ]
+        },
+        {
+          "id": 368,
+          "name": "难度368",
+          "mids": 3,
+          "baseHp": 271582,
+          "baseAttack": 54316,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            678980
+          ]
+        },
+        {
+          "id": 369,
+          "name": "难度369",
+          "mids": 3,
+          "baseHp": 273058,
+          "baseAttack": 54612,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            682670
+          ]
+        },
+        {
+          "id": 370,
+          "name": "难度370",
+          "mids": 3,
+          "baseHp": 274538,
+          "baseAttack": 54908,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            686370
+          ]
+        },
+        {
+          "id": 371,
+          "name": "难度371",
+          "mids": 3,
+          "baseHp": 276022,
+          "baseAttack": 55204,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            690080
+          ]
+        },
+        {
+          "id": 372,
+          "name": "难度372",
+          "mids": 3,
+          "baseHp": 277510,
+          "baseAttack": 55502,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            693800
+          ]
+        },
+        {
+          "id": 373,
+          "name": "难度373",
+          "mids": 3,
+          "baseHp": 279002,
+          "baseAttack": 55800,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            697530
+          ]
+        },
+        {
+          "id": 374,
+          "name": "难度374",
+          "mids": 3,
+          "baseHp": 280498,
+          "baseAttack": 56100,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            701270
+          ]
+        },
+        {
+          "id": 375,
+          "name": "难度375",
+          "mids": 3,
+          "baseHp": 281998,
+          "baseAttack": 56400,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            705020
+          ]
+        },
+        {
+          "id": 376,
+          "name": "难度376",
+          "mids": 3,
+          "baseHp": 283502,
+          "baseAttack": 56700,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            708780
+          ]
+        },
+        {
+          "id": 377,
+          "name": "难度377",
+          "mids": 3,
+          "baseHp": 285010,
+          "baseAttack": 57002,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            712550
+          ]
+        },
+        {
+          "id": 378,
+          "name": "难度378",
+          "mids": 3,
+          "baseHp": 286522,
+          "baseAttack": 57304,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            716330
+          ]
+        },
+        {
+          "id": 379,
+          "name": "难度379",
+          "mids": 3,
+          "baseHp": 288038,
+          "baseAttack": 57608,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            720120
+          ]
+        },
+        {
+          "id": 380,
+          "name": "难度380",
+          "mids": 3,
+          "baseHp": 289558,
+          "baseAttack": 57912,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            723920
+          ]
+        },
+        {
+          "id": 381,
+          "name": "难度381",
+          "mids": 3,
+          "baseHp": 291082,
+          "baseAttack": 58216,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            727730
+          ]
+        },
+        {
+          "id": 382,
+          "name": "难度382",
+          "mids": 3,
+          "baseHp": 292610,
+          "baseAttack": 58522,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            731550
+          ]
+        },
+        {
+          "id": 383,
+          "name": "难度383",
+          "mids": 3,
+          "baseHp": 294142,
+          "baseAttack": 58828,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            735380
+          ]
+        },
+        {
+          "id": 384,
+          "name": "难度384",
+          "mids": 3,
+          "baseHp": 295678,
+          "baseAttack": 59136,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            739220
+          ]
+        },
+        {
+          "id": 385,
+          "name": "难度385",
+          "mids": 3,
+          "baseHp": 297218,
+          "baseAttack": 59444,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            743070
+          ]
+        },
+        {
+          "id": 386,
+          "name": "难度386",
+          "mids": 3,
+          "baseHp": 298762,
+          "baseAttack": 59752,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            746930
+          ]
+        },
+        {
+          "id": 387,
+          "name": "难度387",
+          "mids": 3,
+          "baseHp": 300310,
+          "baseAttack": 60062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            750800
+          ]
+        },
+        {
+          "id": 388,
+          "name": "难度388",
+          "mids": 3,
+          "baseHp": 301862,
+          "baseAttack": 60372,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            754680
+          ]
+        },
+        {
+          "id": 389,
+          "name": "难度389",
+          "mids": 3,
+          "baseHp": 303418,
+          "baseAttack": 60684,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            758570
+          ]
+        },
+        {
+          "id": 390,
+          "name": "难度390",
+          "mids": 3,
+          "baseHp": 304978,
+          "baseAttack": 60996,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            762470
+          ]
+        },
+        {
+          "id": 391,
+          "name": "难度391",
+          "mids": 3,
+          "baseHp": 306542,
+          "baseAttack": 61308,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            766380
+          ]
+        },
+        {
+          "id": 392,
+          "name": "难度392",
+          "mids": 3,
+          "baseHp": 308110,
+          "baseAttack": 61622,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            770300
+          ]
+        },
+        {
+          "id": 393,
+          "name": "难度393",
+          "mids": 3,
+          "baseHp": 309682,
+          "baseAttack": 61936,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            774230
+          ]
+        },
+        {
+          "id": 394,
+          "name": "难度394",
+          "mids": 3,
+          "baseHp": 311258,
+          "baseAttack": 62252,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            778170
+          ]
+        },
+        {
+          "id": 395,
+          "name": "难度395",
+          "mids": 3,
+          "baseHp": 312838,
+          "baseAttack": 62568,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            782120
+          ]
+        },
+        {
+          "id": 396,
+          "name": "难度396",
+          "mids": 3,
+          "baseHp": 314422,
+          "baseAttack": 62884,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            786080
+          ]
+        },
+        {
+          "id": 397,
+          "name": "难度397",
+          "mids": 3,
+          "baseHp": 316010,
+          "baseAttack": 63202,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            790050
+          ]
+        },
+        {
+          "id": 398,
+          "name": "难度398",
+          "mids": 3,
+          "baseHp": 317602,
+          "baseAttack": 63520,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            794030
+          ]
+        },
+        {
+          "id": 399,
+          "name": "难度399",
+          "mids": 3,
+          "baseHp": 319198,
+          "baseAttack": 63840,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            798020
+          ]
+        },
+        {
+          "id": 400,
+          "name": "难度400",
+          "mids": 3,
+          "baseHp": 320798,
+          "baseAttack": 64160,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            802020
+          ]
+        },
+        {
+          "id": 401,
+          "name": "难度401",
+          "mids": 3,
+          "baseHp": 322402,
+          "baseAttack": 64480,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            806030
+          ]
+        },
+        {
+          "id": 402,
+          "name": "难度402",
+          "mids": 3,
+          "baseHp": 324010,
+          "baseAttack": 64802,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            810050
+          ]
+        },
+        {
+          "id": 403,
+          "name": "难度403",
+          "mids": 3,
+          "baseHp": 325622,
+          "baseAttack": 65124,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            814080
+          ]
+        },
+        {
+          "id": 404,
+          "name": "难度404",
+          "mids": 3,
+          "baseHp": 327238,
+          "baseAttack": 65448,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            818120
+          ]
+        },
+        {
+          "id": 405,
+          "name": "难度405",
+          "mids": 3,
+          "baseHp": 328858,
+          "baseAttack": 65772,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            822170
+          ]
+        },
+        {
+          "id": 406,
+          "name": "难度406",
+          "mids": 3,
+          "baseHp": 330482,
+          "baseAttack": 66096,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            826230
+          ]
+        },
+        {
+          "id": 407,
+          "name": "难度407",
+          "mids": 3,
+          "baseHp": 332110,
+          "baseAttack": 66422,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            830300
+          ]
+        },
+        {
+          "id": 408,
+          "name": "难度408",
+          "mids": 3,
+          "baseHp": 333742,
+          "baseAttack": 66748,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            834380
+          ]
+        },
+        {
+          "id": 409,
+          "name": "难度409",
+          "mids": 3,
+          "baseHp": 335378,
+          "baseAttack": 67076,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            838470
+          ]
+        },
+        {
+          "id": 410,
+          "name": "难度410",
+          "mids": 3,
+          "baseHp": 337018,
+          "baseAttack": 67404,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            842570
+          ]
+        },
+        {
+          "id": 411,
+          "name": "难度411",
+          "mids": 3,
+          "baseHp": 338662,
+          "baseAttack": 67732,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            846680
+          ]
+        },
+        {
+          "id": 412,
+          "name": "难度412",
+          "mids": 3,
+          "baseHp": 340310,
+          "baseAttack": 68062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            850800
+          ]
+        },
+        {
+          "id": 413,
+          "name": "难度413",
+          "mids": 3,
+          "baseHp": 341962,
+          "baseAttack": 68392,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            854930
+          ]
+        },
+        {
+          "id": 414,
+          "name": "难度414",
+          "mids": 3,
+          "baseHp": 343618,
+          "baseAttack": 68724,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            859070
+          ]
+        },
+        {
+          "id": 415,
+          "name": "难度415",
+          "mids": 3,
+          "baseHp": 345278,
+          "baseAttack": 69056,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            863220
+          ]
+        },
+        {
+          "id": 416,
+          "name": "难度416",
+          "mids": 3,
+          "baseHp": 346942,
+          "baseAttack": 69388,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            867380
+          ]
+        },
+        {
+          "id": 417,
+          "name": "难度417",
+          "mids": 3,
+          "baseHp": 348610,
+          "baseAttack": 69722,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            871550
+          ]
+        },
+        {
+          "id": 418,
+          "name": "难度418",
+          "mids": 3,
+          "baseHp": 350282,
+          "baseAttack": 70056,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            875730
+          ]
+        },
+        {
+          "id": 419,
+          "name": "难度419",
+          "mids": 3,
+          "baseHp": 351958,
+          "baseAttack": 70392,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            879920
+          ]
+        },
+        {
+          "id": 420,
+          "name": "难度420",
+          "mids": 3,
+          "baseHp": 353638,
+          "baseAttack": 70728,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            884120
+          ]
+        },
+        {
+          "id": 421,
+          "name": "难度421",
+          "mids": 3,
+          "baseHp": 355322,
+          "baseAttack": 71064,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            888330
+          ]
+        },
+        {
+          "id": 422,
+          "name": "难度422",
+          "mids": 3,
+          "baseHp": 357010,
+          "baseAttack": 71402,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            892550
+          ]
+        },
+        {
+          "id": 423,
+          "name": "难度423",
+          "mids": 3,
+          "baseHp": 358702,
+          "baseAttack": 71740,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            896780
+          ]
+        },
+        {
+          "id": 424,
+          "name": "难度424",
+          "mids": 3,
+          "baseHp": 360398,
+          "baseAttack": 72080,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            901020
+          ]
+        },
+        {
+          "id": 425,
+          "name": "难度425",
+          "mids": 3,
+          "baseHp": 362098,
+          "baseAttack": 72420,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            905270
+          ]
+        },
+        {
+          "id": 426,
+          "name": "难度426",
+          "mids": 3,
+          "baseHp": 363802,
+          "baseAttack": 72760,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            909530
+          ]
+        },
+        {
+          "id": 427,
+          "name": "难度427",
+          "mids": 3,
+          "baseHp": 365510,
+          "baseAttack": 73102,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            913800
+          ]
+        },
+        {
+          "id": 428,
+          "name": "难度428",
+          "mids": 3,
+          "baseHp": 367222,
+          "baseAttack": 73444,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            918080
+          ]
+        },
+        {
+          "id": 429,
+          "name": "难度429",
+          "mids": 3,
+          "baseHp": 368938,
+          "baseAttack": 73788,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            922370
+          ]
+        },
+        {
+          "id": 430,
+          "name": "难度430",
+          "mids": 3,
+          "baseHp": 370658,
+          "baseAttack": 74132,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            926670
+          ]
+        },
+        {
+          "id": 431,
+          "name": "难度431",
+          "mids": 3,
+          "baseHp": 372382,
+          "baseAttack": 74476,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            930980
+          ]
+        },
+        {
+          "id": 432,
+          "name": "难度432",
+          "mids": 3,
+          "baseHp": 374110,
+          "baseAttack": 74822,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            935300
+          ]
+        },
+        {
+          "id": 433,
+          "name": "难度433",
+          "mids": 3,
+          "baseHp": 375842,
+          "baseAttack": 75168,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            939630
+          ]
+        },
+        {
+          "id": 434,
+          "name": "难度434",
+          "mids": 3,
+          "baseHp": 377578,
+          "baseAttack": 75516,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            943970
+          ]
+        },
+        {
+          "id": 435,
+          "name": "难度435",
+          "mids": 3,
+          "baseHp": 379318,
+          "baseAttack": 75864,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            948320
+          ]
+        },
+        {
+          "id": 436,
+          "name": "难度436",
+          "mids": 3,
+          "baseHp": 381062,
+          "baseAttack": 76212,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            952680
+          ]
+        },
+        {
+          "id": 437,
+          "name": "难度437",
+          "mids": 3,
+          "baseHp": 382810,
+          "baseAttack": 76562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            957050
+          ]
+        },
+        {
+          "id": 438,
+          "name": "难度438",
+          "mids": 3,
+          "baseHp": 384562,
+          "baseAttack": 76912,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            961430
+          ]
+        },
+        {
+          "id": 439,
+          "name": "难度439",
+          "mids": 3,
+          "baseHp": 386318,
+          "baseAttack": 77264,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            965820
+          ]
+        },
+        {
+          "id": 440,
+          "name": "难度440",
+          "mids": 3,
+          "baseHp": 388078,
+          "baseAttack": 77616,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            970220
+          ]
+        },
+        {
+          "id": 441,
+          "name": "难度441",
+          "mids": 3,
+          "baseHp": 389842,
+          "baseAttack": 77968,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            974630
+          ]
+        },
+        {
+          "id": 442,
+          "name": "难度442",
+          "mids": 3,
+          "baseHp": 391610,
+          "baseAttack": 78322,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            979050
+          ]
+        },
+        {
+          "id": 443,
+          "name": "难度443",
+          "mids": 3,
+          "baseHp": 393382,
+          "baseAttack": 78676,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            983480
+          ]
+        },
+        {
+          "id": 444,
+          "name": "难度444",
+          "mids": 3,
+          "baseHp": 395158,
+          "baseAttack": 79032,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            987920
+          ]
+        },
+        {
+          "id": 445,
+          "name": "难度445",
+          "mids": 3,
+          "baseHp": 396938,
+          "baseAttack": 79388,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            992370
+          ]
+        },
+        {
+          "id": 446,
+          "name": "难度446",
+          "mids": 3,
+          "baseHp": 398722,
+          "baseAttack": 79744,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            996830
+          ]
+        },
+        {
+          "id": 447,
+          "name": "难度447",
+          "mids": 3,
+          "baseHp": 400510,
+          "baseAttack": 80102,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1001300
+          ]
+        },
+        {
+          "id": 448,
+          "name": "难度448",
+          "mids": 3,
+          "baseHp": 402302,
+          "baseAttack": 80460,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1005780
+          ]
+        },
+        {
+          "id": 449,
+          "name": "难度449",
+          "mids": 3,
+          "baseHp": 404098,
+          "baseAttack": 80820,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1010270
+          ]
+        },
+        {
+          "id": 450,
+          "name": "难度450",
+          "mids": 3,
+          "baseHp": 405898,
+          "baseAttack": 81180,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1014770
+          ]
+        },
+        {
+          "id": 451,
+          "name": "难度451",
+          "mids": 3,
+          "baseHp": 407702,
+          "baseAttack": 81540,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1019280
+          ]
+        },
+        {
+          "id": 452,
+          "name": "难度452",
+          "mids": 3,
+          "baseHp": 409510,
+          "baseAttack": 81902,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1023800
+          ]
+        },
+        {
+          "id": 453,
+          "name": "难度453",
+          "mids": 3,
+          "baseHp": 411322,
+          "baseAttack": 82264,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1028330
+          ]
+        },
+        {
+          "id": 454,
+          "name": "难度454",
+          "mids": 3,
+          "baseHp": 413138,
+          "baseAttack": 82628,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1032870
+          ]
+        },
+        {
+          "id": 455,
+          "name": "难度455",
+          "mids": 3,
+          "baseHp": 414958,
+          "baseAttack": 82992,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1037420
+          ]
+        },
+        {
+          "id": 456,
+          "name": "难度456",
+          "mids": 3,
+          "baseHp": 416782,
+          "baseAttack": 83356,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1041980
+          ]
+        },
+        {
+          "id": 457,
+          "name": "难度457",
+          "mids": 3,
+          "baseHp": 418610,
+          "baseAttack": 83722,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1046550
+          ]
+        },
+        {
+          "id": 458,
+          "name": "难度458",
+          "mids": 3,
+          "baseHp": 420442,
+          "baseAttack": 84088,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1051130
+          ]
+        },
+        {
+          "id": 459,
+          "name": "难度459",
+          "mids": 3,
+          "baseHp": 422278,
+          "baseAttack": 84456,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1055720
+          ]
+        },
+        {
+          "id": 460,
+          "name": "难度460",
+          "mids": 3,
+          "baseHp": 424118,
+          "baseAttack": 84824,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1060320
+          ]
+        },
+        {
+          "id": 461,
+          "name": "难度461",
+          "mids": 3,
+          "baseHp": 425962,
+          "baseAttack": 85192,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1064930
+          ]
+        },
+        {
+          "id": 462,
+          "name": "难度462",
+          "mids": 3,
+          "baseHp": 427810,
+          "baseAttack": 85562,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1069550
+          ]
+        },
+        {
+          "id": 463,
+          "name": "难度463",
+          "mids": 3,
+          "baseHp": 429662,
+          "baseAttack": 85932,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1074180
+          ]
+        },
+        {
+          "id": 464,
+          "name": "难度464",
+          "mids": 3,
+          "baseHp": 431518,
+          "baseAttack": 86304,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1078820
+          ]
+        },
+        {
+          "id": 465,
+          "name": "难度465",
+          "mids": 3,
+          "baseHp": 433378,
+          "baseAttack": 86676,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1083470
+          ]
+        },
+        {
+          "id": 466,
+          "name": "难度466",
+          "mids": 3,
+          "baseHp": 435242,
+          "baseAttack": 87048,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1088130
+          ]
+        },
+        {
+          "id": 467,
+          "name": "难度467",
+          "mids": 3,
+          "baseHp": 437110,
+          "baseAttack": 87422,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1092800
+          ]
+        },
+        {
+          "id": 468,
+          "name": "难度468",
+          "mids": 3,
+          "baseHp": 438982,
+          "baseAttack": 87796,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1097480
+          ]
+        },
+        {
+          "id": 469,
+          "name": "难度469",
+          "mids": 3,
+          "baseHp": 440858,
+          "baseAttack": 88172,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1102170
+          ]
+        },
+        {
+          "id": 470,
+          "name": "难度470",
+          "mids": 3,
+          "baseHp": 442738,
+          "baseAttack": 88548,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1106870
+          ]
+        },
+        {
+          "id": 471,
+          "name": "难度471",
+          "mids": 3,
+          "baseHp": 444622,
+          "baseAttack": 88924,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1111580
+          ]
+        },
+        {
+          "id": 472,
+          "name": "难度472",
+          "mids": 3,
+          "baseHp": 446510,
+          "baseAttack": 89302,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1116300
+          ]
+        },
+        {
+          "id": 473,
+          "name": "难度473",
+          "mids": 3,
+          "baseHp": 448402,
+          "baseAttack": 89680,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1121030
+          ]
+        },
+        {
+          "id": 474,
+          "name": "难度474",
+          "mids": 3,
+          "baseHp": 450298,
+          "baseAttack": 90060,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1125770
+          ]
+        },
+        {
+          "id": 475,
+          "name": "难度475",
+          "mids": 3,
+          "baseHp": 452198,
+          "baseAttack": 90440,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1130520
+          ]
+        },
+        {
+          "id": 476,
+          "name": "难度476",
+          "mids": 3,
+          "baseHp": 454102,
+          "baseAttack": 90820,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1135280
+          ]
+        },
+        {
+          "id": 477,
+          "name": "难度477",
+          "mids": 3,
+          "baseHp": 456010,
+          "baseAttack": 91202,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1140050
+          ]
+        },
+        {
+          "id": 478,
+          "name": "难度478",
+          "mids": 3,
+          "baseHp": 457922,
+          "baseAttack": 91584,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1144830
+          ]
+        },
+        {
+          "id": 479,
+          "name": "难度479",
+          "mids": 3,
+          "baseHp": 459838,
+          "baseAttack": 91968,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1149620
+          ]
+        },
+        {
+          "id": 480,
+          "name": "难度480",
+          "mids": 3,
+          "baseHp": 461758,
+          "baseAttack": 92352,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1154420
+          ]
+        },
+        {
+          "id": 481,
+          "name": "难度481",
+          "mids": 3,
+          "baseHp": 463682,
+          "baseAttack": 92736,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1159230
+          ]
+        },
+        {
+          "id": 482,
+          "name": "难度482",
+          "mids": 3,
+          "baseHp": 465610,
+          "baseAttack": 93122,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1164050
+          ]
+        },
+        {
+          "id": 483,
+          "name": "难度483",
+          "mids": 3,
+          "baseHp": 467542,
+          "baseAttack": 93508,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1168880
+          ]
+        },
+        {
+          "id": 484,
+          "name": "难度484",
+          "mids": 3,
+          "baseHp": 469478,
+          "baseAttack": 93896,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1173720
+          ]
+        },
+        {
+          "id": 485,
+          "name": "难度485",
+          "mids": 3,
+          "baseHp": 471418,
+          "baseAttack": 94284,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1178570
+          ]
+        },
+        {
+          "id": 486,
+          "name": "难度486",
+          "mids": 3,
+          "baseHp": 473362,
+          "baseAttack": 94672,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1183430
+          ]
+        },
+        {
+          "id": 487,
+          "name": "难度487",
+          "mids": 3,
+          "baseHp": 475310,
+          "baseAttack": 95062,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1188300
+          ]
+        },
+        {
+          "id": 488,
+          "name": "难度488",
+          "mids": 3,
+          "baseHp": 477262,
+          "baseAttack": 95452,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1193180
+          ]
+        },
+        {
+          "id": 489,
+          "name": "难度489",
+          "mids": 3,
+          "baseHp": 479218,
+          "baseAttack": 95844,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1198070
+          ]
+        },
+        {
+          "id": 490,
+          "name": "难度490",
+          "mids": 3,
+          "baseHp": 481178,
+          "baseAttack": 96236,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1202970
+          ]
+        },
+        {
+          "id": 491,
+          "name": "难度491",
+          "mids": 3,
+          "baseHp": 483142,
+          "baseAttack": 96628,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1207880
+          ]
+        },
+        {
+          "id": 492,
+          "name": "难度492",
+          "mids": 3,
+          "baseHp": 485110,
+          "baseAttack": 97022,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1212800
+          ]
+        },
+        {
+          "id": 493,
+          "name": "难度493",
+          "mids": 3,
+          "baseHp": 487082,
+          "baseAttack": 97416,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1217730
+          ]
+        },
+        {
+          "id": 494,
+          "name": "难度494",
+          "mids": 3,
+          "baseHp": 489058,
+          "baseAttack": 97812,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1222670
+          ]
+        },
+        {
+          "id": 495,
+          "name": "难度495",
+          "mids": 3,
+          "baseHp": 491038,
+          "baseAttack": 98208,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1227620
+          ]
+        },
+        {
+          "id": 496,
+          "name": "难度496",
+          "mids": 3,
+          "baseHp": 493022,
+          "baseAttack": 98604,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1232580
+          ]
+        },
+        {
+          "id": 497,
+          "name": "难度497",
+          "mids": 3,
+          "baseHp": 495010,
+          "baseAttack": 99002,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1237550
+          ]
+        },
+        {
+          "id": 498,
+          "name": "难度498",
+          "mids": 3,
+          "baseHp": 497002,
+          "baseAttack": 99400,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1242530
+          ]
+        },
+        {
+          "id": 499,
+          "name": "难度499",
+          "mids": 3,
+          "baseHp": 498998,
+          "baseAttack": 99800,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1247520
+          ]
+        },
+        {
+          "id": 500,
+          "name": "难度500",
+          "mids": 3,
+          "baseHp": 500998,
+          "baseAttack": 100200,
+          "count": 40,
+          "rwd": [
+            1,
+            2,
+            1252520
+          ]
+        }
+      ]
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

@@ -1,0 +1,97 @@
+
+battle_effect.png
+size: 1558,155
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+G1
+  rotate: true
+  xy: 1357, 53
+  size: 102, 95
+  orig: 102, 95
+  offset: 0, 0
+  index: -1
+G2
+  rotate: false
+  xy: 965, 5
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+GD1
+  rotate: true
+  xy: 386, 11
+  size: 144, 190
+  orig: 144, 190
+  offset: 0, 0
+  index: -1
+GD2
+  rotate: true
+  xy: 578, 11
+  size: 144, 190
+  orig: 144, 190
+  offset: 0, 0
+  index: -1
+GD3
+  rotate: false
+  xy: 1239, 39
+  size: 116, 116
+  orig: 116, 116
+  offset: 0, 0
+  index: -1
+GX
+  rotate: false
+  xy: 202, 0
+  size: 182, 155
+  orig: 182, 155
+  offset: 0, 0
+  index: -1
+GX2
+  rotate: true
+  xy: 1117, 23
+  size: 132, 120
+  orig: 132, 120
+  offset: 0, 0
+  index: -1
+kuang_G1
+  rotate: false
+  xy: 1454, 31
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+kuang_G2
+  rotate: false
+  xy: 0, 3
+  size: 200, 152
+  orig: 200, 152
+  offset: 0, 0
+  index: -1
+kuang_G3
+  rotate: false
+  xy: 770, 21
+  size: 193, 134
+  orig: 193, 134
+  offset: 0, 0
+  index: -1
+quan1
+  rotate: true
+  xy: 1454, 93
+  size: 62, 59
+  orig: 62, 59
+  offset: 0, 0
+  index: -1
+xian3
+  rotate: true
+  xy: 1117, 7
+  size: 14, 275
+  orig: 14, 275
+  offset: 0, 0
+  index: -1
+xing
+  rotate: false
+  xy: 1516, 87
+  size: 42, 68
+  orig: 42, 68
+  offset: 0, 0
+  index: -1

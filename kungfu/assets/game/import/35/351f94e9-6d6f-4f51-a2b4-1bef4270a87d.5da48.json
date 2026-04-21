@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "deiMAygjxB255vsme+Gp1j"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "m103",
+      "rect": [
+        0,
+        2,
+        347,
+        521
+      ],
+      "offset": [
+        -1,
+        -1
+      ],
+      "originalSize": [
+        349,
+        523
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,178 @@
+[
+  1,
+  [
+    "4dq42WFIlNGISwFiMSujfS",
+    "62JNLKuE1MzKaHS3POVQC9",
+    "8dUiTBPvxCq6OI69QrMx8x",
+    "63JMQWGkpHJYNgeKHtElEf"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "challenge_info_di2",
+          "rect": [
+            1,
+            0,
+            374,
+            273
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            376,
+            273
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "challenge_info_level_di",
+          "rect": [
+            4,
+            0,
+            282,
+            49
+          ],
+          "offset": [
+            -0.5,
+            0
+          ],
+          "originalSize": [
+            291,
+            49
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "challenge_info_di",
+          "rect": [
+            0,
+            0,
+            560,
+            680
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            560,
+            680
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "challenge_info_right",
+          "rect": [
+            0,
+            0,
+            38,
+            68
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            38,
+            68
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ]
+  ]
+]

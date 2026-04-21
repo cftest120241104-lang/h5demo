@@ -1,0 +1,41 @@
+
+kongtou.png
+size: 309,156
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+G1
+  rotate: true
+  xy: 153, 77
+  size: 78, 109
+  orig: 78, 109
+  offset: 0, 0
+  index: -1
+G2
+  rotate: false
+  xy: 250, 1
+  size: 58, 74
+  orig: 60, 76
+  offset: 1, 1
+  index: -1
+G3
+  rotate: false
+  xy: 1, 5
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+ren
+  rotate: true
+  xy: 153, 11
+  size: 64, 95
+  orig: 64, 95
+  offset: 0, 0
+  index: -1
+yinying
+  rotate: true
+  xy: 264, 79
+  size: 76, 32
+  orig: 76, 34
+  offset: 0, 1
+  index: -1

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "dfNQZS0DFI9aOiFIcwj8J0"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "shop_item_pz4",
+      "rect": [
+        0,
+        0,
+        159,
+        214
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        159,
+        214
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

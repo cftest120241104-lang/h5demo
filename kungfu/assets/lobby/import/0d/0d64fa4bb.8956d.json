@@ -1,0 +1,96 @@
+[
+  1,
+  [
+    "1cQ6QkEx9ESo6lsAPjtFJ6",
+    "3cjVTS12tKbYtqdDOUb6m2"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "point1",
+          "rect": [
+            0,
+            0,
+            59,
+            59
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            59,
+            59
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "icon1",
+          "rect": [
+            0,
+            0,
+            34,
+            34
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            34,
+            34
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "a5C7Xir9xHCa6ZgBruifA5"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "quaKuang",
+      "rect": [
+        0,
+        0,
+        242,
+        303
+      ],
+      "offset": [
+        -1,
+        1
+      ],
+      "originalSize": [
+        244,
+        305
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

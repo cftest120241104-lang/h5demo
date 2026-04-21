@@ -1,0 +1,96 @@
+[
+  1,
+  [
+    "b6nrZm0ixAgapA1p+ZbEVM",
+    "f7X5bdZX9JG6Zl+INW2ida"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "getItem_di3",
+          "rect": [
+            0,
+            0,
+            100,
+            100
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            100,
+            100
+          ],
+          "capInsets": [
+            45,
+            45,
+            44,
+            47
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "getitem_di2",
+          "rect": [
+            0,
+            0,
+            720,
+            616
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            720,
+            616
+          ],
+          "capInsets": [
+            0,
+            0,
+            425,
+            166
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

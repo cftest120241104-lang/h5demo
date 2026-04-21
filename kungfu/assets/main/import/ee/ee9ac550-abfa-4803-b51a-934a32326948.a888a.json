@@ -1,0 +1,99 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.AnimationClip",
+      [
+        "_name",
+        "_duration",
+        "curveData"
+      ],
+      0
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      4
+    ]
+  ],
+  [
+    [
+      0,
+      "UI_in",
+      0.5,
+      {
+        "paths": {
+          "top": {
+            "comps": {
+              "cc.Widget": {
+                "top": [
+                  {
+                    "frame": 0,
+                    "value": -300,
+                    "curve": "cubicOut"
+                  },
+                  {
+                    "frame": 0.5,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "props": {
+              "opacity": [
+                {
+                  "frame": 0,
+                  "value": 0
+                },
+                {
+                  "frame": 0.5,
+                  "value": 255
+                }
+              ]
+            }
+          },
+          "bottom": {
+            "comps": {
+              "cc.Widget": {
+                "bottom": [
+                  {
+                    "frame": 0,
+                    "value": -500,
+                    "curve": "cubicOut"
+                  },
+                  {
+                    "frame": 0.5,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "props": {
+              "opacity": [
+                {
+                  "frame": 0,
+                  "value": 0
+                },
+                {
+                  "frame": 0.5,
+                  "value": 255
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

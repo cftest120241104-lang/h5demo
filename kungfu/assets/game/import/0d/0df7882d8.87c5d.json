@@ -1,0 +1,96 @@
+[
+  1,
+  [
+    "5avVyDseNIVqWR00NvRuzL",
+    "14Kcid/+RAbZ0DL2/rcnYr"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "universal_board",
+          "rect": [
+            0,
+            0,
+            228,
+            235
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            228,
+            235
+          ],
+          "capInsets": [
+            184,
+            30,
+            44,
+            18
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "universal_shadow",
+          "rect": [
+            0,
+            0,
+            194,
+            43
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            194,
+            43
+          ],
+          "capInsets": [
+            35,
+            31,
+            16,
+            12
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  ]
+]

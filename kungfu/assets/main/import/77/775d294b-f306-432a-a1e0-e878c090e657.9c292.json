@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "5cThT+BXNOK4cJ/7aMQz+8"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "skill_name_di",
+      "rect": [
+        0,
+        0,
+        147,
+        41
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        147,
+        41
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

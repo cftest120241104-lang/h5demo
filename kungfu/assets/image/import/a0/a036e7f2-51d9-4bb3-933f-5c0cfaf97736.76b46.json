@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "20TeIE4HNI7K3lrV/BhrBA"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "iteminfo_di4",
+      "rect": [
+        0,
+        0,
+        472,
+        144
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        472,
+        144
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "86YSM+BtpM+LmRl4s6TmSH"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "2004",
+      "rect": [
+        11,
+        19,
+        78,
+        54
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "originalSize": [
+        100,
+        100
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

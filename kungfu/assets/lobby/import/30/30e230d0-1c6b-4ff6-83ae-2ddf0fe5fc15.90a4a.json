@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "ddRNhEzgdGT6sjyMX+uf2I"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "shouzhi",
+      "rect": [
+        3,
+        2,
+        500,
+        146
+      ],
+      "offset": [
+        0.5,
+        -0.5
+      ],
+      "originalSize": [
+        505,
+        149
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

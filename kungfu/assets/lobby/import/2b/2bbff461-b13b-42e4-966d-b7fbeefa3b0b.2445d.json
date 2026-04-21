@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "f6SeRBQ0BGdpVv48CZufSS"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "mainbox",
+      "rect": [
+        2,
+        2,
+        154,
+        564
+      ],
+      "offset": [
+        1,
+        0
+      ],
+      "originalSize": [
+        156,
+        568
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

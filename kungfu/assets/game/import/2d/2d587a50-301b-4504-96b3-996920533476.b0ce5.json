@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "80A6VNvWBBJJyJyGhkeRUF"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "dieEff",
+      "rect": [
+        2,
+        0,
+        1290,
+        284
+      ],
+      "offset": [
+        1,
+        0
+      ],
+      "originalSize": [
+        1292,
+        284
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

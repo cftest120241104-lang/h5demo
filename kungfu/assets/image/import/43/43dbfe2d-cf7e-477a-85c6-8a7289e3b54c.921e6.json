@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "bf/QecgfBLEpl0zlmTqqgW"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "equip_title4",
+      "rect": [
+        0,
+        0,
+        350,
+        151
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        350,
+        151
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "aacSNbaCNJ752s1UX0ey0x"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "goldm1",
+      "rect": [
+        0,
+        2,
+        205,
+        734
+      ],
+      "offset": [
+        0,
+        -1
+      ],
+      "originalSize": [
+        205,
+        736
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,139 @@
+
+fuhuo.png
+size: 200,2045
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+G1
+  rotate: false
+  xy: 0, 4
+  size: 102, 95
+  orig: 102, 95
+  offset: 0, 0
+  index: -1
+G2
+  rotate: false
+  xy: 0, 763
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+GD1
+  rotate: true
+  xy: 0, 1197
+  size: 144, 190
+  orig: 144, 190
+  offset: 0, 0
+  index: -1
+GD2
+  rotate: true
+  xy: 0, 1051
+  size: 144, 190
+  orig: 144, 190
+  offset: 0, 0
+  index: -1
+GD3
+  rotate: false
+  xy: 0, 101
+  size: 116, 116
+  orig: 116, 116
+  offset: 0, 0
+  index: -1
+GX
+  rotate: false
+  xy: 0, 1343
+  size: 182, 155
+  orig: 182, 155
+  offset: 0, 0
+  index: -1
+GX2
+  rotate: false
+  xy: 0, 219
+  size: 132, 120
+  orig: 132, 120
+  offset: 0, 0
+  index: -1
+LZ
+  rotate: true
+  xy: 0, 1654
+  size: 166, 193
+  orig: 166, 193
+  offset: 0, 0
+  index: -1
+LZ2
+  rotate: false
+  xy: 0, 1822
+  size: 196, 223
+  orig: 196, 223
+  offset: 0, 0
+  index: -1
+WD1
+  rotate: true
+  xy: 0, 477
+  size: 140, 147
+  orig: 140, 147
+  offset: 0, 0
+  index: -1
+WD2
+  rotate: true
+  xy: 0, 341
+  size: 134, 152
+  orig: 134, 152
+  offset: 0, 0
+  index: -1
+WD3
+  rotate: true
+  xy: 0, 619
+  size: 142, 157
+  orig: 142, 157
+  offset: 0, 0
+  index: -1
+fuhuo
+  rotate: true
+  xy: 104, 0
+  size: 99, 91
+  orig: 99, 91
+  offset: 0, 0
+  index: -1
+kuang_G1
+  rotate: false
+  xy: 134, 279
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+kuang_G2
+  rotate: false
+  xy: 0, 1500
+  size: 200, 152
+  orig: 200, 152
+  offset: 0, 0
+  index: -1
+kuang_G3
+  rotate: false
+  xy: 0, 915
+  size: 193, 134
+  orig: 193, 134
+  offset: 0, 0
+  index: -1
+quan1
+  rotate: false
+  xy: 118, 158
+  size: 62, 59
+  orig: 62, 59
+  offset: 0, 0
+  index: -1
+xian3
+  rotate: false
+  xy: 154, 342
+  size: 14, 275
+  orig: 14, 275
+  offset: 0, 0
+  index: -1
+xing
+  rotate: false
+  xy: 152, 845
+  size: 42, 68
+  orig: 42, 68
+  offset: 0, 0
+  index: -1

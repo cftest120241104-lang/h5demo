@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "bb+HAV6YZKZoraAc2dPSl5"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "fly_item",
+      "rect": [
+        2,
+        4,
+        1760,
+        1287
+      ],
+      "offset": [
+        -1,
+        -1
+      ],
+      "originalSize": [
+        1766,
+        1293
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
