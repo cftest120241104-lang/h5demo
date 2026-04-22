@@ -2891,8 +2891,8 @@ window.__require = function e(t, n, r) {
         if (Runtime_1.default.curPage == Constants.CurPage.home) {
           ClientEvent.SignalHub.send(ClientEvent.SignalId.OPEN_CLUB_BUBBLE);
           ClientEvent.SignalHub.send(ClientEvent.SignalId.REFRESH_HOME_JIGSAW_MASK);
-          Runtime_1.default.gui.remove(ViewRegistry_1.UIID.PuzzlePanel);
         }
+        Runtime_1.default.gui.remove(ViewRegistry_1.UIID.PuzzlePanel);
       }
       resolveActivePanelIndex() {
         for (let jigsawRefSlot2 = 0; jigsawRefSlot2 < Object.keys(Constants.JigsawInfo).length; jigsawRefSlot2++) if (Runtime_1.default.user.puzzleProgress[jigsawRefSlot2] < LevelLib.StaticData.puzzleMax) return jigsawRefSlot2;
@@ -4982,11 +4982,11 @@ window.__require = function e(t, n, r) {
           matcheRefSlot137.initItemLayer();
           matcheRefSlot137.scheduleOnce(function() {
             matcheRefSlot137.roundStateMarker = GameConst.GameState.Idle;
+            if (0 === Global.default.user.level) {
+              var matcheRefSlot274 = matcheRefSlot137.getGuideItem();
+              matcheRefSlot274 && GameApp.GameApp.uiMgr.showHint(matcheRefSlot274);
+            }
           });
-        }, .02 * matcheRefSlot140.length + 1);
-        0 === Global.default.user.level && this.scheduleOnce(function() {
-          var matcheRefSlot274 = matcheRefSlot137.getGuideItem();
-          GameApp.GameApp.uiMgr.showHint(matcheRefSlot274);
         }, .02 * matcheRefSlot140.length + 1);
       }
       reOrderData(matcheRefArg146) {
@@ -7878,21 +7878,25 @@ window.__require = function e(t, n, r) {
         widget.updateAlignment();
       }
       onEnable() {
-        var btns = [ this.pauseBtn, this.skinBtn, this.catchBtn, this.illustratedBtn, this.shuffleBtn, this.flipBtn, this.shuffleShareBtn ];
+        var btns = [ this.pauseBtn, this.skinBtn, this.illustratedBtn, this.shuffleBtn, this.flipBtn, this.shuffleShareBtn ];
         for (var i = 0; i < btns.length; ++i) btns[i].on(cc.Node.EventType.TOUCH_END, this.routeTap, this);
+        this.catchBtn.on(cc.Node.EventType.TOUCH_START, this.routeTap, this);
         this.listenerList.push(ClientEvent.SignalHub.on(ClientEvent.SignalId.SHOW_LEVEL_INTRO, this.showDifficult, this));
       }
       onDisable() {
-        var btns = [ this.pauseBtn, this.skinBtn, this.catchBtn, this.illustratedBtn, this.shuffleBtn, this.flipBtn ];
+        var btns = [ this.pauseBtn, this.skinBtn, this.illustratedBtn, this.shuffleBtn, this.flipBtn ];
         for (var i = 0; i < btns.length; ++i) btns[i].off(cc.Node.EventType.TOUCH_END, this.routeTap, this);
         this.shuffleShareBtn.off(cc.Node.EventType.TOUCH_END, this.routeTap, this);
+        this.catchBtn.off(cc.Node.EventType.TOUCH_START, this.routeTap, this);
         for (var j = 0; j < this.listenerList.length; ++j) ClientEvent.SignalHub.off(this.listenerList[j]);
       }
       handlePointerStart() {}
       routeTap(evt) {
         ClientEvent.SignalHub.send(ClientEvent.SignalId.SCREEN_TAP, evt);
         Global.default.platform.playEffect("ab:audio/click");
-        if (GameApp.GameApp.gameMgr.roundStateMarker !== GameConst.GameState.Idle) return;
+        if (GameApp.GameApp.gameMgr.roundStateMarker === GameConst.GameState.Primed) return;
+        var isCatch = "captureButton" === evt.target.name;
+        if (!isCatch && GameApp.GameApp.gameMgr.roundStateMarker !== GameConst.GameState.Idle) return;
         var handler = this._buttonHandlers()[evt.target.name];
         handler && handler.call(this);
       }
@@ -7923,19 +7927,14 @@ window.__require = function e(t, n, r) {
         };
       }
       _handleCatchBtn() {
-        var self = this;
         if (Global.default.user.propsCatch > 0) {
           Global.default.user.propsCatch--;
-          GameApp.GameApp.gameMgr.roundStateMarker = GameConst.GameState.Hook;
           GameApp.GameApp.gameMgr.triggerCatch();
           this.refreshItemBadges();
           return;
         }
         Global.default.platform.watchAd(function(success, _, msg) {
-          if (success) {
-            GameApp.GameApp.gameMgr.roundStateMarker = GameConst.GameState.Hook;
-            GameApp.GameApp.gameMgr.triggerCatch();
-          } else Global.default.gui.toast(msg || "\u89c2\u770b\u5b8c\u6fc0\u52b1\u89c6\u9891\u624d\u80fd\u83b7\u5f97\u5956\u52b1");
+          success ? GameApp.GameApp.gameMgr.triggerCatch() : Global.default.gui.toast(msg || "\u89c2\u770b\u5b8c\u6fc0\u52b1\u89c6\u9891\u624d\u80fd\u83b7\u5f97\u5956\u52b1");
         });
       }
       _handleShuffleBtn() {
