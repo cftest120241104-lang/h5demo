@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "abWB/15HqMzfrXvo9r5RaF"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "img_yx_yang",
+      "rect": [
+        1,
+        0,
+        113,
+        115
+      ],
+      "offset": [
+        0.5,
+        0
+      ],
+      "originalSize": [
+        114,
+        115
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

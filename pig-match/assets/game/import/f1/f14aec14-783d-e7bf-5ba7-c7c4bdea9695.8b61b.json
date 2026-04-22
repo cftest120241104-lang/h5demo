@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "4bK5FBqI+0ewIhTmjg6B17"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "img_sy_btn_kaishi",
+      "rect": [
+        0,
+        0,
+        127,
+        186
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        127,
+        186
+      ],
+      "capInsets": [
+        59,
+        59,
+        68,
+        88
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
