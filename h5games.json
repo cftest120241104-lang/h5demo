@@ -1,0 +1,17 @@
+[
+  {
+    "dir": "pig-match",
+    "title": "猪消消消",
+    "desc": "Cocos Creator 2.4 | 消除类休闲游戏 | 单机版"
+  },
+  {
+    "dir": "kungfu",
+    "title": "这就是功夫",
+    "desc": "Cocos Creator 2.4 | 动作闯关游戏 | 单机版"
+  },
+  {
+    "dir": "duck-rescue",
+    "title": "救救小鸭",
+    "desc": "Cocos Creator 3.8 | 拔钉+消除休闲游戏 | 单机版"
+  }
+]
